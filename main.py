@@ -72,18 +72,64 @@ def main():
         if st.button("Realizar otro examen"):
             # Borrar el contenido anterior antes de iniciar un nuevo examen
             st.session_state['sesion'] = iniciar_sesion()
-            st.experimental_rerun()
-
+            st.experimental_rerun()       
+    
         mostrar_examen()
     elif tab_select == "Resumenes":
-        st.write("Contenido de la sección Resumenes")
-        # Agrega el contenido que desees para la sección Resumenes
+        # Título y resumen para cada sección
+        secciones = [
+            {
+                "titulo": "Estatutos FIFA",
+                "resumen": "Texto resumen..."
+            },
+            {
+                "titulo": "Código Disciplinario",
+                "resumen": "Texto resumen..."
+            },
+            {
+                "titulo": "Codigo de Etica",
+                "resumen": "Texto resumen..."
+            },
+            {
+                "titulo": "Reglamento sobre el Estatuto y la Transferencia de jugadores",
+                "resumen": "Texto resumen..."
+            },
+            {
+                "titulo": " Reglamento de procedimiento del Tribunal del Fútbol",
+                "resumen": "Texto resumen..."
+            },
+            {
+                "titulo": "Reglamento de la Cámara de Compensación",
+                "resumen": "Texto resumen..."
+            },
+            {
+                "titulo": "Reglamento sobre Agente Fifa",
+                "resumen": "Texto resumen..."
+            },
+            {
+                "titulo": "Herramientas de Salvaguardia de la infancia del programa FIFA Guardians",
+                "resumen": "Texto resumen..."
+            },                        
+        ]
+
+        # Iterar sobre cada sección y mostrar el título y el resumen
+        for seccion in secciones:
+            titulo = seccion["titulo"]
+            resumen = seccion["resumen"]
+
+            st.subheader(titulo)  # Título de la sección
+            st.markdown(resumen)  # Resumen de la sección en formato markdown
+                
+                
     elif tab_select == "Esquemas":
         st.write("Contenido de la sección Esquemas")
         # Agrega el contenido que desees para la sección Esquemas
     elif tab_select == "Temario":
-        st.write("Contenido de la sección Temario")
-        # Agrega el contenido que desees para la sección Temario
+        st.title("Temario Examen Agente FIFA")
+        pdf_url = "https://digitalhub.fifa.com/m/1009119579a8c8c4/original/Materiales-de-estudio-sobre-el-examen-de-la-FIFA-para-agentes-de-futbol.pdf"
+        st.markdown(f'<iframe src="{pdf_url}" width="100%" height="1000" style="border: none;"></iframe>', unsafe_allow_html=True)   
+
+
 
 if __name__ == "__main__":
     main()
