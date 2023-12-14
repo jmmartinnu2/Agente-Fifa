@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from pyvis.network import Network
 from examen_fifa import preguntas_fifa
 import random
+import os
 
 
 
@@ -169,6 +170,27 @@ def mostrar_videos():
         st.subheader(videos[index]["titulo"])
         st.video(videos[index]["url"])
 
+
+def mostrar_pdf_segun_tema():
+    st.title("Selección de Temas en PDF")
+
+    # Diccionario con los temas y sus archivos PDF correspondientes en la ruta local
+    temas_pdf = {
+        "Reglamento del Agente": "FIFA Football Agent Regulations_ES.pdf",
+        "Reglamento del Agente Preguntas Frecuentes": "FIFA Football Agent Regulations FAQs_ES.pdf",
+        "Reglamento sobre el Estatuto y la Transferencia de Jugadores": "Reglamento sobre el Estatuto y la Transferencia del Jugador - Mayo 2023.pdf",
+        # ... Otros temas con sus nombres de archivos PDF
+    }
+
+    # Widget selectbox para seleccionar un tema
+    tema_seleccionado = st.selectbox("Selecciona un tema:", list(temas_pdf.keys()))
+
+    # Mostrar el PDF correspondiente al tema seleccionado
+    if tema_seleccionado:
+        ruta_carpeta_pdf = "C:/Users/jmmar/Desktop/Test-FIFA/pdf"
+        ruta_pdf = f"{ruta_carpeta_pdf}/{temas_pdf[tema_seleccionado]}"
+        pdf_embed = f'<embed src="{ruta_pdf}" width="800" height="600" type="application/pdf">'
+        st.markdown(pdf_embed, unsafe_allow_html=True)
 
 
 #Contratos generados
@@ -360,6 +382,8 @@ def ventana_mercado(pdf_url):
 
 
 
+
+
 #Visualizacion
 def main():
     tabs = ["Examenes", "Resumenes", "Esquemas", "Temario", "Videos", "Contratos", "Calculadora", "Examen oficial FIFA", "Ventanas de fichajes"]  # Nuevas secciones
@@ -372,7 +396,9 @@ def main():
             st.experimental_rerun()       
     
         mostrar_examen()
+        
     elif tab_select == "Resumenes":
+        st.subheader("Ver resúmenes por temática")
         mostrar_resumenes()  # Llama a la función desde resumenes.py para mostrar los resúmenes
                 
                 
@@ -381,9 +407,7 @@ def main():
         mostrar_jerarquia_fifa()
         
     elif tab_select == "Temario":
-        st.title("Temario Examen Agente FIFA")
-        pdf_url = "https://digitalhub.fifa.com/m/1009119579a8c8c4/original/Materiales-de-estudio-sobre-el-examen-de-la-FIFA-para-agentes-de-futbol.pdf"
-        st.markdown(f'<iframe src="{pdf_url}" width="100%" height="1000" style="border: none;"></iframe>', unsafe_allow_html=True)   
+        mostrar_pdf_segun_tema() 
         
     elif tab_select == "Videos":
         mostrar_videos()  # Llama a la función para mostrar los videos

@@ -4,25 +4,25 @@ def mostrar_resumenes():
     # Información de las secciones
     secciones = [
         {
-            "titulo": "Estatutos FIFA",
+            "titulo": ":bookmark_tabs: Estatutos FIFA",
             "resumen": [
                 "Texto resumen Estatutos FIFA..."
             ]
         },
         {
-            "titulo": "Código Disciplinario",
+            "titulo": ":orange_book: Código Disciplinario",
             "resumen": [
                 "Texto resumen Código Disciplinario..."
             ]
         },
         {
-            "titulo": "Codigo de Etica",
+            "titulo": ":blue_book: Codigo de Etica",
             "resumen": [
                 "Texto resumen Codigo de Etica..."
             ]
         },
         {
-            "titulo": "Reglamento sobre el Estatuto y la Transferencia de jugadores",
+            "titulo": ":notebook_with_decorative_cover: Reglamento sobre el Estatuto y la Transferencia de jugadores",
             "resumen": [
                 ":orange[***Artículo 7***:] La asociación que inscribe a un jugador debe entregar un pasaporte del jugador con todos los datos relevantes del jugador, que incluirá los clubes en los que ha estado inscrito desde el año en que cumplió 12 años.",
                 ":orange[***Artículo 7***:] Para los derechos relacionados con las compensaciones por formación que están sujetos al Reglamento de la Cámara de Compensación de la FIFA, se generará un Pasaporte Electrónico del Jugador (EPP) que contiene información consolidada sobre la inscripción del jugador a lo largo de su carrera.",
@@ -49,19 +49,19 @@ def mostrar_resumenes():
             ]
         },
         {
-            "titulo": "Reglamento de procedimiento del Tribunal del Fútbol",
+            "titulo": ":notebook: Reglamento de procedimiento del Tribunal del Fútbol",
             "resumen": [
                 "Texto resumen Reglamento del Tribunal del Fútbol..."
             ]
         },
         {
-            "titulo": "Reglamento de la Cámara de Compensación",
+            "titulo": ":green_book: Reglamento de la Cámara de Compensación",
             "resumen": [
                 "Texto resumen Reglamento de la Cámara de Compensación..."
             ]
         },
         {
-            "titulo": "Reglamento sobre Agente Fifa",
+            "titulo": ":ledger: Reglamento sobre Agente Fifa",
             "resumen": [
                 ":orange[***Importante***:] No se puede cobrar comision de por transferencia de jugadores a futuro cuando hemos gestionado un contrato.",
                 ":orange[***Importante***:] Los agentes de fútbol solo pueden representar a un cliente si han firmado un contrato de representación con ese cliente.",
@@ -129,23 +129,18 @@ def mostrar_resumenes():
             ]
         },
         {
-            "titulo": "Herramientas de Salvaguardia de la infancia del programa FIFA Guardians",
+            "titulo": ":books: Herramientas de Salvaguardia de la infancia del programa FIFA Guardians",
             "resumen": [
                 "Texto resumen Herramientas de Salvaguardia..."
             ]
         }
     ]
 
-    tabs = [seccion["titulo"] for seccion in secciones]
-    selected_tab = st.selectbox("Selecciona una sección", tabs)
-
     for seccion in secciones:
-        if seccion["titulo"] == selected_tab:
-            st.subheader(seccion["titulo"])
+        with st.expander(seccion["titulo"]):
+            for resumen in seccion["resumen"]:
+                st.write(resumen)
 
-            for idx, linea in enumerate(seccion["resumen"], start=1):
-                # Usar st.markdown para aplicar el formato Markdown
-                st.markdown(f"* {linea}")  # Usar '*' para viñetas en la lista
 
 if __name__ == "__main__":
     mostrar_resumenes()
