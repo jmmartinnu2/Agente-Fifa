@@ -2207,5 +2207,51 @@ preguntas = [
             "Órgano de resolución de disputas de la Federación Inglesa de Fútbol"
         ],
         'respuesta_correcta': "Cámara de Resolución de Disputas de la FIFA"
-    }                                                                                      
+    },
+    {
+        'pregunta': "Según el estatuto de la FIFA, el Tribunal Arbitral del Deporte no se ocupará de recursos relacionados con violaciones de las reglas del juego",
+        'opciones': [
+            "Verdadero",
+            "Falso",
+        ],
+        'respuesta_correcta': "Verdadero"
+    },
+    {
+        'pregunta': "Los agentes que tienen contrato vigentes al 1-10-23 pueden continuar siendo agentes después de esa fecha hasta el 31-12-23 sin cumplir ningún requisito, como excepción.",
+        'opciones': [
+            "Verdadero",
+            "Falso",
+        ],
+        'respuesta_correcta': "Falso"
+    },
+    {
+        'pregunta': "En una misma transacción, el agente puede representar:",
+        'opciones': [
+            "A una entidad de origen y a una persona",
+            "A una entidad de origen y a una entidad de destino",
+            "A todas las partes",
+            "A la entidad de destino y a la pesona"
+        ],
+        'respuesta_correcta': "A la entidad de destino y a la pesona"
+    },
+    {
+        'pregunta': "¿Quien tiene la obligación de de facilitar una copia del contrato de representación de un jugador cuando así lo solicite un periodista de investigación?",
+        'opciones': [
+            "FIFPro",
+            "Nadie",
+            "La FIFA",
+            "El Agente de fútbol"
+        ],
+        'respuesta_correcta': "Nadie"
+    },
+    {
+        'pregunta': "En aquellos casos en los que se permite doble representación si se acuerda una renumeración de 100.000USD ¿Qué porcentaje de los honorarios totales puede abonar la entidad de destino?",
+        'opciones': [
+            "El 5%",
+            "El 3%",
+            "El 50%",
+            "El 100%"
+        ],
+        'respuesta_correcta': "El 100%"
+    },                                                                                                      
 ]    
