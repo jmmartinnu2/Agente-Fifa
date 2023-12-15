@@ -10,8 +10,8 @@ from pyvis.network import Network
 from examen_fifa import preguntas_fifa
 import random
 import os
-
-
+import fitz 
+from videos import get_videos
 
 # Función para inicializar o resetear la sesión
 def iniciar_sesion():
@@ -20,6 +20,23 @@ def iniciar_sesion():
         'realizado_test': False,
     }
 
+
+#Mostrar Inicio Readme
+def mostrar_inicio():
+    st.title(":soccer: Tablero de Estudio ")
+
+    st.write("""
+     Este tablero ha sido creado para estudiar y revisar materiales relevantes relacionados con la preparación para el examen a Agente FIFA.
+    Proporciona acceso a resúmenes, documentos oficiales, exámenes, videos y más.
+
+    ## :mortar_board: Secciones Disponibles:
+    - **📝 Examenes**: Realiza exámenes relacionados con la temática FIFA, tipo test.
+    - **:book: Resúmenes**: Encuentra resúmenes organizados por temática.
+    - **📚 Temario**: Acceso a documentos y materiales de estudio.
+    - **:clapper: Videos**: Recopilación de videos educativos y explicativos de las clases impartidas.
+    - **:heavy_division_sign: Calculadora**: Calculadora para realizar cálculos sobre Comsiones entre los distintos participantes.
+    - **:dart: Exámenes Oficiales FIFA**: Preguntas oficiales sobre exámenes de la FIFA ya realizados.
+    """)
 
 
 #Examenes 
@@ -77,148 +94,36 @@ def mostrar_examen():
 
 
 
-#Videos de clases    
-def mostrar_videos():
-    st.title("Videos y Recursos Multimedia")
-    st.write("Aquí encontrarás videos explicativos y recursos multimedia relacionados con el examen de FIFA.")
 
-    # Lista de diccionarios con información sobre cada video
-    videos = [
-        {
-            "clase": "Clase 1",
-            "titulo": "Clase 1 - RFAF",
-            "url": "https://youtu.be/mR3uhngzdnE"
-        },
-        {
-            "clase": "Clase 2",
-            "titulo": "Clase 2 - RFAF",
-            "url": "https://youtu.be/RiYmZmLpaCU"
-        },
-        {
-            "clase": "Clase 3",
-            "titulo": "Clase 3 - RFAF",
-            "url": "https://youtu.be/ROqi547z9Ng"
-        },
-        {
-            "clase": "Clase 4",
-            "titulo": "Clase 4 - RFAF",
-            "url": "https://youtu.be/l0xXxcSUJqw"
-        },
-        {
-            "clase": "Clase 5",
-            "titulo": "Clase 5 - RFAF",
-            "url": "https://youtu.be/921ggJ_gj4U"
-        },
-        {
-            "clase": "Clase 6",
-            "titulo": "Clase 6 - Examen Fifa sobre RFAF",
-            "url": "https://youtu.be/aCo78ZSk7d4"
-        },
-        {
-            "clase": "Clase 7",
-            "titulo": "Clase 7 - RTIJ I",
-            "url": "https://www.youtube.com/watch?v=nOJoeyhTCsc"
-        },
-        {
-            "clase": "Clase 8",
-            "titulo": "Clase 8 - RTIJ II",
-            "url": "https://youtu.be/xKhvt-j48jQ"
-        },
-        {
-            "clase": "Clase 9",
-            "titulo": "Clase 9 - RTIJ III",
-            "url": "https://www.youtube.com/watch?v=bySK5jUz7jk"
-        },
-        {
-            "clase": "Clase 10",
-            "titulo": "Clase 10 - RTIJ IV",
-            "url": "https://youtu.be/lXjRsBjS7cQ"
-        },
-        {
-            "clase": "Clase 11",
-            "titulo": "Clase 11 - RTIJ V",
-            "url": "https://www.youtube.com/watch?v=Yv-tBD6x_l8"
-        },
-        {
-            "clase": "Clase 12",
-            "titulo": "Clase 12 - RTIJ VI",
-            "url": "https://youtu.be/EhN4OEU2kXY"
-        },                                                            
-    ]
+def mostrar_pdf_seleccionado(ruta_carpeta):
+    st.title("Selección y visualización de PDF")
 
-    # Obtener las clases únicas para el selectbox
-    clases_disponibles = list(set(video["clase"] for video in videos))
-    clases_a_mostrar = [clase for clase in clases_disponibles if clase not in ["Clase 1", "Clase 2", "Clase 3", "Clase 4", "Clase 5", "Clase 6", "Clase 7", "Clase 8", "Clase 9", "Clase 10", "Clase 11", "Clase 12"]]
-
-    # Crear la lista de opciones del selectbox
-    opciones_clases = ["Ver todo"] + clases_a_mostrar + [f"Video {i+1}" for i in range(len(videos))]
-    opcion_elegida = st.selectbox("¿Qué video deseas ver?", opciones_clases)
-
-    # Mostrar videos según la opción seleccionada
-    if opcion_elegida == "Ver todo":
-        for video in videos:
-            st.subheader(video["titulo"])
-            st.video(video["url"])
-    elif opcion_elegida in clases_a_mostrar:
-        for video in videos:
-            if video["clase"] == opcion_elegida:
-                st.subheader(video["titulo"])
-                st.video(video["url"])
-    else:
-        # Obtener el índice del video seleccionado
-        index = int(opcion_elegida.split(" ")[1]) - 1
-        st.subheader(videos[index]["titulo"])
-        st.video(videos[index]["url"])
-
-
-def mostrar_pdf_segun_tema():
-    st.title("Selección de Temas en PDF")
-
-    # Diccionario con los temas y sus archivos PDF correspondientes en la ruta local
-    temas_pdf = {
+    # Nombres de los archivos PDF
+    nombres_archivos = {
         "Reglamento del Agente": "FIFA Football Agent Regulations_ES.pdf",
         "Reglamento del Agente Preguntas Frecuentes": "FIFA Football Agent Regulations FAQs_ES.pdf",
         "Reglamento sobre el Estatuto y la Transferencia de Jugadores": "Reglamento sobre el Estatuto y la Transferencia del Jugador - Mayo 2023.pdf",
-        # ... Otros temas con sus nombres de archivos PDF
+        "Calendario / Ventana de mercado":"Transfer Window Calendar_MFA_S_v2_20230616.pdf"
     }
 
-    # Widget selectbox para seleccionar un tema
-    tema_seleccionado = st.selectbox("Selecciona un tema:", list(temas_pdf.keys()))
+    # Widget selectbox para seleccionar un archivo PDF
+    archivo_seleccionado = st.selectbox("Selecciona un archivo PDF:", list(nombres_archivos.keys()))
 
-    # Mostrar el PDF correspondiente al tema seleccionado
-    if tema_seleccionado:
-        ruta_carpeta_pdf = "C:/Users/jmmar/Desktop/Test-FIFA/pdf"
-        ruta_pdf = f"{ruta_carpeta_pdf}/{temas_pdf[tema_seleccionado]}"
-        pdf_embed = f'<embed src="{ruta_pdf}" width="800" height="600" type="application/pdf">'
-        st.markdown(pdf_embed, unsafe_allow_html=True)
+    # Mostrar el PDF seleccionado
+    if archivo_seleccionado:
+        archivo_pdf = nombres_archivos[archivo_seleccionado]
+        ruta_pdf = os.path.join(ruta_carpeta, archivo_pdf)
+        pdf_document = fitz.open(ruta_pdf)
+        
+        # Mostrar cada página del PDF
+        for page_num in range(pdf_document.page_count):
+            page = pdf_document.load_page(page_num)
+            img_bytes = page.get_pixmap().tobytes()
+            st.image(img_bytes, caption=f"Página {page_num + 1}", use_column_width=True)
 
 
-#Contratos generados
-def generar_contrato():
-    st.title("Generador de Contratos")
 
-    nombre_cliente = st.text_input("Nombre del Cliente")
-    direccion = st.text_input("Dirección")
-    nombre_agente = st.text_input("Nombre del Agente FIFA")
-    numero_licencia = st.text_input("Número de Licencia")
-    duracion_acuerdo = st.number_input("Duración del acuerdo")
-
-    tipo_contrato = st.selectbox(
-        "Selecciona el tipo de contrato",
-        [
-            "Contrato de Representación",
-            "Contrato de Servicios",
-            "Contrato de Asesoramiento",
-            "Contrato de Comisión"
-        ]
-    )
-
-    if st.button("Generar Contrato"):
-        contrato = generar_contrato_segun_tipo(nombre_cliente, direccion, nombre_agente, numero_licencia, tipo_contrato, duracion_acuerdo)
-        st.subheader("Contrato Generado:")
-        st.text_area("Contrato", contrato, height=400)
-      
-    
+   
 #Calculadora
 def calcular_comision():
     st.title("Calculadora de Comisiones")
@@ -386,16 +291,20 @@ def ventana_mercado(pdf_url):
 
 #Visualizacion
 def main():
-    tabs = ["Examenes", "Resumenes", "Esquemas", "Temario", "Videos", "Contratos", "Calculadora", "Examen oficial FIFA", "Ventanas de fichajes"]  # Nuevas secciones
+    tabs = ["Inicio","Examenes", "Resumenes", "Esquemas", "Temario", "Videos", "Calculadora", "Examen oficial FIFA"]  # Nuevas secciones
     tab_select = st.sidebar.selectbox("Selecciona una sección", tabs, index=0)
 
-    if tab_select == "Examenes":
+    if tab_select == "Inicio":
+        mostrar_inicio()
+
+    elif tab_select == "Examenes":
+        mostrar_examen()
         if st.button("Realizar otro examen"):
             # Borrar el contenido anterior antes de iniciar un nuevo examen
             st.session_state['sesion'] = iniciar_sesion()
             st.experimental_rerun()       
     
-        mostrar_examen()
+
         
     elif tab_select == "Resumenes":
         st.subheader("Ver resúmenes por temática")
@@ -407,13 +316,25 @@ def main():
         mostrar_jerarquia_fifa()
         
     elif tab_select == "Temario":
-        mostrar_pdf_segun_tema() 
+        mostrar_pdf_seleccionado("C:/Users/jmmar/Desktop/Test-FIFA/pdf") 
         
     elif tab_select == "Videos":
-        mostrar_videos()  # Llama a la función para mostrar los videos
 
-    elif tab_select == "Contratos":
-        generar_contrato()
+        if tab_select == "Videos":
+            videos = get_videos()  # Obtener la lista de videos
+
+            # Obtener los títulos de los videos para el selector
+            video_titles = [video['clase'] for video in videos]
+            
+            # Selector para elegir el video
+            selected_video = st.selectbox("Selecciona un video", video_titles)
+
+            # Mostrar el video seleccionado con st.video
+            for video in videos:
+                if video['clase'] == selected_video:
+                    st.header(f"{video['clase']} - {video['titulo']}")
+                    st.video(video['url'])
+
 
         
     elif tab_select == "Calculadora":
@@ -423,10 +344,6 @@ def main():
     elif tab_select == "Examen oficial FIFA":
         mostrar_examen_fifa()
 
-    elif tab_select == "Ventanas de fichajes":
-        # Llamada a la función con la URL
-        pdf_url_ejemplo = "https://digitalhub.fifa.com/m/680099dc838c2961/original/Transfer-Window-Calendar_MFA_S_20211201.pdf"
-        ventana_mercado(pdf_url_ejemplo)
 
 if __name__ == "__main__":
     main()
