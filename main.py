@@ -7,11 +7,34 @@ from login import login, registro
 from contratos import generar_contrato_segun_tipo
 import matplotlib.pyplot as plt
 from pyvis.network import Network
-from examen_fifa import preguntas_fifa
 import random
 import os
 import fitz 
 from videos import get_videos
+from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia
+import string
+
+def mostrar_examen_fifa():
+    st.title("Examen Oficial FIFA")
+    st.write("Selecciona el tema del examen:")
+
+    # Menú desplegable para seleccionar el tema
+    tema_seleccionado = st.selectbox("Selecciona el tema del examen", ["Reglamento sobre Agente FIFA", "Reglamento del Estatuto y la Transferencia del Jugador"])
+
+    # Variable para almacenar las preguntas según el tema seleccionado
+    preguntas_seleccionadas = preguntas_agente_fifa if tema_seleccionado == "Reglamento sobre Agente FIFA" else preguntas_estatuto_transferencia
+
+    puntaje = 0
+
+    for i, pregunta in enumerate(preguntas_seleccionadas, 1):
+        pregunta_texto = pregunta['pregunta']
+        opciones = pregunta['opciones']
+        respuesta_correcta = pregunta['respuesta_correcta']
+
+        st.write(f"{i}. {pregunta_texto}")  # Muestra la pregunta
+
+
+
 
 # Función para inicializar o resetear la sesión
 def iniciar_sesion():
@@ -61,12 +84,13 @@ def mostrar_examen():
         opciones = pregunta['opciones']
         respuesta_correcta = pregunta['respuesta_correcta']
 
-        st.write(f"{i}. {pregunta_texto}")
+        st.write(f"**Pregunta {i}:** {pregunta_texto}")
 
         # Generar una clave única basada en el índice de la pregunta
         key = f"pregunta_{i}_respuestas"
 
-        respuesta_usuario = st.radio(f"Selecciona una respuesta: ", ['', *opciones], key=key)
+        respuesta_usuario = st.radio(f"", ['', *opciones], key=key)
+
 
         # Mostrar retroalimentación sobre la respuesta
         if respuesta_usuario == respuesta_correcta:
@@ -91,6 +115,7 @@ def mostrar_examen():
 
     # Actualizar la sesión
     st.session_state['sesion'] = sesion
+
 
 
 
@@ -254,28 +279,61 @@ def mostrar_jerarquia_fifa():
 
 
 #Examen oficial fifa test
-def mostrar_examen_fifa():
+def mostrar_examen_fifa(preguntas):
     st.title("Examen Oficial FIFA")
-    st.write("Responde las siguientes preguntas:")
 
-    sesion = st.session_state.get('sesion', None)
-    if sesion is None:
-        sesion = iniciar_sesion()
+    tema_seleccionado = st.selectbox("Selecciona el tema del examen", ["Selecciona el Examen Agente FIFA a realizar por tema...", "Reglamento sobre Agente FIFA", "Reglamento del Estatuto y la Transferencia del Jugador"])
 
-    puntaje = 0
-    respuestas_usuario = {}
+    if tema_seleccionado and tema_seleccionado != "Selecciona el Examen Agente FIFA a realizar por tema...":
+        preguntas_seleccionadas = preguntas.get(tema_seleccionado, [])
 
-    for i, pregunta in enumerate(sesion['preguntas_fifa'], 1):
-        pregunta_texto = pregunta['pregunta']
-        opciones = pregunta['opciones']
+        puntaje = 0
 
-        st.write(f"{i}. {pregunta_texto}")  # Muestra la pregunta
+        for i, pregunta in enumerate(preguntas_seleccionadas, 1):
+            pregunta_texto = pregunta['pregunta']
+            opciones = pregunta['opciones']
 
-        # Muestra las opciones de respuesta como botones de radio
-        respuesta_usuario = st.radio(f"Respuesta {i}", opciones)
-        respuestas_usuario[i] = respuesta_usuario
+            respuesta_correcta = pregunta.get('respuesta_correcta')  # Busca la respuesta_correcta si existe
 
-    st.write(respuestas_usuario)  # Muestra las respuestas seleccionadas por el usuario
+            st.write(f"{i}. {pregunta_texto}")
+
+            estados_checkboxes = []
+            for opcion in opciones:
+                estado = st.checkbox(opcion, key=f"checkbox_{i}_{opcion}")
+                estados_checkboxes.append(estado)
+
+            respuestas_seleccionadas = [opcion for opcion, estado in zip(opciones, estados_checkboxes) if estado]
+            respuestas_seleccionadas.sort()
+
+            if st.button(f"Ver respuesta {i}"):
+                if respuesta_correcta:  # Si la respuesta_correcta existe
+                    if sorted(respuesta_correcta) == sorted(respuestas_seleccionadas):
+                        st.success(f"Respuesta {i}: ¡Correcto! {respuesta_correcta}")
+                        puntaje += 1
+                    else:
+                        st.error(f"Respuesta {i}: Incorrecto. La respuesta correcta es: {respuesta_correcta}")
+                else:  # Si no existe, utilizamos respuestas_correctas
+                    respuestas_correctas = pregunta.get('respuestas_correctas', [])
+                    if sorted(respuestas_correctas) == sorted(respuestas_seleccionadas):
+                        st.success(f"Respuesta {i}: ¡Correcto! {respuestas_correctas}")
+                        puntaje += 1
+                    else:
+                        st.error(f"Respuesta {i}: Incorrecto. La respuesta correcta es: {respuestas_correctas}")
+
+        if preguntas_seleccionadas:  # Si hay preguntas seleccionadas
+            st.write(f"Puntaje total: {puntaje}/{len(preguntas_seleccionadas)}")
+        else:
+            st.write("No hay preguntas cargadas para este examen.")
+    else:
+        st.write("")
+
+
+
+
+
+
+
+
 
 
 
@@ -342,7 +400,10 @@ def main():
         calcular_pagos_variables()
 
     elif tab_select == "Examen oficial FIFA":
-        mostrar_examen_fifa()
+        mostrar_examen_fifa({
+    "Reglamento sobre Agente FIFA": preguntas_agente_fifa,
+    "Reglamento del Estatuto y la Transferencia del Jugador": preguntas_estatuto_transferencia
+        })
 
 
 if __name__ == "__main__":
