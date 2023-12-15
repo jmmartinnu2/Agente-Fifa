@@ -119,6 +119,7 @@ def mostrar_examen():
 
 
 
+ruta_carpeta = "pdf"  # Carpeta en la raíz del repositorio que contiene los archivos PDF
 
 def mostrar_pdf_seleccionado(ruta_carpeta):
     st.title("Selección y visualización de PDF")
@@ -374,7 +375,7 @@ def main():
         mostrar_jerarquia_fifa()
         
     elif tab_select == "Temario":
-        mostrar_pdf_seleccionado("C:/Users/jmmar/Desktop/Test-FIFA/pdf") 
+        mostrar_pdf_seleccionado("pdf") 
         
     elif tab_select == "Videos":
 
