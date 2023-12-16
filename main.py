@@ -3,7 +3,6 @@ from random import sample
 from preguntas import preguntas
 from resumenes import mostrar_resumenes  # Importa la función desde resumenes.py
 import time
-from login import login, registro
 from contratos import generar_contrato_segun_tipo
 import matplotlib.pyplot as plt
 from pyvis.network import Network
