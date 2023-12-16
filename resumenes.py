@@ -137,7 +137,7 @@ def mostrar_resumenes():
     ]
 
     for seccion in secciones:
-        with st.expander(seccion["titulo"]):
+        with st.expander(seccion["titulo"].upper()):
             for resumen in seccion["resumen"]:
                 st.write(resumen)
 
