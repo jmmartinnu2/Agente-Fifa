@@ -3,16 +3,13 @@ from random import sample
 from preguntas import preguntas
 from resumenes import mostrar_resumenes  # Importa la función desde resumenes.py
 import time
-from contratos import generar_contrato_segun_tipo
-import matplotlib.pyplot as plt
-from pyvis.network import Network
 import random
 import os
 import fitz 
 from videos import get_videos
 from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia
 import string
-
+from esquemas import mostrar_esquema_fifa,esquema_formacion
 def mostrar_examen_fifa():
     st.title("Examen Oficial FIFA")
     st.write("Selecciona el tema del examen:")
@@ -244,37 +241,7 @@ def calcular_pagos_variables():
         st.write(f"El agente cobrará por pagos variables: {cantidad_cobrada:.2f} USD")
 
 
-        
-#Esquemas
-def mostrar_jerarquia_fifa():
-    # Crear un objeto Network
-    network = Network(height="750px", width="100%", notebook=True)
-
-    # Agregar nodos
-    nodos = [
-        ('Órganos', 'Congreso'),
-        ('Órganos', 'Consejo'),
-        ('Órganos', 'Presidente'),
-        ('Órganos', 'Secretaría General'),
-        ('Órganos', 'Bureau del Consejo'),
-        ('Órganos', 'Comisiones Permanentes'),
-        ('Comisiones Permanentes', 'Comisión de Finanzas'),
-        ('Comisiones Permanentes', 'Comisión de Desarrollo'),
-        ('Comisiones Permanentes', 'Comisión Organizadora de Competiciones de la FIFA'),
-        ('Comisiones Permanentes', 'Comisión de Grupos de Interés del Fútbol'),
-        ('Comisiones Permanentes', 'Comisión de Federaciones Miembro'),
-        ('Comisiones Permanentes', 'Comisión de Árbitros'),
-        ('Comisiones Permanentes', 'Comisión de Medicina')
-    ]
-
-    for parent, child in nodos:
-        network.add_node(parent, parent, title=parent)
-        network.add_node(child, child, title=child)
-        network.add_edge(parent, child)
-
-    # Mostrar la red
-    network.show("fifa_hierarchy_organs_updated.html")
-    st.components.v1.html(open("fifa_hierarchy_organs_updated.html").read(), height=900)
+    
          
 
 
@@ -370,8 +337,19 @@ def main():
                 
                 
     elif tab_select == "Esquemas":
-        st.title('Jerarquía FIFA')
-        mostrar_jerarquia_fifa()
+        # Llamando a la función para mostrar el esquema de jerarquía FIFA
+        network_fifa = mostrar_esquema_fifa()  
+        network_fifa.show("fifa_hierarchy_organs_updated.html")
+        st.write("Jerarquía FIFA")
+        st.components.v1.html(open("fifa_hierarchy_organs_updated.html").read(), height=750)
+
+        st.title('Estructura de Comisiones')
+        st.image('./tabla-agente-comisiones.png', caption='Sunrise by the mountains')
+
+
+        esquema_formacion()
+
+        
         
     elif tab_select == "Temario":
         mostrar_pdf_seleccionado("pdf") 
