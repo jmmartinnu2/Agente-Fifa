@@ -76,7 +76,12 @@ def get_videos():
             "clase": "Clase 14",
             "titulo": "Clase 14 - RTIJ VIII",
             "url": "https://youtu.be/nlCv3KHdAcw"
-        },                                                                            
+        },
+        {
+            "clase": "Clase 15",
+            "titulo": "Clase 15 - RTIJ Preguntas Examen ",
+            "url": "https://youtu.be/8x9BeNnfPDg"
+        },                                                                                   
     ]
     
     return videos  # Asegurémonos de retornar la lista de videos
