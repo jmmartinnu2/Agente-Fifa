@@ -68,19 +68,139 @@ preguntas_agente_fifa = [
         'pregunta': '¿Debe notificarse a la FIFA la enmienda de un contrato de representación vigente por parte de un agente de fútbol y un cliente? Seleccione una:',
         'opciones': ['Siempre, si se trata de un contrato de representación de dimensión internacional', 'Siempre, índependientemente de que el contrato de representación tenga o no dimensión internacional', 'Nunca', 'Unicamente si dicho contrato de representación guarda relación con un traspaso o una transacción nacionales'],
         'respuestas_correctas': ['Siempre, índependientemente de que el contrato de representación tenga o no dimensión internacional']
-    } 
+    },
+    {
+        'pregunta': '¿Qué condiciones pueden impedir que se cobren honorarios al representar a una persona que sea menor de edad? Seleccione una o más de una:',
+        'opciones': [
+            'Probibición del cobro de honorarios a menores en virtud de la legislación de un territorio o país',
+            'Prohibición del cobro de honorarios a menores por parte de una federación',
+            'Ausencia de un contrato profesional',
+            'Oposición de los tutores legales del menor'
+        ],
+        'respuestas_correctas': ['Probibición del cobro de honorarios a menores en virtud de la legislación de un territorio o país','Prohibición del cobro de honorarios a menores por parte de una federación','Oposición de los tutores legales del menor']
+    },
+    {
+        'pregunta': '¿Qué sanción se prevé para los nuevos agentes de fúbtol que infrinjan por primera vez las disposiciones sobre el contacto con clientes menores de edad? Seleccione una:',
+        'opciones': [
+            'Multa e inhabilitación de hasta dos años para representar a dicho cliente',
+            'Anulación de la licencia del agente de fútbol',
+            'Advertencia por escrito y publicación de una sanción',
+            'Multa y suspensión de hasta dos años de licencia del agente de fútbol'
+        ],
+        'respuestas_correctas': ['Multa y suspensión de hasta dos años de licencia del agente de fútbol']
+    },
+    {
+        'pregunta': '¿Cuáles de las siguientes situaciones constituyen una infracción del Reglamento sobre Agentes de Fútbol de la FIFA? Seleccione una o más de una:',
+        'opciones': [
+            'Facturar los honorarios en una divisa que no sea USD',
+            'Representar a una entidad de origen y a un jugador en la misma transacción',
+            'Aceptar que los honorarios se calculen sobre el 3% del coste de un futuro traspaso',
+            'Facturar gastos pertinentes a los clientes'
+        ],
+        'respuestas_correctas': ['Representar a una entidad de origen y a un jugador en la misma transacción','Aceptar que los honorarios se calculen sobre el 3% del coste de un futuro traspaso']
+    },
+    {
+        'pregunta': '¿Cuáles de las siguientes situaciones constituyen una infracción del Reglamento sobre Agentes de Fútbol de la FIFA? Seleccione una o más de una:',
+        'opciones': [
+            'Facturar los honorarios en una divisa que no sea USD',
+            'Representar a una entidad de origen y a un jugador en la misma transacción',
+            'Aceptar que los honorarios se calculen sobre el 3% del coste de un futuro traspaso',
+            'Facturar gastos pertinentes a los clientes'
+        ],
+        'respuestas_correctas': ['Representar a una entidad de origen y a un jugador en la misma transacción','Aceptar que los honorarios se calculen sobre el 3% del coste de un futuro traspaso']
+    },
+    {
+        'pregunta': '¿Se puede sancionar a un agente de fútbol por incumplir el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores? Seleccione una:',
+        'opciones': [
+            'Sí, el Reglamento de la FIFA sobre Agentes de Fútbol prohíbe incurrir e intentar incurrir en traspasos puente, y la Comisión Disciplinaria de la FIFA podrá imponer sanciones conforme al Código Disciplinario de la FIFA a toda parte sujeta a los Estatutos y reglamentación de la FIFA que participe en un traspaso puente',
+            'No, el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores no prevé sanción alguna para los agentes de fútbol por los traspasos puente. No obstante, los agentes de fútbol deben tener en cuenta que, según el artículo 15 del Código Disciplinario de la FIFA, se puede sancionar a los agentes de fútbol que incumplan las decisiones del TAS',
+            'Sí, porque los agentes de fútbol actúan en nombre de los futbolistas y los clubes, y por tanto se los puede sancionar en su lugar',
+            'No, nunca'
+        ],
+        'respuestas_correctas': ['Sí, el Reglamento de la FIFA sobre Agentes de Fútbol prohíbe incurrir e intentar incurrir en traspasos puente, y la Comisión Disciplinaria de la FIFA podrá imponer sanciones conforme al Código Disciplinario de la FIFA a toda parte sujeta a los Estatutos y reglamentación de la FIFA que participe en un traspaso puente']
+    },
+    {
+        'pregunta': 'Edson ha firmado un contrato de representación con su amigo Denis, que también es agente de fútbol. Poco después, Edson recibe una llamada del FC Tombe para ficharlo como portero titular. Sin embargo, al no saber demasiado sobre este tipo de negociaciones, Edson pide a Denis que negocie un contrato en su nombre con este equipo extranjero. Tras varios días de negociaciones propiciadas por Denis, Edson firma un contrato profesional con el FC Tombe, a cambio de una remuneración total de 400 000 USD, que debe abonarse por adelantado. Unos meses después de llegar a su nuevo país, Edson recibe un mensaje de Denis en el que lo insta a pagar sus honorarios por ayudarlo con la negociación del contrato. Minka, mujer de Edson, le advierte de que en su contrato de representación acordaron unos honorarios del 4.4 %, lo cual podría traducirse en sanciones disciplinarias para el jugador. ¿Qué porcentaje debería pagar Edson en concepto de honorarios? Seleccione una:',
+        'opciones': [
+            'El 15%',
+            'El 3%',
+            'El 2,6%',
+            'El 4.4 % de los primeros 200 000 USD y el 3 % de los 200 000 USD restantes'
+        ],
+        'respuestas_correctas': ['El 4.4 % de los primeros 200 000 USD y el 3 % de los 200 000 USD restantes']
+    },
+    {
+        'pregunta': '¿Cuáles son las máximas costas procesales que se pueden imponer a un jugador, entrenador, agente de fútbol o agente organizador de partidos en disputas ante el Tribunal del Fútbol? Seleccione una:',
+        'opciones': [
+            '5000 USD',
+            'Ninguna, dado que dichos procedimientos son gratuitos',
+            '10000 USD',
+            '25000 USD'
+        ],
+        'respuestas_correctas': ['Ninguna, dado que dichos procedimientos son gratuitos']
+    },
+    {
+        'pregunta': '¿En qué situaciones puede el límite de los honorarios de agentes ser inferior a lo estipulado en el Reglamento de la FIFA sobre Agentes de Fútbol? Seleccione una o más de una:',
+        'opciones': [
+            'Nunca',
+            'Cuando así lo estipule el reglamento nacional sobre agentes de fútbol de la federación',
+            'Cuando así lo acuerden las partes de un contrato de representación',
+            'En todas las transacciones relacionadas con jugadores menores de edad'
+        ],
+        'respuestas_correctas': ['Cuando así lo estipule el reglamento nacional sobre agentes de fútbol de la federación','En todas las transacciones relacionadas con jugadores menores de edad']
+    },
+    {
+        'pregunta': '¿En cuáles de las siguientes situaciones se asumirá que los servicios de ojeamiento y consultoría prestados a un club forman parte de los servicios de representación y están sujetos a un límite? Seleccione una o más de una:',
+        'opciones': [
+            'Los servicios se han prestado en los 24 meses posteriores a una transacción',
+            'Se estipulan en contratos que no se denominan «contratos de representación',
+            'No se ha demostrado ante la FIFA que los servicios se prestaran en la práctica',
+            'Los servicios de ojeamiento y consultoría se han prestado en el contexto de una transacción que no se ha materializado'
+        ],
+        'respuestas_correctas': ['Los servicios se han prestado en los 24 meses posteriores a una transacción']
+    },
+    {
+        'pregunta': '¿Qué sucede si un agente de fútbol acepta una oferta para trabajar como ojeador a jornada completa y firma un contrato? Seleccione una:',
+        'opciones': [
+            'Tendrá hasta el final de la vigencia de su licencia para rescindir los contratos de representación vigentes y completar las transacciones relacionadas',
+            'Nada',
+            'Dejará de cumplir los requisitos de elegibilidad para tener una licencia de agente de fútbol',
+            'Tendrá 14 días para rescindir los contratos de representación vigentes y completar las transacciones relacionadas'
+        ],
+        'respuestas_correctas': ['Dejará de cumplir los requisitos de elegibilidad para tener una licencia de agente de fútbol']
+    },
+    {
+        'pregunta': '¿Qué debe hacer un agente de fútbol en caso de recibir un mensaje en redes sociales en el que se ofrezca un contrato de aficionado a su cliente? Seleccione una:',
+        'opciones': [
+            'Informar de la oferta a su cliente',
+            'Entablar negociaciones con el club',
+            'Solicitar una oferta con el membrete del club',
+            'Ignorar la oferta porque se trata de un contrato de categoría aficionado'
+        ],
+        'respuestas_correctas': ['Dejará de cumplir los requisitos de elegibilidad para tener una licencia de agente de fútbol']
+    },
+    {
+        'pregunta': '¿Con quién no debe contactar nunca un agente de fútbol en los últimos 30 días de su contrato de representación, con vistas a representarlo? Seleccione una o más de una:',
+        'opciones': [
+            'Un entrenador con contrato laboral',
+            'Un club con un contrato de representación no exclusivo',
+            'Un posible cliente que sea menor de edad',
+            'Un posible cliente con un contrato de representación exclusivo'
+        ],
+        'respuestas_correctas': ['Un entrenador con contrato laboral','Un posible cliente que sea menor de edad']
+    },                                               
 ]
 
 preguntas_estatuto_transferencia = [
     {
-        'pregunta': 'Cuáles de las siguientes frases completan correctamente la oración, de conformidad con el Reglamento sobre el Estatuto y la Transferencia de jugadores? La validez de un contrato no puede supeditarse a Seleccione una o más de una:',
+        'pregunta': 'Usted representa a un jugador que acaba de regresar de su club de origen tras un préstamo en el extranjero de un año. Al regresar del préstamo, su club le ofreció al jugador un traspaso en préstamo a otro club por una temporada. Una vez comprobadas las condiciones del préstamo, usted se da cuenta de que se trataría de un traspaso puente con el objetivo de evitar la prohibición de la propiedad de los derechos económicos de futbolistas por parte de terceros. ¿Cuál de las siguientes sería la forma correcta de actuar? Selecciones una:',
         'opciones': [
-            'Los resultados positivos de un examen médico',
-            'el descenso del club',
-            'la consecución del campeonato nacional por parte del club',
-            'la concesión de un permiso de trabajo'
+            'Su jugador puede aceptar el préstamo, dado que la prohibición de realizar traspasos puente solo afecta a los clubes',
+            'Informar al jugador de que podría enfrentarse a medidas disciplinarias si participara en un traspaso puente',
+            'Informar al jugador de que podría enfrentarse a medidas disciplinarias si participara en un traspaso puente, a menos que logre obtener un salario superior mientras dure el préstamo',
+            'Dado que el jugador estaría en préstamo, y no sería un traspaso permanente, no se aplica el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores. Por tanto, el jugador no se arriesgaría a que se le impongan medidas disciplinarias'
         ],
-        'respuestas_correctas': ['Los resultados positivos de un examen médico','la concesión de un permiso de trabajo']
+        'respuestas_correctas': ['Informar al jugador de que podría enfrentarse a medidas disciplinarias si participara en un traspaso puente']
     },
     {
         'pregunta': '¿Cuáles de las siguientes personas físicas y jurídicas se consideran terceros en los traspasos? Seleccione una o más de una:',
@@ -332,7 +452,267 @@ preguntas_estatuto_transferencia = [
         ],
         'respuestas_correctas': ['Todo coste por el traspaso abonado por un club a otro']
     },                                                                                                
-    # Otras preguntas sobre el Reglamento del Estatuto y la Transferencia del Jugador
+    {
+        'pregunta': 'Como excepción a la regla general ¿A qué jugadores es posible inscribir fuera de un periodo de inscripción? Selecciona una:',
+        'opciones': [
+            'Jugadores profesionales con contrato durante al menos 3 años',
+            'Jugadores aficionados',
+            'Jugadores profesionales de un club que pertenezca a una federación cuyo periodo de inscripción esté cerrado en el momento del traspaso',
+            'Jugadores profesionales cuyo contrato haya vencido antes del fin del periodo de inscripción'
+        ],
+        'respuestas_correctas': ['Jugadores profesionales cuyo contrato haya vencido antes del fin del periodo de inscripción']
+    }, 
+    {
+        'pregunta': 'El Football United y el Real Soccer cierran un contrato por el traspaso del jugador Fennan. El Real Soccer pagará un coste del traspaso de 10000000 EUR, que se abonará en cinco cuotas. Asimismo, las partes acuerdan una prima de reventa del 30%, que el Real Soccer tendrá que pagar al Football United en caso de que se traspase en el futuro a dicho jugador. No obstante, el Football United se quiere asegurar de que Fennan, que todavía es joven y tiene muchas posibilidades de convertirse en una gran estrella, pueda brillar y tener un valor de mercado más alto. Por este motivo, el Football United y el Real Soccer pactan varias claúsulas que otorgan al Football United la posibilidad de decidir cuando podrá Fennan jugar, tirar penaltis y hacer lanzamientos de falta. En caso de que el Real Soccer incumpla las órdenes del Football United, deberá pagar distintas multas, que se definen en el contrato en la <<claúsula de penalización>> ¿Cuáles de las siguientes afirmaciones son verdaderas?(Selecciones todas las opciones que correspondan)',
+        'opciones': [
+            'No, el contrato se ajusta a toda la reglamentación de la FIFA',
+            'Se incumple el artículo 18bis del Reglamento sobre el Estatuto y la Transferencia de jugadores, dado que las partes han pactado un contrato que concede al Football United la posibilidad de influir en las decisiones del Real Soccer relacionadas con el rendimiento del equipo',
+            'No se incumple el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de jugadores, porque las clausulas de prima de reventa de este tipo son totalmente legales',
+            'Se incumple el artículo 18bis del Reglamento sobre el Estatuto y la Transferencia de jugadores, dado que se ha concedido al Football United el poder influir en las decisiones del Real Soccer sobre el rendimiento del equipo. Además, supone el incumplimiento del artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de jugadores, porque las claúsulas de prima de reventa están prohibidas'
+        ],
+        'respuestas_correctas': ['Se incumple el artículo 18bis del Reglamento sobre el Estatuto y la Transferencia de jugadores, dado que las partes han pactado un contrato que concede al Football United la posibilidad de influir en las decisiones del Real Soccer relacionadas con el rendimiento del equipo','No se incumple el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de jugadores, porque las clausulas de prima de reventa de este tipo son totalmente legales']
+    },
+    {
+        'pregunta': 'El 1 de Enero de 2023 se traspasa a un jugador profesional del Highrisers FC (RP China) al FC Lawns (RP China) de forma temporal (préstamo) por un coste de traspaso de 2000000 USD. Antes, el jugador había estado inscrito en el Maru Reds FC (Uganda) durante todo el año en que cumplió 13 años y la mitad del año en que cumplió 18. ¿Tiene el Maru Reds FC derecho a percibir la contribución de solidaridad? Seleccione una:',
+        'opciones': [
+            'El Maru Reds FC, tiene derecho a una contribución de solidaridad por valor de 7500 USD',
+            'El Maru Reds FC no tiene derecho porque el traspaso tiene carácter temporal',
+            'El Maru Reds FC no tiene derecho porque el traspaso se ha hecho entre dos clubes afiliados a la misma federeación',
+            'El Maru Reds FC tiene derecho a una contribución de solidaridad por valor de 10000 USD'
+        ],
+        'respuestas_correctas': ['El Maru Reds FC tiene derecho a una contribución de solidaridad por valor de 10000 USD']
+    },
+    {
+        'pregunta': 'Thomas nació en Suiza, momento en el que adquirió la doble nacionalidad germano- suiza. Sus padres y sus abuelos nacieron en Alemania. Uno de sus bisabuelos nació en Austria. Thomas lleva toda la vida residiendo en Suiza. ¿Con qué federación o federaciones tiene derecho a jugar Thomas? Seleccione una o más de una:',
+        'opciones': [
+            'Alemania',
+            'Austria',
+            'Suiza',
+            'Suiza, Austria y Alemania'
+        ],
+        'respuestas_correctas': ['Alemania','Suiza']
+    },
+    {
+        'pregunta': 'Una federación tendrá derecho a recibir la indemnización por formación, la cual en principio se debería a uno de sus clubes afiliados, si logra aportar prueba irrefutable de que el club en el cual el profesional estuvo inscrito y se formó: Seleccione una o más de una:',
+        'opciones': [
+            'Ha cambiado de propietario',
+            'Ya no participa en el fútbol organizado y/o ya no existe; en particular, por motivo de bancarrota, liquidación, disolución o pérdida de afiliación',
+            'No se ha clasificado para la Copa Mundial de Clubes de la FIFA',
+            'Ha perdido la categoría de profesional'
+        ],
+        'respuestas_correctas': ['Ya no participa en el fútbol organizado y/o ya no existe; en particular, por motivo de bancarrota, liquidación, disolución o pérdida de afiliación']
+    },
+    {
+        'pregunta': 'Un club ha transferido a uno o varios jugadores menores de edad, incumpliendo el artículo 19 del Reglamento sobre el Estatuto y la Transferencia de Jugadores. ¿Tras cuántos años prescribe este tipo de infracción de cara al órgano competente de la FIFA? Seleccione una:',
+        'opciones': [
+            'Diez años',
+            'No prescribe',
+            'Cinco años',
+            'Dos años'
+        ],
+        'respuestas_correctas': ['Diez años']
+    },
+    {
+        'pregunta': 'Un jugador está estudiando y se muda sin sus padres temporalmente a otro país por motivos académicos para participar en un programa de intercambio. ¿Qué requisitos se deben cumplir? Seleccione una o más de una:',
+        'opciones': [
+            'El nuevo club del jugador solo podrá ser un club exclusivamente aficionado',
+            'La duración de la inscripción del jugador en el nuevo club hasta que cumpla los 18 años o hasta el final del programa académico o escolar no podrá ser superior a un año',
+            'El nuevo club del jugador solo podrá ser un club aficionado o semiprofesional',
+            'La duración de la inscripción del jugador en el nuevo club hasta que cumpla los 18 años o hasta el final del programa académico o escolar no podrá ser superior a dos años'
+        ],
+        'respuestas_correctas': ['El nuevo club del jugador solo podrá ser un club exclusivamente aficionado','La duración de la inscripción del jugador en el nuevo club hasta que cumpla los 18 años o hasta el final del programa académico o escolar no podrá ser superior a un año','El nuevo club del jugador solo podrá ser un club aficionado o semiprofesional']
+    },
+    {
+        'pregunta': 'La prohibición de propiedad de terceros se aplica a nivel nacional? Seleccione uno:',
+        'opciones': [
+            'No, el artículo 18ter del Reglamento de la FIFA sobre el Estatuto y la Transferencia de Jugadores se aplica únicamente a las transferencias internacionales.',
+            'Si, pero solo si hay un elemento internacional',
+            'Sí, el artículo 18ter del Reglamento de la FIFA sobre el Estatuto y la Transferencia de Jugadores debe implementarse sin modificaciones a nivel nacional.',
+            'Si, pero solo para clubes'
+        ],
+        'respuestas_correctas': ['Sí, el artículo 18ter del Reglamento de la FIFA sobre el Estatuto y la Transferencia de Jugadores debe implementarse sin modificaciones a nivel nacional.']
+    },
+    {
+        'pregunta': 'La asociación anterior de un jugador ha rechazado una solicitud de Certificado de transferencia Internacional realizada por la nueva asociación del jugador, indicando que "el contrato entre el club anterior y el jugador profesional no ha expirado". ¿Qué puede hacer la nueva asociación? Seleccione uno o más:',
+        'opciones': [
+            'Disputa el rechazo y pide la intervención de la FIFA',
+            'Aceptar el rechazo del Certificado de Transferencia Internacional',
+            'Ingrese una nueva instrucción de transferencia',
+            'Disputa el rechazo y registra al jugador'
+        ],
+        'respuestas_correctas': ['Disputa el rechazo y pide la intervención de la FIFA','Aceptar el rechazo del Certificado de Transferencia Internacional']
+    },                            
+]                       
+
+
+
+preguntas_codigo_disciplinario = [
+    {
+        'pregunta': 'La comisión disciplinaria averigua que un jugador ha manipulado varios partidos y decide sancionarlo con una multa de 100000 CHF y la prohibición de ejercer actividades relacionadas con el fútbol durante diez años. Una vez recibido el fundamento íntegro de la decisión de la Comisión Disciplinaria de la FIFA, el jugador le pregunta a usted si se puede apelar la decisión. Marque la respuesta correcta.',
+        'opciones': [
+            'Sí, la decisión se puede apelar ante la Comisión de Apelación de la FIFA',
+            'Sí, la decisión se puede apelar ante el Tribunal de Arbitraje Deportivo ',
+            'Sí, la decisión se puede apelar ante el Tribunal del Fútbol de la FIFA',
+            'No, la decisión es definitiva y no se puede recurrir'
+        ],
+        'respuestas_correctas': ['Si, la decisión se puede apelar ante la Comisión de Apelación de la FIFA']
+    },
+    {
+        'pregunta': '¿Cómo puede un agente de fútbol prestar servicios de representación?. Seleccione una o más de una:',
+        'opciones': [
+            'Como empleado de una agencia',
+            'Como empleado de un club',
+            'Como trabajador autónomo o por cuenta propia',
+            'Como entrenador de juveniles de un club'
+        ],
+        'respuestas_correctas': ['Como empleado de una agencia','Como trabajador autónomo o por cuenta propia']
+    },
+    {
+        'pregunta': '¿Cuales de las siguientes personas físicas y jurídicas se consideran <<terceros>> en los traspasos?. Seleccione una o más de una:',
+        'opciones': [
+            'Un compañero de equipo del jugador que se traspasa',
+            'El agente del club de origen',
+            'El agente del club de destino',
+            'El jugador que se traspasa'
+        ],
+        'respuestas_correctas': ['Un compañero de equipo del jugador que se traspasa','El agente del club de origen','El agente del club de destino']
+    },
+    {
+        'pregunta': 'En el caso de la indemnización por formación, los costos de formación de jugadores de los años naturales de su 12º y 15º cumpleaños se basarán en:',
+        'opciones': [
+            'Los costos de formación y educación de la categoría actual del club',
+            'Los costos de formación y educación indicados por la federación miembro en cuestión',
+            'Los costos de formación y educación de clubes de la categoría IV',
+            'Ninguna opción es correcta'
+        ],
+        'respuestas_correctas': ['Los costos de formación y educación de clubes de la categoría IV']
+    },
+    {
+        'pregunta': '¿Qué requisitos se deben cumplir para que la Comisión Disciplinaria de la FIFA sancione a una persona jurídica/física? Seleccione una o más de una:',
+        'opciones': [
+            'La persona debe estar sujeta al Reglamento sobre el Estatuto y la Transferencia de jugadores',
+            'No hay ningún requisito en especial, siempre que la persona esté activa en el mundo del fútbol',
+            'La persona debe estar sujeta al Código Disciplinario de la FIFA'
+        ],
+        'respuestas_correctas': ['La persona debe estar sujeta al Código Disciplinario de la FIFA']
+    },
+    {
+        'pregunta': 'La comisión Disciplinaria de la FIFA averigua que un jugador no colaboró para esclarecer los hechos de un caso importante de manipulación de partidos. La comisión decide multar al jugador con 20000 CHF. El jugador no está de acuerdo con la multa, ya que considera que ha aportado información suficiente a la comisión. El jugador le pregunta a usted si se puede recurrir la decisión. Marque la respuesta correcta. Seleccione una:',
+        'opciones': [
+            'La decisión se puede apelar ante el Tribunal del Futbol de la FIFA',
+            'La decisión se puede apelar ante el Tribuan de Apelación de la FIFA',
+            'La decisión se puede apelar ante la Comisión de Apelación de la FIFA',
+            'La decisión es definitiva y no se puede recurrir'
+        ],
+        'respuestas_correctas': ['La decisión se puede apelar ante la Comisión de Apelación de la FIFA']
+    },
+    {
+        'pregunta': '¿Las personas sujetas al Código Disciplinario de la FIFA están obligadas a contribuir a esclarecer los hechos de un caso, incluso aunque no estén sujetas a u procedmiento disciplinario? Seleccione una:',
+        'opciones': [
+            'Sí, están obligadas a colaborar pero pueden quedar exentas si tienen algún vínculo con la persona investigada',
+            'Sí, deben colaborar en cualquier circunstancia',
+            'No, pueden negarse a colaborar si tienes razones que lo justifiquen',
+            'No, solo deben de colaborar si se han iniciado procedimientos contra ellas'
+        ],
+        'respuestas_correctas': ['Sí, deben colaborar en cualquier circunstancia']
+    },
+    {
+        'pregunta': 'Cuando se enfrenta a un posible incumplimiento del artículo 15 del Código Disciplinario de la FIFA (incumplimiento de decisiones) ¿Cuál es la única labor de la Comisión Disciplinaria de la FIFA? Seleccione una respuesta:?',
+        'opciones': [
+            'Comprobar que las sumas se hayan pagado en su totalidad',
+            'Revisar que todo el caso ejerciendo la facultad de revocar o instruir de nuevo',
+            'Comprobar que las sumas pendientes sean correctas',
+            'Ordenar a las partes que lleguen a un acuerdo extrajudicial'
+        ],
+        'respuestas_correctas': ['Comprobar que las sumas se hayan pagado en su totalidad']
+    },
+    {
+        'pregunta': '¿Los jugadores pueden firmar contratos donde se acuerde que tienen derecho a un porcentaje del coste de un futuro traspaso? Seleccione una:',
+        'opciones': [
+            'Sí, incluso aunque el contrato se refiera al coste de futuros traspasos de otros jugadores',
+            'No, porque se trataría de un contrato de derechos de terceros, prohibido por el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de Jugadores',
+            'Sí, y después el jugador puede traspasar este derecho a su agente de fútbol',
+            'Sí, siempre que dicho porcentaje se aplique al coste de un futuro traspaso del jugador'
+        ],
+        'respuestas_correctas': ['Sí, siempre que dicho porcentaje se aplique al coste de un futuro traspaso del jugador']
+    },
+    {
+        'pregunta': 'La Comisión Disciplinaria de la FIFA considera que usted es culpable de incumplir una decisión que le ordenaba pagar a uno de sus exjugadores. Se le ha notifcado la decisión, pero usted quisiera saber los motivos en los que se basa. ¿Cuál es el plazo para solicitar el fundamento íntegor de la decisión? ',
+        'opciones': [
+            'Cinco días, a contar desde la notificación de la decisión',
+            '30 días, a contar desde la notificación de la decisión',
+            'Diez días, a contar desde la notificación de la decisión',
+            'Tres días, a contar desde la notificación de la decisión'
+        ],
+        'respuestas_correctas': ['Diez días, a contar desde la notificación de la decisión']
+    },
+    {
+        'pregunta': 'El presidente de un club le pide a usted consejo sobre la manipulación de partidos. Le preocupa que algunos de los jugadores del club puedan estar implicados en arreglos de partidos y se pregunta si se puede considerar responsable al club por la conducta de sus propios jugadores. ¿Se puede considerar responsable al club? Seleccione una:',
+        'opciones': [
+            'No, no se puede considerar responsables a los clubes por la conducta de sus propios jugadores en ninguna circunstancia',
+            'Sí, se puede considerar responsables a los clubes por la conducta de sus propios jugadores, pero se les puede eximir de la responsabilidad si demuestran que no ha habido falta ni negligencia por parte de los clubes',
+            'Sí, se puede considerar responsables a los clubes por la conducta de sus propios jugadores, según el principio de la responsabilidad objetiva',
+            'No, los clubes solo pueden considerarse responsables de la conducta de sus propios oficiales'
+        ],
+        'respuestas_correctas': ['Sí, se puede considerar responsables a los clubes por la conducta de sus propios jugadores, según el principio de la responsabilidad objetiva']
+    },                                         
+]    
+
+
+preguntas_estatutos_fifa = [
+    {
+        'pregunta': '¿Cuáles de las siguientes afirmaciones se aplican a las confederaciones? Seleccione una o más de una:',
+        'opciones': [
+            'Las confederaciones solo pueden incluir federaciones miembro',
+            'Las confederaciones respetarán y harán respetar los Estatutos, reglamentos y decisiones de la FIFA',
+            'Las confederaciones tienen los mismos derechos y obligaciones y gozan de la misma situación que las federaciones miembro de la FIFA',
+            'Las confederaciones son agrupaciones de federaciones reconocidas por la FIFA que pertenecen a un mismo continente (o espacio geográfico similar)'
+        ],
+        'respuestas_correctas': ['Las confederaciones respetarán y harán respetar los Estatutos, reglamentos y decisiones de la FIFA','Las confederaciones son agrupaciones de federaciones reconocidas por la FIFA que pertenecen a un mismo continente (o espacio geográfico similar)']
+    },
+    {
+        'pregunta': 'Según los Estatutos de la FIFA ¿Cuáles son las consecuencias a las que se enfrentan las federaciones miembro suspendidas? Seleccione una o más de una:',
+        'opciones': [
+            'Serán expulsadas automáticamente por el Congreso de la FIFA',
+            'No podrán participar en ningunas elecciones de la FIFA ni ejercer su derecho a voto',
+            'No podrán formular propuestas para su inclusión en el orden del día del Congreso',
+            'No podrán ejercer ninguno de sus derechos como miembro'
+        ],
+        'respuestas_correctas': ['No podrán participar en ningunas elecciones de la FIFA ni ejercer su derecho a voto','No podrán formular propuestas para su inclusión en el orden del día del Congreso','No podrán ejercer ninguno de sus derechos como miembro']
+    },
+    {
+        'pregunta': 'Cuáles de los siguientes requisitos son obligatorios para convertirse en federación miembro de la FIFA? Seleccione una o más de una:',
+        'opciones': [
+            'Las federaciones deben de ser responsables de organizar y supervisar el fútbol een todas sus formas en su país',
+            'La federación debe ejercer su actividad en un país democrático',
+            'El fútbol deber de ser el deporte más popular del país donde la federación ejerce su actividad',
+            'La federación debe de estar afiliada a la confederación correspondiente'
+        ],
+        'respuestas_correctas': ['Las federaciones deben de ser responsables de organizar y supervisar el fútbol een todas sus formas en su país','La federación debe de estar afiliada a la confederación correspondiente']
+    },        
+]    
+
+
+
+preguntas_salvaguardia = [
+    {
+        'pregunta': 'Diego es un ecuatoriano de 15 años. Le encanta ir a la escuela y jugar al fútbol. Todos sus entrenadores les han dicho a sus padres que tiene mucho talento y que debería dedicarse al fútbol. Por eso decidieron apuntarlo a una academia privada de Brasil con buena reputación. Tras unas semanas en la academia, Diego piensa que la parte futbolística está bien organizada, pero entrenan en condiciones extremas de calor y les sirven poca comida y de mala calidad. Siempre tiene hambre y sed, ya que pocas veces les dan agua potable. Además, reciben poca educación y las clases son solo en portugués, un idioma que no habla. Es evidente que los profesores no están bien preparados y no parece importarles demasiado. Además, la residencia donde duermen los chicos está masificada y muy sucia. ¿Qué tipo de problemas de salvaguardia presenta esta situación? Seleccione una o más de una:',
+        'opciones': [
+            'Problemas de desatención, alimentación y dieta',
+            'Problemas de educación e integración social',
+            'Problemas de salud y seguridad',
+            'No hay ningún problema'
+        ],
+        'respuestas_correctas': ['Problemas de desatención, alimentación y dieta','Problemas de educación e integración social','Problemas de salud y seguridad']
+    },
+    {
+        'pregunta': 'Falta de salvaguardia: Seleccione uno o más:',
+        'opciones': [
+            'Lastima a nadie',
+            'Socava el crecimiento y la integridad del fútbol',
+            'Lastima a los niños',
+            'Socava la integridad de la asociación miembro, la academia o el club'
+        ],
+        'respuestas_correctas': ['Socava el crecimiento y la integridad del fútbol','Lastima a los niños']
+    },     
 ]
-
-
