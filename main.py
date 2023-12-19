@@ -7,7 +7,7 @@ import random
 import os
 import fitz 
 from videos import get_videos
-from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia
+from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia,preguntas_codigo_disciplinario,preguntas_estatutos_fifa,preguntas_salvaguardia
 import string
 from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
 # Configurar la página para ancho completo
@@ -264,7 +264,7 @@ def calcular_pagos_variables():
 def mostrar_examen_fifa(preguntas):
     st.title("Examen Oficial FIFA")
 
-    tema_seleccionado = st.selectbox("Selecciona el tema del examen", ["Selecciona el Examen Agente FIFA a realizar por tema...", "Reglamento sobre Agente FIFA", "Reglamento del Estatuto y la Transferencia del Jugador"])
+    tema_seleccionado = st.selectbox("Selecciona el tema del examen", ["Selecciona el Examen Agente FIFA a realizar por tema...", "Reglamento sobre Agente FIFA", "Reglamento del Estatuto y la Transferencia del Jugador", "Preguntas sobre Código Disciplinario", "Preguntas sobre Estatutos de la FIFA", "Preguntas sobre Salvaguardia de la infancia"])
 
     if tema_seleccionado and tema_seleccionado != "Selecciona el Examen Agente FIFA a realizar por tema...":
         preguntas_seleccionadas = preguntas.get(tema_seleccionado, [])
@@ -406,8 +406,11 @@ def main():
 
     elif tab_select == "Examen oficial FIFA":
         mostrar_examen_fifa({
-    "Reglamento sobre Agente FIFA": preguntas_agente_fifa,
-    "Reglamento del Estatuto y la Transferencia del Jugador": preguntas_estatuto_transferencia
+            "Reglamento sobre Agente FIFA": preguntas_agente_fifa,
+            "Reglamento del Estatuto y la Transferencia del Jugador": preguntas_estatuto_transferencia,
+            "Preguntas sobre Código Disciplinario": preguntas_codigo_disciplinario,
+            "Preguntas sobre Estatutos de la FIFA": preguntas_estatutos_fifa,
+            "Preguntas sobre Salvaguardia de la infancia": preguntas_salvaguardia
         })
 
 
