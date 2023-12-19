@@ -1,7 +1,4 @@
 import streamlit as st
-from graphviz import Digraph
-from PIL import Image
-import io
 import pandas as pd
 
 
@@ -39,7 +36,7 @@ def esquema_formacion():
     for calculo in esquema.get("Calculo Indemnización", []):
         st.write("🔢 " + calculo)
 
-    st.header("Tabla Confederación")
+    st.header("Tabla Confederaciones")
     df_confederacion = pd.DataFrame(esquema.get("Tabla Confederación", {}))
     st.write(df_confederacion)
     
