@@ -1,0 +1,41 @@
+digraph {
+	"Órganos"
+	Congreso
+	"Órganos" -> Congreso
+	"Órganos"
+	Consejo
+	"Órganos" -> Consejo
+	"Órganos"
+	Presidente
+	"Órganos" -> Presidente
+	"Órganos"
+	"Secretaría General"
+	"Órganos" -> "Secretaría General"
+	"Órganos"
+	"Bureau del Consejo"
+	"Órganos" -> "Bureau del Consejo"
+	"Órganos"
+	"Comisiones Permanentes"
+	"Órganos" -> "Comisiones Permanentes"
+	"Comisiones Permanentes"
+	"Comisión de Finanzas"
+	"Comisiones Permanentes" -> "Comisión de Finanzas"
+	"Comisiones Permanentes"
+	"Comisión de Desarrollo"
+	"Comisiones Permanentes" -> "Comisión de Desarrollo"
+	"Comisiones Permanentes"
+	"Comisión Organizadora de Competiciones de la FIFA"
+	"Comisiones Permanentes" -> "Comisión Organizadora de Competiciones de la FIFA"
+	"Comisiones Permanentes"
+	"Comisión de Grupos de Interés del Fútbol"
+	"Comisiones Permanentes" -> "Comisión de Grupos de Interés del Fútbol"
+	"Comisiones Permanentes"
+	"Comisión de Federaciones Miembro"
+	"Comisiones Permanentes" -> "Comisión de Federaciones Miembro"
+	"Comisiones Permanentes"
+	"Comisión de Árbitros"
+	"Comisiones Permanentes" -> "Comisión de Árbitros"
+	"Comisiones Permanentes"
+	"Comisión de Medicina"
+	"Comisiones Permanentes" -> "Comisión de Medicina"
+}

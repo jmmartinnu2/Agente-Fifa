@@ -9,7 +9,22 @@ import fitz
 from videos import get_videos
 from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia
 import string
-from esquemas import mostrar_esquema_fifa,esquema_formacion
+from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
+# Configurar la página para ancho completo
+st.markdown(
+    """
+    <style>
+    .wide {
+        max-width: 1200px;
+        margin: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
 def mostrar_examen_fifa():
     st.title("Examen Oficial FIFA")
     st.write("Selecciona el tema del examen:")
@@ -316,7 +331,7 @@ def ventana_mercado(pdf_url):
 
 #Visualizacion
 def main():
-    tabs = ["Inicio","Examenes", "Resumenes", "Esquemas", "Temario", "Videos", "Calculadora", "Examen oficial FIFA"]  # Nuevas secciones
+    tabs = ["Inicio","Examenes", "Resumenes", "Formación", "Temario", "Videos", "Calculadora", "Examen oficial FIFA"]  # Nuevas secciones
     tab_select = st.sidebar.selectbox("Selecciona una sección", tabs, index=0)
 
     if tab_select == "Inicio":
@@ -336,19 +351,31 @@ def main():
         mostrar_resumenes()  # Llama a la función desde resumenes.py para mostrar los resúmenes
                 
                 
-    elif tab_select == "Esquemas":
-        # Llamando a la función para mostrar el esquema de jerarquía FIFA
-        network_fifa = mostrar_esquema_fifa()  
-        network_fifa.show("fifa_hierarchy_organs_updated.html")
-        st.write("Jerarquía FIFA")
-        st.components.v1.html(open("fifa_hierarchy_organs_updated.html").read(), height=750)
+    elif tab_select == "Formación":
 
-        st.title('Estructura de Comisiones')
-        st.image('./tabla-agente-comisiones.png', caption='Sunrise by the mountains')
+        # Definir las opciones del menú desplegable
+        opciones_esquemas = {
+            "Tabla Formación": esquema_formacion,
+            "Tabla Confederación AFC": confederacion_afc,
+            "Tabla Confederación CAF": confederacion_caf,
+            "Tabla Confederación CONCACAF": confederacion_concacaf,
+            "Tabla Confederación CONMEBOL": confederacion_conmebol,
+            "Tabla Confederación OFC": confederacion_ofc,
+            "Tabla Confederación UEFA": confederacion_uefa,
+        }
 
+        # Seleccionar el esquema a mostrar
+        selected_option = st.selectbox("Selecciona un esquema", list(opciones_esquemas.keys()))
 
-        esquema_formacion()
+        # Mostrar el esquema seleccionado
+        esquema_funcion = opciones_esquemas[selected_option]
+        if selected_option in ["Tabla Formación"]:
+            esquema_funcion()
+        else:
+            tabla_confederacion = esquema_funcion()
+            st.write(tabla_confederacion)
 
+    
         
         
     elif tab_select == "Temario":
