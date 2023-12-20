@@ -81,7 +81,12 @@ def get_videos():
             "clase": "Clase 15",
             "titulo": "Clase 15 - RTIJ Preguntas Examen ",
             "url": "https://youtu.be/8x9BeNnfPDg"
-        },                                                                                   
+        },
+        {
+            "clase": "Clase 16",
+            "titulo": "Clase 16 - Extra sobre Reglamento de Procedimiento",
+            "url": "https://www.youtube.com/watch?v=FaCCYVj6n9A"
+        },                                                                                           
     ]
     
     return videos  # Asegurémonos de retornar la lista de videos
