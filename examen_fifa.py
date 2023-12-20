@@ -259,7 +259,46 @@ preguntas_agente_fifa = [
         ],
         'respuestas_correctas': ['Informar de dicha circunstancia en la Plataforma de Agentes de la FIFA en un plazo de 14 días']
     },                           
-                                                   
+    {
+        'pregunta': 'Adiop es un futbolista senegalés de 15 años que quiere ser profesional. Su padre siempre soñó con ser muy rico. Contactó por internet con alguien que decía ser agente de fútbol y tener buenos contactos con clubes europeos. El padre de Adiop se emocionó tanto que pagó a esta persona 3000 EUR sin ver ningún documento ni acreditación a cambio de la promesa de que llevaría a su hijo a un club europeo. Adiop discutió con su padre, ya que en su club le advirtieron que no debía confiar en esa persona porque parecía ser un agente falso y Adiop no quería irse con él. A persa de ello, su padre le obligó. ¿Cual parece ser la prioridad del padre en este caso? Seleccione una:',
+        'opciones': [
+            'El futuro de su hijo como futbolista de élite',
+            'El bienestar de Adiop',
+            'Su sueño de hacerse rico',
+            'El binestar de los hermanos pequeños de Adiop'
+        ],
+        'respuestas_correctas': ['Su sueño de hacerse rico']
+    },
+    {
+        'pregunta': '¿Con arreglo a cuáles de los siguientes conceptos no puede un agente de fútbol cobrar sus honorarios? Seleccione una o más de una:',
+        'opciones': [
+            'El porcentaje de una venta futura',
+            'La prima de rendimiento de un jugador después de que este maque diez goles',
+            'La prima variable de un club después de que un jugador que estuviera previamente en sus filas gana una competicón continental',
+            'La prima por fidelidad de un jugador transcurridos doce meses'
+        ],
+        'respuestas_correctas': ['El porcentaje de una venta futura']
+    },
+    {
+        'pregunta': '¿Cuáles de las siguientes claúsulas se admiten en un contrato de representación exclusivo? Seleccione una o más de una:',
+        'opciones': [
+            'Un requisito que estipule que el cliente debe pagar los honorarios relacionados con un contrato negociado incluso después del vencimiento de un contrato de representación',
+            'Un requisito que estipule que el cliente debe de pagar todos los gastos relacionados con su representación a un agente de fútbol',
+            'Permiso para que el cliente puede pagar 190000 USD para representarse a sí mismo',
+            'Información detallada sobre la naturaleza de los servicios de representación que se van a prestar'
+        ],
+        'respuestas_correctas': ['Un requisito que estipule que el cliente debe pagar los honorarios relacionados con un contrato negociado incluso después del vencimiento de un contrato de representación','Un requisito que estipule que el cliente debe de pagar todos los gastos relacionados con su representación a un agente de fútbol','Información detallada sobre la naturaleza de los servicios de representación que se van a prestar']
+    },
+    {
+        'pregunta': 'Cuando una entidad de destino vaya a abonar los honorarios en nombre de una persona, ¿Cuáles de las siguientes condiciones deben cumplirse? Seleccione una o más de una:',
+        'opciones': [
+            'Informar de dicha circunstancia a la Cámara de Compensación de la FIFA en un plazo de 14 días',
+            'Nada',
+            'Registrarse con la misma agencia en un plazo de 14 días',
+            'Informar de dicha circunstancia en la Plataforma de Agentes de la FIFA en un plazo de 14 días'
+        ],
+        'respuestas_correctas': ['Informar de dicha circunstancia en la Plataforma de Agentes de la FIFA en un plazo de 14 días']
+    },                                                                 
 ]
 
 preguntas_estatuto_transferencia = [
@@ -534,7 +573,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Jugadores profesionales cuyo contrato haya vencido antes del fin del periodo de inscripción']
     }, 
     {
-        'pregunta': 'El Football United y el Real Soccer cierran un contrato por el traspaso del jugador Fennan. El Real Soccer pagará un coste del traspaso de 10000000 EUR, que se abonará en cinco cuotas. Asimismo, las partes acuerdan una prima de reventa del 30%, que el Real Soccer tendrá que pagar al Football United en caso de que se traspase en el futuro a dicho jugador. No obstante, el Football United se quiere asegurar de que Fennan, que todavía es joven y tiene muchas posibilidades de convertirse en una gran estrella, pueda brillar y tener un valor de mercado más alto. Por este motivo, el Football United y el Real Soccer pactan varias claúsulas que otorgan al Football United la posibilidad de decidir cuando podrá Fennan jugar, tirar penaltis y hacer lanzamientos de falta. En caso de que el Real Soccer incumpla las órdenes del Football United, deberá pagar distintas multas, que se definen en el contrato en la <<claúsula de penalización>> ¿Cuáles de las siguientes afirmaciones son verdaderas?(Selecciones todas las opciones que correspondan)',
+        'pregunta': 'El Football United y el Real Soccer cierran un contrato por el traspaso del jugador Fennan. El Real Soccer pagará un coste del traspaso de 10000000 EUR, que se abonará en cinco cuotas. Asimismo, las partes acuerdan una prima de reventa del 30%, que el Real Soccer tendrá que pagar al Football United en caso de que se traspase en el futuro a dicho jugador. No obstante, el Football United se quiere asegurar de que Fennan, que todavía es joven y tiene muchas posibilidades de convertirse en una gran estrella, pueda brillar y tener un valor de mercado más alto. Por este motivo, el Football United y el Real Soccer pactan varias claúsulas que otorgan al Football United la posibilidad de decidir cuando podrá Fennan jugar, tirar penaltis y hacer lanzamientos de falta. En caso de que el Real Soccer incumpla las órdenes del Football United, deberá pagar distintas multas, que se definen en el contrato en la <<claúsula de penalización>> ¿Cuáles de las siguientes afirmaciones son verdaderas? Selecciones todas las opciones que correspondan:',
         'opciones': [
             'No, el contrato se ajusta a toda la reglamentación de la FIFA',
             'Se incumple el artículo 18bis del Reglamento sobre el Estatuto y la Transferencia de jugadores, dado que las partes han pactado un contrato que concede al Football United la posibilidad de influir en las decisiones del Real Soccer relacionadas con el rendimiento del equipo',
@@ -692,7 +731,47 @@ preguntas_estatuto_transferencia = [
             'El FC Brown (Italia) solicita la contribución de solidaridad por el traspaso permanente (sin pagos) de un jugador del FC Grey (España) al FC Black (Alemania)'
         ],
         'respuestas_correctas': ['l FC Blue (Uruguay) solicita la contribución de solidariad por el traspaso permanente (previo pago del coste del traspaso) de un jugador del FC Red (Chile) al FC Yellow (Colombia)','El FC Maroon (Nigeria) solicita la contribución por solidaridad por el traspaso permanente(previo pago del coste del traspaso) de un jugador del FC Purple (Senegal) al FC Indigo (Nigeria)','El FC White (Japón) solicita la contribución por solidariad por el traspaso de un jugador del FC Green (Indonesia) al FC Orange (Indonesia)']
-    },                            
+    },
+    {
+        'pregunta': '¿Se aplica el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de jugadores a los traspasos de jugadoras? Seleccione una o más de una:',
+        'opciones': [
+            'Sí, dado que la definición de <<traspaso puente>> no distingue entre sexos',
+            'Sí, pero solo si la jugadora es profesional',
+            'No, dado que en general los traspasos puente se hacen para evitar la indemnización por formación, que no se abona en el caso de las jugadoras',
+            'No, dado que la definición de <<traspaso puente>> indica que solo se refiere a jugadores varones'
+        ],
+        'respuestas_correctas': ['Sí, dado que la definición de <<traspaso puente>> no distingue entre sexos']
+    },
+    {
+        'pregunta': '¿Cuáles de las siguientes frases completan correctamente la oración, de conformidad con el Reglamento sobre el Estatuto y la Transferencia de jugadores? La validez de un contrato no puede supeditarse a _______________. Seleccione una o más de una:',
+        'opciones': [
+            'Los resultados positivos de un examen médico',
+            'El descenso del club',
+            'La consecución del campeonato nacional por parte del club',
+            'La consecución del campeonato nacional por parte del club'
+        ],
+        'respuestas_correctas': ['Los resultados positivos de un examen médico','La consecución del campeonato nacional por parte del club']
+    },
+    {
+        'pregunta': 'La jugadora Zaina empieza a despuntar. El Elite FC quiere ficharla y le ofrece ser profesional, opción que no tiene en el país donde juega ahora. El Elite FC y Zaina acuerdan que ella percibirá un porcentaje del coste del traspaso que se abone al Elite FC en un futuro traspaso. ¿La reglamentación de la FIFA permite este tipo de práctica? Seleccione una:',
+        'opciones': [
+            'Sí, siempre y cuando Zaina no vuelva a ser aficionada en el futuro',
+            'Si, dado que el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de jugadores no se aplica a las jugadoras',
+            'No, se trata de un contrato de derechos, prohibido por el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de jugadores',
+            'Sí, los jugadores no son terceros y pueden participar en compensaciones que se abonen por su futuro traspaso'
+        ],
+        'respuestas_correctas': ['Sí, los jugadores no son terceros y pueden participar en compensaciones que se abonen por su futuro traspaso']
+    },
+    {
+        'pregunta': 'En caso de que un jugador profesional deba pagar una indemnización, ¿Qué implica la obligación conjunta que se estipula en el artículo 17 apartado 2 del Reglamento sobre el Estatuto y la Transferencia de Jugadores? Seleccione una:',
+        'opciones': [
+            'La familia del jugador debe de pagar la indemnización',
+            'El jugador y su nuevo club tendrán la obligación conjunta de abonar dicho importe',
+            'El agente del jugador debe pagar la indemnización',
+            'El nuevo club del jugador, y no este último, debe de pagar la indemnización'
+        ],
+        'respuestas_correctas': ['El jugador y su nuevo club tendrán la obligación conjunta de abonar dicho importe']
+    },                                                
                                     
 ]                       
 
@@ -817,7 +896,17 @@ preguntas_codigo_disciplinario = [
             'La decisión es definitva y no se puede recurrir'
         ],
         'respuestas_correctas': ['La decisión se puede apelar ante el Tribunal de Arbitraje Deportivo']
-    },                                                 
+    },
+    {
+        'pregunta': 'El Tribunal de Arbitraje Deportivo emitió un fallo por el que se ordenaba a un club que le pagase a usted cierta cantidad. No obstante, los problemas financieros de dicho club lo condujeron a la bancarrota. Por ello, el club desapareció y ya no está afiliado a la federación miembro correspondiente. Pocos años después, usted descubre que un club casi idéntico ha comenzado a competir en la misma liga del club extinto. Dado que el club extinto no le ha pagado la deuda, ¿Puede usted entablar un procedimiento en contra del nuevo club por incumplir el fallo y alegar que se trata del sucesor deportivo del club extinto? Seleccione una:',
+        'opciones': [
+            'No, debe presentar una nueva demanda contra el nuevo club ante el órgano competente',
+            'Sí, puede presentar la solicitud ante el Tribunal de Arbitraje Deportivo',
+            'Sí, puede presentar la solicitud ante el Tribunal del Fútbol de la FIFA',
+            'Sí, puede solicitar que se presente el caso ante la Comisión Disciplinaria de la FIFA'
+        ],
+        'respuestas_correctas': ['Sí, puede solicitar que se presente el caso ante la Comisión Disciplinaria de la FIFA']
+    },                                                      
 ]    
 
 
@@ -946,5 +1035,75 @@ preguntas_salvaguardia = [
             'Ninguna opción es correcta'
         ],
         'respuestas_correctas': ['En el pago fijo y en las variables']
-    },                      
+    },
+    {
+        'pregunta': 'Un jugador varón nacido el 1 de Enero de 1998, estuvo inscrito en el FC Dribblers (Ghana) como aficionado durante el periodo comprendido entre los años naturales de su 12º y 20º cumpleaños. El 1 de Agosto de 2019, el jugador firmó su primer contrato profesional con el FC Runners (Brasil), válido hasta el 31 de Diciembre de 2023. El 10 de Enero de 2022, se traspasa el jugador de forma temporal (préstamo) al FC Playmakers (Argentina) hasta el 31 de Julio de 2022, tras lo cual regresa al FC Runners. En caso de que, en el futuro, se traspase al jugador a cambio del pago de un coste del traspaso, ¿qué clubes tendrían derecho a percibir la contribución de solidaridad? Seleccione una o más de una:',
+        'opciones': [
+            'Sólo el FC Dribblers y el FC Runners',
+            'Sólo el FC Runners',
+            'Sólo el FC Dribblers',
+            'El FC Dribblers, el FC Runners y el FC Playmakers'
+        ],
+        'respuestas_correctas': ['Sólo el FC Dribblers y el FC Runners']
+    },
+    {
+        'pregunta': 'Los problemas de salvaguardia pueden variar según su gravedad, pero . Seleccione una:',
+        'opciones': [
+            'Sólo se deben abordar los más graves',
+            'Se debe reaccionar ante todos ellos',
+            'Es mejor para el fútbol evitar tratar estos temas',
+            'Nadie debería perder el tiempo con estos temas'
+        ],
+        'respuestas_correctas': ['Se debe reaccionar ante todos ellos']
+    },
+    {
+        'pregunta': 'Descuidar el deber de salvaguardia: Seleccione una o más de una:',
+        'opciones': [
+            'Perjudica a los niños',
+            'Socava la integridad de la federación miembro, la academia o el club',
+            'No perjudica a nadie',
+            'Socava el crecimiento y la integridad del fútbol'
+        ],
+        'respuestas_correctas': ['Perjudica a los niños','Socava la integridad de la federación miembro, la academia o el club','Socava el crecimiento y la integridad del fútbol']
+    },
+    {
+        'pregunta': '¿Cómo definiría <<Salvaguardia>>? Seleccione una o más de una:',
+        'opciones': [
+            'Todas las medidas proactivas destinadas a velar por el bienestar del niño',
+            'Toda la legislación de protección de la infancia de un país',
+            'Todas las medidas proactivas destinadas a proteger al niño de todo daño',
+            'Ayudar al niño si está herido'
+        ],
+        'respuestas_correctas': ['Todas las medidas proactivas destinadas a velar por el bienestar del niño','Todas las medidas proactivas destinadas a proteger al niño de todo daño']
+    },
+    {
+        'pregunta': 'La contribución de solidaridad se basa en: Seleccione una:',
+        'opciones': [
+            'En el pago fijo y las variables',
+            'Ninguna opción es correcta',
+            'Sólo en las variables',
+            'Sólo en el pago fijo por traspaso'
+        ],
+        'respuestas_correctas': ['En el pago fijo y las variables']
+    },
+    {
+        'pregunta': '¿Quienes pueden dañar a un niño, incluso sin darse cuenta o con buenas intenciones? Seleccione una o más de una:',
+        'opciones': [
+            'Los padres del niño',
+            'Ninguna de estas opciones es correcta, ya que nadie daña a los niños',
+            'Los agentes',
+            'Los entrenadores'
+        ],
+        'respuestas_correctas': ['Los padres del niño','Los agentes','Los entrenadores']
+    },
+    {
+        'pregunta': '¿Cuáles son los tres pasos necesarios para gestionar los riesgos? Seleccione una:',
+        'opciones': [
+            'Detectar el riesgo, hablar de ello con los niños y despues con sus padres',
+            'Detectar el riesgo, hablar con los empleados y hacer ajustes en los altos cargos',
+            'Detectar el riesgo, hablar con los jugadores y cambiar la política',
+            'Detectar el riesgo, valorar su gravedad y responder para minimizarlo'
+        ],
+        'respuestas_correctas': ['Detectar el riesgo, valorar su gravedad y responder para minimizarlo']
+    },                                               
 ]

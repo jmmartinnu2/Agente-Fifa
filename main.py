@@ -49,7 +49,7 @@ if session_state:
         """)
 
 
-    #Examenes 
+    #Examenes tipo test 1 respuesta
     def mostrar_examen():
         st.title("Test de 20 preguntas")
         st.write("Responde las siguientes preguntas:")
@@ -71,7 +71,7 @@ if session_state:
             opciones = pregunta['opciones']
             respuesta_correcta = pregunta['respuesta_correcta']
 
-            st.markdown(f"#### Pregunta {i}: {pregunta_texto}")  # Formato un poco más pequeño para la pregunta
+            st.markdown(f"##### Pregunta {i}: {pregunta_texto}")  # Formato un poco más pequeño para la pregunta
 
             # Generar una clave única basada en el índice de la pregunta
             key = f"pregunta_{i}_respuestas"
@@ -89,7 +89,7 @@ if session_state:
             if respuesta_usuario:
                 respuestas_usuario[pregunta_texto] = respuesta_usuario
 
-            st.markdown("")  # Agregar un espacio entre preguntas
+            st.markdown("---")  # Línea horizontal para separar preguntas
 
         st.write(f"Tu puntaje total es: {puntaje}/100")
 
@@ -106,17 +106,32 @@ if session_state:
 
 
 
-
     ruta_carpeta = "pdf"  # Carpeta en la raíz del repositorio que contiene los archivos PDF
 
     def mostrar_pdf_seleccionado(ruta_carpeta):
         st.title("Selección y visualización de PDF")
+        st.markdown("""
+        **Reglamentos de la FIFA:**
+
+        a. Estatutos de la FIFA (edición de mayo de 2022)  
+        b. Código Disciplinario de la FIFA (edición de 2023)  
+        c. Código de Ética de la FIFA (edición de 2023)  
+        d. Reglamento sobre el Estatuto y la Trasferencia de Jugadores (edición de marzo de 2023)  
+        e. Reglamento de procedimiento del Tribunal del Fútbol (edición de marzo de 2023)  
+        f. Reglamento de la Cámara de Compensación de la FIFA (edición de 2022)  
+        g. Reglamento de la FIFA sobre Agentes de fútbol (edición de 2022)
+        """)
 
         # Nombres de los archivos PDF
         nombres_archivos = {
-            "Reglamento del Agente": "FIFA Football Agent Regulations_ES.pdf",
+            "Estatutos de la FIFA": "Estatutos-de-la-FIFA.pdf",
+            "Código Disciplinario de la FIFA": "Codigo-Disciplinario-de-la-FIFA.pdf",
+            "Código de Ética de la FIFA": "Codigo-de Etica-de-la-FIFA.pdf",
+            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "Reglamento sobre el Estatuto y la Transferencia del Jugador - Mayo 2023.pdf",
+            "Reglamento de procedimiento del Tribunal del Fútbol": "Reglamento-de-procedimiento-del-Tribunal-del-Fútbol.pdf",
+            "Reglamento de la Cámara de Compensación de la FIFA": "Reglamento-de-la-Cámara-de-Compensación-de-la-FIFA.pdf",
+            "Reglamento de la FIFA sobre Agentes de fútbol": "FIFA Football Agent Regulations_ES.pdf",
             "Reglamento del Agente Preguntas Frecuentes": "FIFA Football Agent Regulations FAQs_ES.pdf",
-            "Reglamento sobre el Estatuto y la Transferencia de Jugadores": "Reglamento sobre el Estatuto y la Transferencia del Jugador - Mayo 2023.pdf",
             "Calendario / Ventana de mercado":"Transfer Window Calendar_MFA_S_v2_20230616.pdf"
         }
 
@@ -241,11 +256,17 @@ if session_state:
     def mostrar_examen_fifa(preguntas):
         st.title("Examen Oficial FIFA")
 
-        tema_seleccionado = st.selectbox("Selecciona el tema del examen", ["Selecciona el Examen Agente FIFA a realizar por tema...", "Reglamento sobre Agente FIFA", "Reglamento del Estatuto y la Transferencia del Jugador", "Preguntas sobre Código Disciplinario", "Preguntas sobre Estatutos de la FIFA", "Preguntas sobre Salvaguardia de la infancia"])
+        tema_seleccionado = st.selectbox("Selecciona el tema del examen", [
+            "Selecciona el Examen Agente FIFA a realizar por tema...",
+            "Reglamento sobre Agente FIFA",
+            "Reglamento del Estatuto y la Transferencia del Jugador",
+            "Preguntas sobre Código Disciplinario",
+            "Preguntas sobre Estatutos de la FIFA",
+            "Preguntas sobre Salvaguardia de la infancia"
+        ])
 
         if tema_seleccionado and tema_seleccionado != "Selecciona el Examen Agente FIFA a realizar por tema...":
             preguntas_seleccionadas = preguntas.get(tema_seleccionado, [])
-
             puntaje = 0
 
             for i, pregunta in enumerate(preguntas_seleccionadas, 1):
@@ -254,13 +275,9 @@ if session_state:
 
                 respuesta_correcta = pregunta.get('respuesta_correcta')  # Busca la respuesta_correcta si existe
 
-                st.markdown(f"#### Pregunta {i}: {pregunta_texto}")  # Formato un poco más pequeño para la pregunta
+                st.markdown(f"##### Pregunta {i}: {pregunta_texto}")  # Formato más pequeño para la pregunta
 
-                estados_checkboxes = []
-                for opcion in opciones:
-                    estado = st.checkbox(opcion, key=f"checkbox_{i}_{opcion}")
-                    estados_checkboxes.append(estado)
-
+                estados_checkboxes = [st.checkbox(opcion, key=f"checkbox_{i}_{opcion}") for opcion in opciones]
                 respuestas_seleccionadas = [opcion for opcion, estado in zip(opciones, estados_checkboxes) if estado]
                 respuestas_seleccionadas.sort()
 
@@ -279,7 +296,7 @@ if session_state:
                         else:
                             st.error(f"**Respuesta {i}: Incorrecto. La respuesta correcta es: {respuestas_correctas}**")
 
-                st.markdown("")  # Agregar un espacio entre preguntas
+                st.markdown("---")  # Línea horizontal para separar preguntas
 
             if preguntas_seleccionadas:  # Si hay preguntas seleccionadas
                 st.write(f"**Puntaje total: {puntaje}/{len(preguntas_seleccionadas)}**")
