@@ -12,7 +12,25 @@ def mostrar_resumenes():
         {
             "titulo": ":orange_book: Código Disciplinario",
             "resumen": [
-                "Texto resumen Código Disciplinario..."
+                ":orange[***Artículo 1 Objeto***:] \n\n1. Define las infracciones según la reglamentación de la FIFA.\n"
+                "2. Establece sanciones para dichas infracciones.\n"
+                "3. Regula la organización y funcionamiento de los órganos judiciales de la FIFA y los procedimientos a seguir.",
+                ":orange[***Artículo 2 Ámbito de aplicación material***:] \n\n1. Aplicable a partidos y competencias organizadas por la FIFA y otros partidos y competencias que no estén bajo la jurisdicción de confederaciones o federaciones.\n"
+                "2. También se aplica en casos de incumplimiento de objetivos estatutarios de la FIFA y otras normas, a menos que otro órgano tenga competencia.",
+                ":orange[***Artículo 3 Ámbito de aplicación personal***:] \n\n Aplicable a :\n1. Federaciones\n", "\n2. Miembros de federaciones (incluyendo clubes)\n", "\n3. Oficiales \n", "\n4. Jugadores \n", "\n5. Oficiales de partido \n", "\n6. Agentes de fútbol con licencia FIFA \n", "\n7. Agentes organizadores de partidos con licencia FIFA \n", "\n8. Ligas independientes \n", "\n9. Personas elegidas o asignadas por FIFA para ejercer funciones",
+                ":orange[***Artículo 4 Ámbito de aplicación temporal***:] \n\n- Aplica a infracciones cometidas después de su entrada en vigor.\n", "\n- También a infracciones anteriores si el código anterior tenía sanciones más leves.\n", "\n- Los órganos judiciales de la FIFA no anularán procedimientos ya iniciados.",
+                ":orange[***Artículo 5 Derecho aplicable***:] \n\n Decisiones basadas en: \n", "\n- Estatutos y regulaciones de la FIFA\n", "\n- Reglas del juego\n", "\n- De forma subsidiaria, derecho suizo y otras normativas jurídicas",
+                ":orange[***Artículo 6 Medidas disciplinarias***:] \n\n***- Medidas aplicables tanto a personas físicas como jurídcas:***","Adevertencia, apercibimiento, multas, devolución de premios, retirada de título, cumplimiento de obligaciones económicas","***- Medidas solo para personas físicas:***\n","Suspensiones, prohibiciones de acceso, prohibición de actividades futbolísticas, servicios comunitarios, retirada de licencias.\n","***-Medidas solo para personas jurídcas:***\n","Prohibiciones de inscripciones, partidos a puerta cerrada, limitaciones de espectadores, juego en terreno neutral, anulaciones, deducciones, descensos, exclusiones, repeticiones, implementación de planes de prevención, pérdidas de derechos, pagos de indemnizaciones.\n","***-Rango de multas:***\n","100 CHF a 1000000 CHF\n","***-Federaciones y clubes asumen solidariamente multas impuestas a jugadores y oficiales***\n","***-Las medidas pueden combinarse***\n", 
+                ":orange[***Artículo 7 Directivas***:] \n\n - Las directivas indican una conducta específica que las personas deben seguir\n","- Los órganos judiciales de la FIFA pueden establecer directivas sobre cómo aplicar una sanción\n","- Pueden decretar indemnizaciones por daños si la responsabilidad recae en una federación o club.\n",
+                ":orange[***Artículo 8 Responsabilidad***:] \n\n - Las infracciones cometidas intencionalmente o por negligencia serán sancionadas.\n","- Federaciones y clubes pueden ser responsables de la conducta de sus miembros, jugadores, oficiales, seguidores, etc., incluso sin culpa o negligencia.\n","- La tentativa es punible.\n","- Cualquiera que participe o induzca a cometer una infracción puede ser sancionado.\n",
+                ":orange[***Artículo 9 Decisiones arbitrales***:] \n\n - Las decisiones del árbitro en el campo son definitivas y no revisables por la FIFA, a menos que haya un error claro.\n","- Las decisiones solo pueden revisarse en casos de confusión de identidad.\n","- Las protestas solo son admisibles si el error del árbitro fue confundir la identidad del jugador.\n","- En casos graves, se pueden tomar medidas disciplinarias incluso si el árbitro no vio la acción.\n","- Las decisiones arbitrales evidentemente incorrectas pueden ser objeto de protesta.\n",
+                ":orange[***Artículo 10 Prescripción de las infracciones***:] \n\n -  Plazo de prescripción:\n","\2 años para infracciones en partidos\n","\10 años para infracciones antidopaje, transferencias de menores y manipulación de partidos.\n","\5 años para otras infracciones\n","- El inicio del cómputo de prescripción varía según las circunstancias\n","- Las diligencias interrumpen los plazos de prescripción\n",
+                ":orange[***Artículo 11 Deber de denunciar***:] \n\n - Las personas deben reportar inmediatamente cualquier violación del código\n","- Las denuncias infundadas o irresponsables pueden resultar en sanciones\n",
+                ":orange[***Artículo 12 Obligación de colaborar***:] \n\n - Las partes deben actuar de buena fe durante el procedimiento\n","- Las personas sujetas al código deben de colaborar para esclarecer los hechos\n","- No colaborar puede resultar en sanciones\n","- Si las partes no colaboran, la decisión se basará en la información disponible\n",
+                ":orange[***Artículo 13 Conducta ofensiva y violaciones de los principios del juego limpio***:] \n\n - Federaciones, clubes, jugadores, oficiales y otros deben respetar las Reglas de Juego y otros reglamentos de la FIFA, y mantener el juego limpio.\n","- Medidas disciplinarias pueden ser impuestas por violaciones específicas, como insultos, manifestaciones no deportivas, o modificar la edad de jugadores.\n",
+                ":orange[***Artículo 14 Conducta incorrecta de los jugadores y los oficiales***:] \n\n - Establece diversas sanciones para jugadores y oficiales según la gravedad de su conducta (ejemplo: suspensión por juego brusco, actos violentos, conducta antideportiva hacia oficiales, etc.).\n","- Las infracciones cometidas incluso fuera del terreno de juego (como redes sociales) pueden ser sancionadas.\n","- Si un equipo se comporta inadecuadamente, puede ser sancionado.\n",
+                ":orange[***Artículo 15 Discriminación***:] \n\n - Sanciones para quienes atenten contra la dignidad de personas o colectivos por diversos motivos (como raza, género, religión, etc.).\n","- Federaciones o clubes pueden ser sancionados si sus seguidores adoptan conductas discriminatorias.\n","- Las víctimas de discriminación pueden ser invitadas a declarar y tienen derechos específicos en el proceso.\n","- Suspensión definitiva de partidos por conducta racista/discriminatoria puede llevar a la derrota por renuncia.\n",
+
             ]
         },
         {
@@ -137,9 +155,10 @@ def mostrar_resumenes():
     ]
 
     for seccion in secciones:
-        with st.expander(seccion["titulo"]):
+        with st.expander(seccion["titulo"]):  # Expander con el título de la sección
             for resumen in seccion["resumen"]:
-                st.write(resumen)
+                st.markdown(resumen)  # Mostrar el resumen con formato
+
 
 
 if __name__ == "__main__":

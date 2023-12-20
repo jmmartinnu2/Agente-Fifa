@@ -327,13 +327,13 @@ if session_state:
 
     #Visualizacion
     def main():
-        tabs = ["Inicio","Examenes", "Resumenes", "Formación", "Temario", "Videos", "Calculadora", "Examen oficial FIFA"]  # Nuevas secciones
+        tabs = ["Inicio","Examen oficial FIFA", "Examenes para practicar", "Resumenes", "Formación", "Temario", "Videos", "Calculadora", ]  # Nuevas secciones
         tab_select = st.sidebar.selectbox("Selecciona una sección", tabs, index=0)
 
         if tab_select == "Inicio":
             mostrar_inicio()
 
-        elif tab_select == "Examenes":
+        elif tab_select == "Examenes para practicar":
             mostrar_examen()
             if st.button("Realizar otro examen"):
                 # Borrar el contenido anterior antes de iniciar un nuevo examen
