@@ -204,8 +204,8 @@ def confederacion_ofc():
     ]
 
     column_names = ['Federación miembro', 'Categoría I', 'Categoría II', 'Categoría III', 'Categoría IV']
-    df = pd.DataFrame(confederacion_ofc, columns=column_names)
-    return df
+    df_ofc = pd.DataFrame(confederacion_ofc, columns=column_names)
+    return df_ofc
 
 
 
@@ -271,8 +271,8 @@ def confederacion_uefa():
     ]
 
     column_names = ['Federación miembro', 'Categoría I', 'Categoría II', 'Categoría III', 'Categoría IV']
-    df = pd.DataFrame(confederacion_uefa, columns=column_names)
-    return df
+    df_uefa = pd.DataFrame(confederacion_uefa, columns=column_names)
+    return df_uefa
 
 # Ejemplo de uso de la función
 tabla_confederacion_uefa = confederacion_uefa()
