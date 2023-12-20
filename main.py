@@ -277,7 +277,8 @@ if session_state:
 
                 st.markdown(f"##### Pregunta {i}: {pregunta_texto}")  # Formato más pequeño para la pregunta
 
-                estados_checkboxes = [st.checkbox(opcion, key=f"checkbox_{i}_{opcion}") for opcion in opciones]
+                estados_checkboxes = [st.checkbox(opcion, key=f"checkbox_{i}_{indice}") for indice, opcion in enumerate(opciones)]
+
                 respuestas_seleccionadas = [opcion for opcion, estado in zip(opciones, estados_checkboxes) if estado]
                 respuestas_seleccionadas.sort()
 
