@@ -17,7 +17,7 @@ contraseña_correcta = "12345"
 session_state = verificar_sesion(contraseña_correcta)
 
 if session_state:
-    st.title("¡Bienvenido al Tablero!")
+
     # Aquí va todo el contenido del tablero
 
 
