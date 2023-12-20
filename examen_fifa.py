@@ -188,7 +188,78 @@ preguntas_agente_fifa = [
             'Un posible cliente con un contrato de representación exclusivo'
         ],
         'respuestas_correctas': ['Un entrenador con contrato laboral','Un posible cliente que sea menor de edad']
-    },                                               
+    },
+    {
+        'pregunta': '¿Quien debe de dar el visto bueno a que un cliente se represente a sí mismo en una transacción? Seleccione una:',
+        'opciones': [
+            'La última federación en la que haya estado inscrito el jugador',
+            'El agente de fútbol mediante un contrato de representación exclusivo',
+            'La FIFA',
+            'Nadie'
+        ],
+        'respuestas_correctas': ['Nadie']
+    },
+    {
+        'pregunta': '¿Qué sucederá el 1 de Octubre de 2023 con las personas que tengan una licencia anterior a 2015 en virtud de una versión del Reglamento sobre los Agentes de jugadores de la FIFA, pero no hayan obtenido el reconocimiento de dicha licencia? Seleccione una: (TENGO DUDAS CON LA RESPUESTA CORRECTA)',
+        'opciones': [
+            'No podrán representar a clientes ni cumplirán los requisitos para presentarse  al examen de la FIFA para agentes',
+            'No podrán representar a clientes y tendrán que presentarse al examen de la FIFA para agentes',
+            'Nada, podrán seguir representando a clientes',
+            'No podrán representar a clientes y tendrán que presentar una solicitud para que se reconozca su licencia anterior a 2015'
+        ],
+        'respuestas_correctas': ['No podrán representar a clientes y tendrán que presentarse al examen de la FIFA para agentes']
+    },
+    {
+        'pregunta': 'Florian es un nuevo agente de fútbol de Austria con el que ha contactado Kemoh, padre de un chico de 13 años llamado Flastoh que juega actualmente en Malasia. A Kemoh le gustaría que Florian representara a su hijo y le consiguiera un contrato laboral en Footbalia, país que acaba de ganar la Copa Mundial de la FIFA y que goza de gran reputación por el desarrollo de jugadores jóvenes. En su correo electrónico, Kemoh menciona que está dispuesto a pagar 50000 EUR a Florian si le consigue una prueba y un contrato a su hijo en uno de los clubes punteros de Footbalia. Tras consultar el reglamento pertinente de Footbalia, Florian averigua que este país sólo puede firmar contratos profesionales a la edad de 16 años, y que todos los agentes de fúbtol deben de contar con un certificado nacional de salvaguardia de la infancia. ¿Qué puede hacer Florian para representar a Flastoh? Seleccione una o más de una:',
+        'opciones': [
+            'Obtener el certificado nacional de salvaguardia de la infancia de Footbalia',
+            'Representar a Flastoh con vistas a conseguirle pruebas, pero no en negociaciones contractuales, y cobrarle 25000 EUR ',
+            'Nada, Flastoh es demasiado joven para contar con una representación en Footbalia',
+            'Completar el curso de formación continua de la FIFA sobre representación de menores'
+        ],
+        'respuestas_correctas': ['Nada, Flastoh es demasiado joven para contar con una representación en Footbalia']
+    },
+    {
+        'pregunta': '¿Qué condiciones pueden impedir que se cobren honorarios al representar a una persona que no sea menor de edad? Seleccione una o más de una:',
+        'opciones': [
+            'Rescisión prematura de un contrato laboral negociado sin causa justificada, donde un agente de fútbol que haya negociado dicho contrato siga representando a la persona',
+            'Oposición de la entidad de destino',
+            'Impago de la renumeración',
+            'Traspaso de una persona a otra entidad de destino'
+        ],
+        'respuestas_correctas': ['Rescisión prematura de un contrato laboral negociado sin causa justificada, donde un agente de fútbol que haya negociado dicho contrato siga representando a la persona','Traspaso de una persona a otra entidad de destino']
+    },
+    {
+        'pregunta': '¿Qué se considera un contacto con un jugador?. Seleccione una o más de una:',
+        'opciones': [
+            'Un correo electrónico enviado al jugador',
+            'Un correo electrónico enviado al club del jugador sobre un posible traspaso de otro jugador',
+            'Una reunión con un hermano del jugador',
+            'Un mensaje en redes sociales'
+        ],
+        'respuestas_correctas': ['Un correo electrónico enviado al jugador','Una reunión con un hermano del jugador','Un mensaje en redes sociales']
+    },
+    {
+        'pregunta': '¿Desde qué cuenta bancaria puede realizar un jugador el pago de los honorarios al agente de fútbol?. Seleccione una o más de una:',
+        'opciones': [
+            'La cuenta del abogado del jugador',
+            'La cuenta del tutor legal del jugador',
+            'La cuenta de la sociedad que gestiona los derechos de imagen del jugador',
+            'La cuenta del jugador'
+        ],
+        'respuestas_correctas': ['La cuenta del jugador']
+    },
+    {
+        'pregunta': '¿Qué deben de hacer dos o más agentes de fútbol que alcancen un acuerdo para colaborar en la prestación de servicios de representación?. Seleccione una:',
+        'opciones': [
+            'Informar de dicha circunstancia en la Plataforma de Agentes de la FIFA en un plazo de 14 días',
+            'Informar de dicha circunstancia a la Cámara de Compensación de la FIFA en un plazo de 14 días',
+            'Registrarse con la misma agencia en un plazo de 14 días',
+            'Nada'
+        ],
+        'respuestas_correctas': ['Informar de dicha circunstancia en la Plataforma de Agentes de la FIFA en un plazo de 14 días']
+    },                           
+                                                   
 ]
 
 preguntas_estatuto_transferencia = [
@@ -541,7 +612,88 @@ preguntas_estatuto_transferencia = [
             'Disputa el rechazo y registra al jugador'
         ],
         'respuestas_correctas': ['Disputa el rechazo y pide la intervención de la FIFA','Aceptar el rechazo del Certificado de Transferencia Internacional']
+    },
+    {
+        'pregunta': 'Steven tiene 20 años, nació en Gales y posee nacionalidad británica. Sus padres y sus abuelos nacieron en Escocia, pero la familia se mudó a Inglaterra cuando Steven tenía un año. Nunca ha jugado con ninguna selección nacional. ¿Con qué federación o federaciones tiene derecho a jugar Steven? Seleccione una o más de una:',
+        'opciones': [
+            'Gales',
+            'Irlanda del Norte',
+            'Escocia',
+            'Inglaterra'
+        ],
+        'respuestas_correctas': ['Gales','Escocia','Inglaterra']
+    },
+    {
+        'pregunta': 'El club FC Superstars busca un nuevo delantero. Encuentra a Tino, un talentoso y joven delantero que tiene contrato con el Sporting Football y está representado por el agente de fútbol Marcus. El contrato de Tino con el Sporting Football está a punto de finalizar y hay muchos clubes interesados en contratarlo. El FC Superstars conctacta con Marcus para saber si existen posibildades de fichar a Tino, pero Marcus le informa que la única condición para que Tino fiche por el club es que el FC Superstars conceda a Marcus el 50% de los derechos económicos de Tino. Asimismo, Marcus recibirá el 50% del coste del traspaso de Tino. ¿Es aceptable un acuerdo de este tipo en el marco de la reglamentación FIFA? Seleccione una:',
+        'opciones': [
+            'Sí, dado que no se considera que los agentes de fútbol sean terceros',
+            'No, se trata de un contrato de derechos de terceros, prohibido por el artículo 18ter del Reglamento sobre Estatuto y la Transferencia de jugadores',
+            'No, porque los agentes de fútbol no pueden representar a jugadores cuyo contrato está a punto de finalizar',
+            'Sí, porque es la única manera de que el FC Superstars pueda fichar a Tino'
+        ],
+        'respuestas_correctas': ['No, se trata de un contrato de derechos de terceros, prohibido por el artículo 18ter del Reglamento sobre Estatuto y la Transferencia de jugadores']
+    },
+    {
+        'pregunta': 'El 1 de Enero de 2023 se traspasa a un jugador profesional del FC Verdo (Bolivia) al AFC Nuevo (Bolivia) por un coste de traspaso de 250000 USD. Antes el jugador, había estado inscrito en el Revaneira FC (Argentina) durante todo el año en que cumplió 13 años y la mitad del del año en que cumplió 14. ¿Tiene el Revaneira FC derecho a percibir la contribución por solidaridad? Seleccione una:',
+        'opciones': [
+            'El Revaneira FC tiene derecho a una contribución de solidaridad por valor de 937.50 USD',
+            'El Revaneira FC tiene derecho a una contribución de solidaridad por valor de 939.50 USD',
+            'El Revaneira FC no tiene derecho porque el traspaso se ha hecho entre dos clubes afiliados a la misma federación',
+            'El Revaneira FC tiene derecho a una contribución de solidaridad por valor de 938.50 USD'
+        ],
+        'respuestas_correctas': ['El Revaneira FC tiene derecho a una contribución de solidaridad por valor de 937.50 USD']
+    },
+    {
+        'pregunta': 'Un traspaso puente. Seleccione una:',
+        'opciones': [
+            'Sirve para evitar la aplicación de la normativa o legislación',
+            'Nunca se da para evitar la indemnización por formación',
+            'Puede darse en traspaso internacionales de entrenadores',
+            'Sólo se da si intervienen clubes profesionales'
+        ],
+        'respuestas_correctas': ['Sirve para evitar la aplicación de la normativa o legislación']
+    },
+    {
+        'pregunta': '¿Qué derechos se estipulan en el artículo 18quarter del Reglamento sobre el Estatuto y la Transferencia de Jugadores para las jugadoras que se queden embarazadas?. Seleccione una o más de una:',
+        'opciones': [
+            'Mantenimiento de la prestación de servicios deportivos a su club (p. ejemplo jugar y entrenar) tras la confirmación del especialista que esté llevando el embarazo y de un profesional médico independiente (escogido de mutuo acuerdo por la jugadora y el club) de que resulta seguro para ella hacerlo',
+            'Vuelta a la actividad futbolística tras la baja por maternidad',
+            'Aumento salaria del 10% tras la baja por maternidad',
+            'Ninguna de las respuestas enumeradas'
+        ],
+        'respuestas_correctas': ['Mantenimiento de la prestación de servicios deportivos a su club (p. ejemplo jugar y entrenar) tras la confirmación del especialista que esté llevando el embarazo y de un profesional médico independiente (escogido de mutuo acuerdo por la jugadora y el club) de que resulta seguro para ella hacerlo','Vuelta a la actividad futbolística tras la baja por maternidad']
+    },
+    {
+        'pregunta': '¿Qué porcentaje del coste del traspaso se deduce para pagar la contribución de solidaridad?. Seleccione una:',
+        'opciones': [
+            '5%',
+            '7.5%',
+            '10%',
+            '15%'
+        ],
+        'respuestas_correctas': ['5%']
+    },
+    {
+        'pregunta': 'En tanto en cuanto todas las partes pertinentes acepten por escrito la representación múltiple, ¿A qué partes puede representar un agente de fútbol en el traspaso del jugador Mika del FC White al FC Red?. Seleccione una o más de una:',
+        'opciones': [
+            'FC Red',
+            'FC White',
+            'Mika',
+            'No se permite la representación múltiple'
+        ],
+        'respuestas_correctas': ['FC Red','Mika']
+    },
+    {
+        'pregunta': 'En cual o cuales de los siguientes casos se debe abonar la contribución de solidaridad?. Seleccione una o más de una:',
+        'opciones': [
+            'El FC Blue (Uruguay) solicita la contribución de solidariad por el traspaso permanente (previo pago del coste del traspaso) de un jugador del FC Red (Chile) al FC Yellow (Colombia)',
+            'El FC Maroon (Nigeria) solicita la contribución por solidaridad por el traspaso permanente(previo pago del coste del traspaso) de un jugador del FC Purple (Senegal) al FC Indigo (Nigeria)',
+            'El FC White (Japón) solicita la contribución por solidariad por el traspaso de un jugador del FC Green (Indonesia) al FC Orange (Indonesia)',
+            'El FC Brown (Italia) solicita la contribución de solidaridad por el traspaso permanente (sin pagos) de un jugador del FC Grey (España) al FC Black (Alemania)'
+        ],
+        'respuestas_correctas': ['l FC Blue (Uruguay) solicita la contribución de solidariad por el traspaso permanente (previo pago del coste del traspaso) de un jugador del FC Red (Chile) al FC Yellow (Colombia)','El FC Maroon (Nigeria) solicita la contribución por solidaridad por el traspaso permanente(previo pago del coste del traspaso) de un jugador del FC Purple (Senegal) al FC Indigo (Nigeria)','El FC White (Japón) solicita la contribución por solidariad por el traspaso de un jugador del FC Green (Indonesia) al FC Orange (Indonesia)']
     },                            
+                                    
 ]                       
 
 
@@ -655,7 +807,17 @@ preguntas_codigo_disciplinario = [
             'No, los clubes solo pueden considerarse responsables de la conducta de sus propios oficiales'
         ],
         'respuestas_correctas': ['Sí, se puede considerar responsables a los clubes por la conducta de sus propios jugadores, según el principio de la responsabilidad objetiva']
-    },                                         
+    },
+    {
+        'pregunta': 'La Comisión Disciplinaria de la FIFA averigua que un jugador no colaboró para esclarecer los hechos de un caso importante de manipulación de partidos. La comisión decide multar al jugador con 5000 CHF. El jugador no está de acuerdo con esa multa, ya que considera que ha aportado información suficiente a la Comisión. El jugador le pregunta a usted si se puede recurrir la decisión. Maque la respuesta correcta. Seleccione una:',
+        'opciones': [
+            'La decisión se puede apelar ante el Tribunal de Arbitraje Deportivo',
+            'La decisión se puede apelar ante la Comisión de Apelación de la FIFA',
+            'La decisión se puede apelar ante el Tribunal del Fútbol de la FIFA',
+            'La decisión es definitva y no se puede recurrir'
+        ],
+        'respuestas_correctas': ['La decisión se puede apelar ante el Tribunal de Arbitraje Deportivo']
+    },                                                 
 ]    
 
 
@@ -689,7 +851,37 @@ preguntas_estatutos_fifa = [
             'La federación debe de estar afiliada a la confederación correspondiente'
         ],
         'respuestas_correctas': ['Las federaciones deben de ser responsables de organizar y supervisar el fútbol een todas sus formas en su país','La federación debe de estar afiliada a la confederación correspondiente']
-    },        
+    },
+    {
+        'pregunta': 'En caso de que un club incumpla una decisión de naturaleza económica (o de otro tipo) adoptada por el órgano competente de la federación ¿Qué entidad tiene la autoridad para ejecutar dicha decisión? Seleccione una:',
+        'opciones': [
+            'El tribunal de Arbitraje deportivo',
+            'La Federación del órgano que haya adoptado la decisión',
+            'La Comisión Disciplinaria de la FIFA',
+            'La Comisión de Ética de la FIFA'
+        ],
+        'respuestas_correctas': ['La Federación del órgano que haya adoptado la decisión']
+    },
+    {
+        'pregunta': '¿Cuales de los siguiente requisitos son obligatorios para convertirse en federación miembro de la FIFA? Seleccione una o más de una:',
+        'opciones': [
+            'El fútbol debe de ser el deporte más popular del país donde la federación ejerce su actividad',
+            'Las federaciones deben de ser responsables de organizar y supervisar el fútbol en todas sus formas en su país',
+            'La federación debe ejercer su actividad en un país democrático',
+            'La federación debe de estar afiliada a la confederación correspondiente'
+        ],
+        'respuestas_correctas': ['Las federaciones deben de ser responsables de organizar y supervisar el fútbol en todas sus formas en su país','La federación debe de estar afiliada a la confederación correspondiente']
+    },
+    {
+        'pregunta': '¿Cuales son las máximas costas procesales que se pueden imponer a un jugador, entrenador, agente de fútbol o agente organizador de partidos en disputas ante el Tribunal del Fútbol?. Seleccione una:',
+        'opciones': [
+            '5000 USD',
+            '10000 USD',
+            '25000',
+            'Ninguna, dado que dichos procedimientos son gratuitos'
+        ],
+        'respuestas_correctas': ['Ninguna, dado que dichos procedimientos son gratuitos']
+    },                     
 ]    
 
 
@@ -714,5 +906,45 @@ preguntas_salvaguardia = [
             'Socava la integridad de la asociación miembro, la academia o el club'
         ],
         'respuestas_correctas': ['Socava el crecimiento y la integridad del fútbol','Lastima a los niños']
-    },     
+    },
+    {
+        'pregunta': 'Un Entrenador habla con su mejor amigo y le cuenta que le han llegado rumores de <<conducta extraña>> de un colega con los niños del club por el que acaba de fichar. Algunas de las personas que llevan más tiempo en el club dicen que esto lleva pasando muchos años, pero que es muy buen entrenador y tiene mucha influencia. También le cuenta a su amigo que se ha dado cuenta de que muchos chicos de los que juegan con él han cambiado en las últimas semanas y que todos parecen tenerle miedo. Le pide consejo a su amigo, ya que en el club no cuenta con un oficial de salvaguardia. ¿Qué debería hacer? Seleccione una o más de una:',
+        'opciones': [
+            'Acudir a la policía para expresar su preocupación por sospechas graves de abuso',
+            'Informar al presidente del club, que es el mejor amigo del entrenador en cuestión',
+            'Informar de ello a los servicios de de protección de la infancia del lugar',
+            'Contactar oficialmente con la dirección del club y preguntar si cuentan con un protocolo institucional para informar de estos casos'
+        ],
+        'respuestas_correctas': ['Acudir a la policía para expresar su preocupación por sospechas graves de abuso','Informar de ello a los servicios de de protección de la infancia del lugar','Contactar oficialmente con la dirección del club y preguntar si cuentan con un protocolo institucional para informar de estos casos']
+    },
+    {
+        'pregunta': '¿Es posible detectar los riesgos a los que se enfrenta un niño antes de que llegue a sucederle algo? Seleccione una:',
+        'opciones': [
+            'No corresponde al mundo del fútbol ocuparse de estas cosas',
+            'No se sabe',
+            'No es posible',
+            'Sí, si se aplican las medidas adecuadas, se pueden detectar y gestionar los riesgos'
+        ],
+        'respuestas_correctas': ['Sí, si se aplican las medidas adecuadas, se pueden detectar y gestionar los riesgos']
+    },
+    {
+        'pregunta': '¿Quien es responsable de la salvaguardia de los niños en el mundo del fútbol?. Seleccione una:',
+        'opciones': [
+            'Sólo los agentes de fútbol',
+            'Sólo el personal sanitario',
+            'Todo el mundo',
+            'Sólo los entrenadores'
+        ],
+        'respuestas_correctas': ['Todo el mundo']
+    },
+    {
+        'pregunta': 'La contribución por solidaridad se basa en: Seleccione una:',
+        'opciones': [
+            'Sólo en las variables',
+            'En el pago fijo y en las variables',
+            'Sólo en el pago fijo por el traspaso',
+            'Ninguna opción es correcta'
+        ],
+        'respuestas_correctas': ['En el pago fijo y en las variables']
+    },                      
 ]
