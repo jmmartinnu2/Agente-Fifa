@@ -2,13 +2,8 @@ import streamlit as st
 from random import sample
 from preguntas import preguntas
 from resumenes import mostrar_resumenes  # Importa la función desde resumenes.py
-import time
-import random
-import os
-import fitz 
 from videos import get_videos
 from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia,preguntas_codigo_disciplinario,preguntas_estatutos_fifa,preguntas_salvaguardia
-import string
 from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
 from login import verificar_sesion
 import requests
@@ -106,23 +101,22 @@ if session_state:
 
         # Actualizar la sesión
         st.session_state['sesion'] = sesion
+        
+        
 
-
-
-    def displayPDF(file):
-        # Abrir el archivo desde la URL
-        with requests.get(file) as response:
+    def displayPDF(url):
+        response = requests.get(url)
+        if response.status_code == 200:
+            # Codificar el contenido del PDF en base64
             base64_pdf = base64.b64encode(response.content).decode('utf-8')
+            # Generar la etiqueta HTML para mostrar el PDF
+            pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="600" type="application/pdf">'
+            # Mostrar el archivo PDF
+            st.markdown(pdf_display, unsafe_allow_html=True)
+        else:
+            st.error("Error al cargar el documento PDF")
 
-        # Incrustar el PDF en HTML
-        pdf_display = F'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="600" type="application/pdf">'
-
-        # Mostrar el archivo PDF
-        st.markdown(pdf_display, unsafe_allow_html=True)
-
-    ruta_carpeta = "pdf"
-
-    def mostrar_pdf_seleccionado(ruta_carpeta):
+    def mostrar_pdf_seleccionado():
         st.title("Selección y visualización de PDF")
         st.markdown("""
         **Reglamentos de la FIFA:**
@@ -136,17 +130,12 @@ if session_state:
         g. Reglamento de la FIFA sobre Agentes de fútbol (edición de 2022)
         """)
 
-        # Nombres de los archivos PDF
+        # Nombres de los archivos PDF con enlaces de Google Drive
         nombres_archivos = {
-            "Estatutos de la FIFA": "https://docs.google.com/document/d/1sXqm3wkc_v4mJRgWP56_A3t5d4QAwJaBTh3CWhqtu-Q/edit?usp=drive_link",
+            "Estatutos de la FIFA": "https://drive.google.com/file/d/19tkrvl9kaejiDERFtLaPG9GV8K3OREC7/view?usp=drive_link",
             "Código Disciplinario de la FIFA": "https://drive.google.com/file/d/180bLEv00NNZAQs_oV9B2w0OfIhuXU0ib/view?usp=drive_link",
             "Código de Ética de la FIFA": "https://drive.google.com/file/d/1XL1liFdS7wgl2DRj-_ETlEiw83_jwgTE/view?usp=drive_link",
-            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "https://drive.google.com/file/d/1os-pPvIkeez-kxzi9ceaAZhSsrjfe7EP/view?usp=drive_link",
-            "Reglamento de procedimiento del Tribunal del Fútbol": "https://drive.google.com/file/d/1LngASCz1byQ2rrAjjoovFNkcVhTbrTbJ/view?usp=drive_link",
-            "Reglamento de la Cámara de Compensación de la FIFA": "https://drive.google.com/file/d/1G0IOAPpLm3NVW9NVzhxL9xTGLSblFnFE/view?usp=drive_link",
-            "Reglamento de la FIFA sobre Agentes de fútbol": "https://drive.google.com/file/d/1VInArOlX2yMd_-s_zRd9vU9yLVLnJrkV/view?usp=drive_link",
-            "Reglamento del Agente Preguntas Frecuentes": "https://drive.google.com/file/d/1ZIpBK6R0RKeI-SuE6hZWt-1OuzJ9dWpc/view?usp=drive_link",
-            "Calendario / Ventana de mercado":"https://drive.google.com/file/d/1YDs4Utm2QpRhPgNvezRN93zd41PxbuKs/view?usp=drive_link"
+            # Agrega el resto de los archivos aquí
         }
 
         # Widget selectbox para seleccionar un archivo PDF
@@ -156,6 +145,7 @@ if session_state:
             url_pdf = nombres_archivos[archivo_seleccionado]
             st.write(f"Visualización de {archivo_seleccionado}:")
             displayPDF(url_pdf)
+
 
 
 
@@ -384,7 +374,7 @@ if session_state:
             
             
         elif tab_select == "Temario":
-            mostrar_pdf_seleccionado("pdf") 
+            mostrar_pdf_seleccionado() 
             
         elif tab_select == "Videos":
 
