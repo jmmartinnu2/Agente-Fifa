@@ -138,15 +138,15 @@ if session_state:
 
         # Nombres de los archivos PDF
         nombres_archivos = {
-            "Estatutos de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Estatutos-de-la-FIFA.pdf",
-            "Código Disciplinario de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Codigo-Disciplinario-de-la-FIFA.pdf",
-            "Código de Ética de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Codigo-de%20Etica-de-la-FIFA.pdf",
-            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Reglamento%20sobre%20el%20Estatuto%20y%20la%20Transferencia%20del%20Jugador%20-%20Mayo%202023.pdf",
-            "Reglamento de procedimiento del Tribunal del Fútbol": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Reglamento-de-procedimiento-del-Tribunal-del-F%C3%BAtbol.pdf",
-            "Reglamento de la Cámara de Compensación de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Reglamento-de-la-C%C3%A1mara-de-Compensaci%C3%B3n-de-la-FIFA.pdf",
-            "Reglamento de la FIFA sobre Agentes de fútbol": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/FIFA%20Football%20Agent%20Regulations_ES.pdf",
-            "Reglamento del Agente Preguntas Frecuentes": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/FIFA%20Football%20Agent%20Regulations%20FAQs_ES.pdf",
-            "Calendario / Ventana de mercado":"https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Transfer%20Window%20Calendar_MFA_S_v2_20230616.pdf"
+            "Estatutos de la FIFA": "https://drive.google.com/file/d/19tkrvl9kaejiDERFtLaPG9GV8K3OREC7/view?usp=drive_link",
+            "Código Disciplinario de la FIFA": "https://drive.google.com/file/d/180bLEv00NNZAQs_oV9B2w0OfIhuXU0ib/view?usp=drive_link",
+            "Código de Ética de la FIFA": "https://drive.google.com/file/d/1XL1liFdS7wgl2DRj-_ETlEiw83_jwgTE/view?usp=drive_link",
+            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "https://drive.google.com/file/d/1os-pPvIkeez-kxzi9ceaAZhSsrjfe7EP/view?usp=drive_link",
+            "Reglamento de procedimiento del Tribunal del Fútbol": "https://drive.google.com/file/d/1LngASCz1byQ2rrAjjoovFNkcVhTbrTbJ/view?usp=drive_link",
+            "Reglamento de la Cámara de Compensación de la FIFA": "https://drive.google.com/file/d/1G0IOAPpLm3NVW9NVzhxL9xTGLSblFnFE/view?usp=drive_link",
+            "Reglamento de la FIFA sobre Agentes de fútbol": "https://drive.google.com/file/d/1VInArOlX2yMd_-s_zRd9vU9yLVLnJrkV/view?usp=drive_link",
+            "Reglamento del Agente Preguntas Frecuentes": "https://drive.google.com/file/d/1ZIpBK6R0RKeI-SuE6hZWt-1OuzJ9dWpc/view?usp=drive_link",
+            "Calendario / Ventana de mercado":"https://drive.google.com/file/d/1YDs4Utm2QpRhPgNvezRN93zd41PxbuKs/view?usp=drive_link"
         }
 
         # Widget selectbox para seleccionar un archivo PDF
