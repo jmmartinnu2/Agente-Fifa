@@ -2,13 +2,15 @@ import streamlit as st
 from random import sample
 from preguntas import preguntas
 from resumenes import mostrar_resumenes  # Importa la función desde resumenes.py
+import time
+import random
+import os
+import fitz 
 from videos import get_videos
 from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia,preguntas_codigo_disciplinario,preguntas_estatutos_fifa,preguntas_salvaguardia
+import string
 from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
 from login import verificar_sesion
-import requests
-import base64
-
 
 contraseña_correcta = "12345"
 
@@ -101,22 +103,12 @@ if session_state:
 
         # Actualizar la sesión
         st.session_state['sesion'] = sesion
-        
-        
 
-    def displayPDF(url):
-        response = requests.get(url)
-        if response.status_code == 200:
-            # Codificar el contenido del PDF en base64
-            base64_pdf = base64.b64encode(response.content).decode('utf-8')
-            # Generar la etiqueta HTML para mostrar el PDF
-            pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="600" type="application/pdf">'
-            # Mostrar el archivo PDF
-            st.markdown(pdf_display, unsafe_allow_html=True)
-        else:
-            st.error("Error al cargar el documento PDF")
 
-    def mostrar_pdf_seleccionado():
+
+    ruta_carpeta = "pdf"  # Carpeta en la raíz del repositorio que contiene los archivos PDF
+
+    def mostrar_pdf_seleccionado(ruta_carpeta):
         st.title("Selección y visualización de PDF")
         st.markdown("""
         **Reglamentos de la FIFA:**
@@ -130,23 +122,33 @@ if session_state:
         g. Reglamento de la FIFA sobre Agentes de fútbol (edición de 2022)
         """)
 
-        # Nombres de los archivos PDF con enlaces de Google Drive
+        # Nombres de los archivos PDF
         nombres_archivos = {
-            "Estatutos de la FIFA": "https://drive.google.com/file/d/19tkrvl9kaejiDERFtLaPG9GV8K3OREC7/view?usp=drive_link",
-            "Código Disciplinario de la FIFA": "https://drive.google.com/file/d/180bLEv00NNZAQs_oV9B2w0OfIhuXU0ib/view?usp=drive_link",
-            "Código de Ética de la FIFA": "https://drive.google.com/file/d/1XL1liFdS7wgl2DRj-_ETlEiw83_jwgTE/view?usp=drive_link",
-            # Agrega el resto de los archivos aquí
+            "Estatutos de la FIFA": "Estatutos-de-la-FIFA.pdf",
+            "Código Disciplinario de la FIFA": "Codigo-Disciplinario-de-la-FIFA.pdf",
+            "Código de Ética de la FIFA": "Codigo-de Etica-de-la-FIFA.pdf",
+            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "Reglamento sobre el Estatuto y la Transferencia del Jugador - Mayo 2023.pdf",
+            "Reglamento de procedimiento del Tribunal del Fútbol": "Reglamento-de-procedimiento-del-Tribunal-del-Fútbol.pdf",
+            "Reglamento de la Cámara de Compensación de la FIFA": "Reglamento-de-la-Cámara-de-Compensación-de-la-FIFA.pdf",
+            "Reglamento de la FIFA sobre Agentes de fútbol": "FIFA Football Agent Regulations_ES.pdf",
+            "Reglamento del Agente Preguntas Frecuentes": "FIFA Football Agent Regulations FAQs_ES.pdf",
+            "Calendario / Ventana de mercado":"Transfer Window Calendar_MFA_S_v2_20230616.pdf"
         }
 
         # Widget selectbox para seleccionar un archivo PDF
         archivo_seleccionado = st.selectbox("Selecciona un archivo PDF:", list(nombres_archivos.keys()))
 
+        # Mostrar el PDF seleccionado
         if archivo_seleccionado:
-            url_pdf = nombres_archivos[archivo_seleccionado]
-            st.write(f"Visualización de {archivo_seleccionado}:")
-            displayPDF(url_pdf)
-
-
+            archivo_pdf = nombres_archivos[archivo_seleccionado]
+            ruta_pdf = os.path.join(ruta_carpeta, archivo_pdf)
+            pdf_document = fitz.open(ruta_pdf)
+            
+            # Mostrar cada página del PDF
+            for page_num in range(pdf_document.page_count):
+                page = pdf_document.load_page(page_num)
+                img_bytes = page.get_pixmap().tobytes()
+                st.image(img_bytes, caption=f"Página {page_num + 1}", use_column_width=True)
 
 
 
@@ -374,7 +376,7 @@ if session_state:
             
             
         elif tab_select == "Temario":
-            mostrar_pdf_seleccionado() 
+            mostrar_pdf_seleccionado("pdf") 
             
         elif tab_select == "Videos":
 
