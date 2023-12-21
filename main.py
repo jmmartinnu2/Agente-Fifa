@@ -138,7 +138,7 @@ if session_state:
 
         # Nombres de los archivos PDF
         nombres_archivos = {
-            "Estatutos de la FIFA": "https://drive.google.com/file/d/19tkrvl9kaejiDERFtLaPG9GV8K3OREC7/view?usp=drive_link",
+            "Estatutos de la FIFA": "https://docs.google.com/document/d/1sXqm3wkc_v4mJRgWP56_A3t5d4QAwJaBTh3CWhqtu-Q/edit?usp=drive_link",
             "Código Disciplinario de la FIFA": "https://drive.google.com/file/d/180bLEv00NNZAQs_oV9B2w0OfIhuXU0ib/view?usp=drive_link",
             "Código de Ética de la FIFA": "https://drive.google.com/file/d/1XL1liFdS7wgl2DRj-_ETlEiw83_jwgTE/view?usp=drive_link",
             "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "https://drive.google.com/file/d/1os-pPvIkeez-kxzi9ceaAZhSsrjfe7EP/view?usp=drive_link",
