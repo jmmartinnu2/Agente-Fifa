@@ -11,7 +11,8 @@ from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia,
 import string
 from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
 from login import verificar_sesion
-import fitz
+import requests
+import base64
 
 
 contraseña_correcta = "12345"
@@ -108,7 +109,18 @@ if session_state:
 
 
 
-    ruta_carpeta = "pdf"  # Carpeta en la raíz del repositorio que contiene los archivos PDF
+    def displayPDF(file):
+        # Abrir el archivo desde la URL
+        with requests.get(file) as response:
+            base64_pdf = base64.b64encode(response.content).decode('utf-8')
+
+        # Incrustar el PDF en HTML
+        pdf_display = F'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="600" type="application/pdf">'
+
+        # Mostrar el archivo PDF
+        st.markdown(pdf_display, unsafe_allow_html=True)
+
+    ruta_carpeta = "pdf"
 
     def mostrar_pdf_seleccionado(ruta_carpeta):
         st.title("Selección y visualización de PDF")
@@ -126,15 +138,15 @@ if session_state:
 
         # Nombres de los archivos PDF
         nombres_archivos = {
-            "Estatutos de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/Estatutos-de-la-FIFA.pdf",
-            "Código Disciplinario de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/Codigo-Disciplinario-de-la-FIFA.pdf",
-            "Código de Ética de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/Codigo-de%20Etica-de-la-FIFA.pdf",
-            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/Reglamento%20sobre%20el%20Estatuto%20y%20la%20Transferencia%20del%20Jugador%20-%20Mayo%202023.pdf",
-            "Reglamento de procedimiento del Tribunal del Fútbol": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/Reglamento-de-procedimiento-del-Tribunal-del-F%C3%BAtbol.pdf",
-            "Reglamento de la Cámara de Compensación de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/Reglamento-de-la-C%C3%A1mara-de-Compensaci%C3%B3n-de-la-FIFA.pdf",
-            "Reglamento de la FIFA sobre Agentes de fútbol": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/FIFA%20Football%20Agent%20Regulations_ES.pdf",
-            "Reglamento del Agente Preguntas Frecuentes": "https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/FIFA%20Football%20Agent%20Regulations%20FAQs_ES.pdf",
-            "Calendario / Ventana de mercado":"https://github.com/jmmartinnu2/Agente-Fifa/blob/main/pdf/Transfer%20Window%20Calendar_MFA_S_v2_20230616.pdf"
+            "Estatutos de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Estatutos-de-la-FIFA.pdf",
+            "Código Disciplinario de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Codigo-Disciplinario-de-la-FIFA.pdf",
+            "Código de Ética de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Codigo-de%20Etica-de-la-FIFA.pdf",
+            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Reglamento%20sobre%20el%20Estatuto%20y%20la%20Transferencia%20del%20Jugador%20-%20Mayo%202023.pdf",
+            "Reglamento de procedimiento del Tribunal del Fútbol": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Reglamento-de-procedimiento-del-Tribunal-del-F%C3%BAtbol.pdf",
+            "Reglamento de la Cámara de Compensación de la FIFA": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Reglamento-de-la-C%C3%A1mara-de-Compensaci%C3%B3n-de-la-FIFA.pdf",
+            "Reglamento de la FIFA sobre Agentes de fútbol": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/FIFA%20Football%20Agent%20Regulations_ES.pdf",
+            "Reglamento del Agente Preguntas Frecuentes": "https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/FIFA%20Football%20Agent%20Regulations%20FAQs_ES.pdf",
+            "Calendario / Ventana de mercado":"https://github.com/jmmartinnu2/Agente-Fifa/raw/main/pdf/Transfer%20Window%20Calendar_MFA_S_v2_20230616.pdf"
         }
 
         # Widget selectbox para seleccionar un archivo PDF
@@ -143,7 +155,7 @@ if session_state:
         if archivo_seleccionado:
             url_pdf = nombres_archivos[archivo_seleccionado]
             st.write(f"Visualización de {archivo_seleccionado}:")
-            st.markdown(f'<iframe src="{url_pdf}" width="800" height="600" style="border: none;"></iframe>', unsafe_allow_html=True)
+            displayPDF(url_pdf)
 
 
 
