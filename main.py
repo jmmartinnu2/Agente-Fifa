@@ -105,40 +105,53 @@ if session_state:
 
     def mostrar_pdf_seleccionado():
         st.title("Selección y visualización de PDF")
-        st.markdown("""
-        **Reglamentos de la FIFA:**
 
-        a. Estatutos de la FIFA (edición de mayo de 2022)  
-        b. Código Disciplinario de la FIFA (edición de 2023)  
-        c. Código de Ética de la FIFA (edición de 2023)  
-        d. Reglamento sobre el Estatuto y la Trasferencia de Jugadores (edición de marzo de 2023)  
-        e. Reglamento de procedimiento del Tribunal del Fútbol (edición de marzo de 2023)  
-        f. Reglamento de la Cámara de Compensación de la FIFA (edición de 2022)  
-        g. Reglamento de la FIFA sobre Agentes de fútbol (edición de 2022)
-        """)
-
-        # Nombres y URLs de los archivos PDF
-        # Nombres y URLs de los archivos PDF
         nombres_archivos = {
-            "Estatutos de la FIFA": "",
-            "Código Disciplinario de la FIFA": "https://drive.google.com/file/d/180bLEv00NNZAQs_oV9B2w0OfIhuXU0ib/view?usp=drive_link",
-            "Código de Ética de la FIFA": "https://drive.google.com/file/d/1XL1liFdS7wgl2DRj-_ETlEiw83_jwgTE/view?usp=drive_link",
-            "Reglamento sobre el Estatuto y la Trasferencia de Jugadores": "https://drive.google.com/file/d/1os-pPvIkeez-kxzi9ceaAZhSsrjfe7EP/view?usp=drive_link",
-            "Reglamento de procedimiento del Tribunal del Fútbol": "https://drive.google.com/file/d/1LngASCz1byQ2rrAjjoovFNkcVhTbrTbJ/view?usp=drive_link",
-            "Reglamento de la Cámara de Compensación de la FIFA": "https://drive.google.com/file/d/1G0IOAPpLm3NVW9NVzhxL9xTGLSblFnFE/view?usp=drive_link",
-            "Reglamento de la FIFA sobre Agentes de fútbol": "https://drive.google.com/file/d/1VInArOlX2yMd_-s_zRd9vU9yLVLnJrkV/view?usp=drive_link",
-            "Reglamento del Agente Preguntas Frecuentes": "https://drive.google.com/file/d/1ZIpBK6R0RKeI-SuE6hZWt-1OuzJ9dWpc/view?usp=drive_link",
-            "Calendario / Ventana de mercado": "https://drive.google.com/file/d/1YDs4Utm2QpRhPgNvezRN93zd41PxbuKs/view?usp=drive_link"
+            "Estatutos de la FIFA": {
+                "Páginas": (6, 105)
+            },
+            "Código Disciplinario de la FIFA": {
+                "Páginas": (106, 160)
+            },
+            "Código de Ética de la FIFA": {
+                "Páginas": (161, 208)
+            },
+            "Reglamento sobre el Estatuto y la Transferencia de Jugadores": {
+                "Páginas": (209, 309)
+            },
+            "Reglamento de procedimiento del Tribunal del Fútbol": {
+                "Páginas": (310, 343)
+            },
+            "Reglamento de la Cámara de Compensación de la FIFA": {
+                "Páginas": (344, 379)
+            },
+            "Reglamento de la FIFA sobre Agentes de fútbol": {
+                "Páginas": (380, 420)
+            }
         }
 
-        # Widget selectbox para seleccionar un archivo PDF
-        archivo_seleccionado = st.selectbox("Selecciona un archivo PDF:", list(nombres_archivos.keys()))
+        tema_seleccionado = st.selectbox("Selecciona un tema", list(nombres_archivos.keys()))
 
-        # Mostrar el PDF seleccionado
-        if archivo_seleccionado:
-            url_pdf = nombres_archivos[archivo_seleccionado]
-            st.write(f"Visualización de {archivo_seleccionado}:")
-            st.markdown(f'<iframe src="{url_pdf}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+        if tema_seleccionado:
+            inicio_pagina, _ = nombres_archivos[tema_seleccionado]["Páginas"]
+            
+            st.write(f"Visualización de {tema_seleccionado}: Página {inicio_pagina}")
+            
+            # Embed del PDF usando JavaScript para cambiar las páginas
+            pdf_embed = f"""
+            <iframe id="pdf_view" src="https://digitalhub.fifa.com/m/1009119579a8c8c4/original/Materiales-de-estudio-sobre-el-examen-de-la-FIFA-para-agentes-de-futbol.pdf#page={inicio_pagina}" 
+            width="800" height="600"></iframe>
+            <script>
+                var pdf_view = document.getElementById('pdf_view');
+                pdf_view.src = pdf_view.src.replace(/#page=\d+/, '#page={inicio_pagina}');
+            </script>
+            """
+            st.markdown(pdf_embed, unsafe_allow_html=True)
+
+   
+
+
+
 
 
     
