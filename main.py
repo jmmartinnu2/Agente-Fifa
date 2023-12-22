@@ -2,11 +2,13 @@ import streamlit as st
 from random import sample
 from preguntas import preguntas
 from resumenes import mostrar_resumenes  # Importa la función desde resumenes.py
-import os
 from videos import get_videos
 from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia,preguntas_codigo_disciplinario,preguntas_estatutos_fifa,preguntas_salvaguardia
 from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
 from login import verificar_sesion
+
+
+
 
 
 contraseña_correcta = "12345"
@@ -149,11 +151,6 @@ if session_state:
             st.markdown(pdf_embed, unsafe_allow_html=True)
 
    
-
-
-
-
-
     
     #Calculadora
     def calcular_comision():
@@ -250,10 +247,6 @@ if session_state:
             st.write(f"El agente cobrará por pagos variables: {cantidad_cobrada:.2f} USD")
 
 
-        
-            
-
-
     #Examen oficial fifa test
     def mostrar_examen_fifa(preguntas):
         st.title("Examen Oficial FIFA")
@@ -311,13 +304,6 @@ if session_state:
 
 
 
-
-
-
-
-
-
-
     #Funcion Ventanas de mercado calendarios
     def ventana_mercado(pdf_url):
         st.title("Ventanas de mercados")
@@ -328,9 +314,11 @@ if session_state:
 
 
 
+
+
     #Visualizacion
     def main():
-        tabs = ["Inicio","Examen oficial FIFA", "Examenes para practicar", "Resumenes", "Formación", "Temario", "Videos", "Calculadora", ]  # Nuevas secciones
+        tabs = ["Inicio","Examen oficial FIFA", "Examenes para practicar", "Resumenes", "Formación", "Temario", "Videos", "Calculadora"]  # Nuevas secciones
         tab_select = st.sidebar.selectbox("Selecciona una sección", tabs, index=0)
 
         if tab_select == "Inicio":
@@ -411,6 +399,12 @@ if session_state:
                 "Preguntas sobre Estatutos de la FIFA": preguntas_estatutos_fifa,
                 "Preguntas sobre Salvaguardia de la infancia": preguntas_salvaguardia
             })
+            
+
+                    
+                    
+                    
+                    
 
     if __name__ == "__main__":
         main()  
