@@ -112,7 +112,7 @@ if session_state:
     def mostrar_pdf_seleccionado(pdf_url):
         st.write("Visualización del PDF:")
         
-        # Obtener el archivo PDF desde Google Drive
+        # Obtener el archivo PDF desde la URL
         response = requests.get(pdf_url)
         with open("temp_pdf.pdf", "wb") as file:
             file.write(response.content)
@@ -121,6 +121,10 @@ if session_state:
         with open("temp_pdf.pdf", "rb") as file:
             base64_pdf = base64.b64encode(file.read()).decode('utf-8')
         
+        # Imprimir el enlace Base64 antes de mostrarlo
+        print("Enlace Base64:", base64_pdf)
+        
+        # Mostrar el PDF utilizando el enlace Base64
         pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="10600" type="application/pdf">'
         
         st.markdown(pdf_display, unsafe_allow_html=True)
