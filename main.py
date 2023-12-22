@@ -119,21 +119,9 @@ if session_state:
 
             if archivo_seleccionado in pdf_files:
                 file_id = pdf_files[archivo_seleccionado]["file_id"]
-                url = f"https://drive.google.com/uc?id={file_id}"
+                url = f"https://drive.google.com/file/d/{file_id}/view?usp=sharing"
                 
-                response = requests.get(url)
-                if response.status_code == 200:
-                    with open("temp_pdf.pdf", "wb") as file:
-                        file.write(response.content)
-                    
-                    with open("temp_pdf.pdf", "rb") as file:
-                        base64_pdf = base64.b64encode(file.read()).decode('utf-8')
-
-                    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="600"></iframe>'
-
-                    st.markdown(pdf_display, unsafe_allow_html=True)
-                else:
-                    st.write("No se pudo cargar el archivo.")
+                st.markdown(f"[Abrir PDF en el visor externo de Google Drive]({url})", unsafe_allow_html=True)
             else:
                 st.write("El PDF seleccionado no está disponible.")
 
