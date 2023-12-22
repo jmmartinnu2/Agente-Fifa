@@ -3,4 +3,4 @@ random2==1.0.1  # Versión específica de la librería random2
 matplotlib==3.4.3  # Versión específica de Matplotlib
 pyvis==0.1.9  # Versión específica de Pyvis
 PyMuPDF==1.19.0  # Versión específica de PyMuPDF
-
+requests==2.26.0  # Versión estándar de Requests
