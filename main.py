@@ -6,6 +6,9 @@ from videos import get_videos
 from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia,preguntas_codigo_disciplinario,preguntas_estatutos_fifa,preguntas_salvaguardia
 from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
 from login import verificar_sesion
+import requests
+from pdfs import pdf_files
+import base64
 
 
 
@@ -105,50 +108,28 @@ if session_state:
 
 
 
-    def mostrar_pdf_seleccionado():
-        st.title("Selección y visualización de PDF")
 
-        nombres_archivos = {
-            "Estatutos de la FIFA": {
-                "Páginas": (6, 105)
-            },
-            "Código Disciplinario de la FIFA": {
-                "Páginas": (106, 160)
-            },
-            "Código de Ética de la FIFA": {
-                "Páginas": (161, 208)
-            },
-            "Reglamento sobre el Estatuto y la Transferencia de Jugadores": {
-                "Páginas": (209, 309)
-            },
-            "Reglamento de procedimiento del Tribunal del Fútbol": {
-                "Páginas": (310, 343)
-            },
-            "Reglamento de la Cámara de Compensación de la FIFA": {
-                "Páginas": (344, 379)
-            },
-            "Reglamento de la FIFA sobre Agentes de fútbol": {
-                "Páginas": (380, 420)
-            }
-        }
+    def mostrar_pdf_seleccionado(pdf_url):
+        st.write("Visualización del PDF:")
+        
+        # Obtener el archivo PDF desde Google Drive
+        response = requests.get(pdf_url)
+        with open("temp_pdf.pdf", "wb") as file:
+            file.write(response.content)
+        
+        # Mostrar el PDF en un marco usando base64
+        with open("temp_pdf.pdf", "rb") as file:
+            base64_pdf = base64.b64encode(file.read()).decode('utf-8')
+        
+        pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="600" type="application/pdf">'
+        
+        st.markdown(pdf_display, unsafe_allow_html=True)
 
-        tema_seleccionado = st.selectbox("Selecciona un tema", list(nombres_archivos.keys()))
 
-        if tema_seleccionado:
-            inicio_pagina, _ = nombres_archivos[tema_seleccionado]["Páginas"]
-            
-            st.write(f"Visualización de {tema_seleccionado}: Página {inicio_pagina}")
-            
-            # Embed del PDF usando JavaScript para cambiar las páginas
-            pdf_embed = f"""
-            <iframe id="pdf_view" src="https://digitalhub.fifa.com/m/1009119579a8c8c4/original/Materiales-de-estudio-sobre-el-examen-de-la-FIFA-para-agentes-de-futbol.pdf#page={inicio_pagina}" 
-            width="800" height="600"></iframe>
-            <script>
-                var pdf_view = document.getElementById('pdf_view');
-                pdf_view.src = pdf_view.src.replace(/#page=\d+/, '#page={inicio_pagina}');
-            </script>
-            """
-            st.markdown(pdf_embed, unsafe_allow_html=True)
+
+
+
+
 
    
     
@@ -366,7 +347,12 @@ if session_state:
             
             
         elif tab_select == "Temario":
-            mostrar_pdf_seleccionado() 
+            tema_seleccionado = st.selectbox("Selecciona un tema", list(pdf_files.keys()))
+
+            if tema_seleccionado:
+                file_id = pdf_files[tema_seleccionado]["file_id"]
+                pdf_url = f"https://drive.google.com/uc?export=download&id={file_id}"
+                mostrar_pdf_seleccionado(pdf_url)
             
         elif tab_select == "Videos":
 
