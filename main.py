@@ -108,26 +108,33 @@ if session_state:
 
 
 
+    def mostrar_pdf_seleccionado():
+        st.write("Selecciona un archivo PDF:")
+        
+        opciones_archivos = list(pdf_files.keys())
+        archivo_seleccionado = st.selectbox("Archivos disponibles", opciones_archivos)
 
-    def mostrar_pdf_seleccionado(pdf_url):
-        st.write("Visualización del PDF:")
-        
-        # Obtener el archivo PDF desde la URL
-        response = requests.get(pdf_url)
-        with open("temp_pdf.pdf", "wb") as file:
-            file.write(response.content)
-        
-        # Mostrar el PDF en un marco usando base64
-        with open("temp_pdf.pdf", "rb") as file:
-            base64_pdf = base64.b64encode(file.read()).decode('utf-8')
-        
-        # Imprimir el enlace Base64 antes de mostrarlo
-        print("Enlace Base64:", base64_pdf)
-        
-        # Mostrar el PDF utilizando el enlace Base64
-        pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="10600" type="application/pdf">'
-        
-        st.markdown(pdf_display, unsafe_allow_html=True)
+        if archivo_seleccionado:
+            st.write(f"Visualización del PDF: {archivo_seleccionado}")
+
+            if archivo_seleccionado in pdf_files:
+                file_id = pdf_files[archivo_seleccionado]["file_id"]
+                url = f"https://drive.google.com/uc?id={file_id}"
+                
+                response = requests.get(url)
+                if response.status_code == 200:
+                    with open("temp_pdf.pdf", "wb") as file:
+                        file.write(response.content)
+                    
+                    with open("temp_pdf.pdf", "rb") as file:
+                        base64_pdf = base64.b64encode(file.read()).decode('utf-8')
+
+                    pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="600" type="application/pdf">'
+                    st.markdown(pdf_display, unsafe_allow_html=True)
+                else:
+                    st.write("No se pudo cargar el archivo.")
+            else:
+                st.write("El PDF seleccionado no está disponible.")
 
 
 
@@ -351,12 +358,8 @@ if session_state:
             
             
         elif tab_select == "Temario":
-            tema_seleccionado = st.selectbox("Selecciona un tema", list(pdf_files.keys()))
+            mostrar_pdf_seleccionado()
 
-            if tema_seleccionado:
-                file_id = pdf_files[tema_seleccionado]["file_id"]
-                pdf_url = f"https://drive.google.com/uc?export=download&id={file_id}"
-                mostrar_pdf_seleccionado(pdf_url)
             
         elif tab_select == "Videos":
 
