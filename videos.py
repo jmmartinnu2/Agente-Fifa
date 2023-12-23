@@ -86,7 +86,23 @@ def get_videos():
             "clase": "Clase 16",
             "titulo": "Clase 16 - Extra sobre Reglamento de Procedimiento",
             "url": "https://www.youtube.com/watch?v=FaCCYVj6n9A"
-        },                                                                                           
+        },
+        {
+            "clase": "Clase 17",
+            "titulo": "Clase 17 - Extra Estatutos de la FIFA",
+            "url": "https://www.youtube.com/watch?v=51HvtUBSC88&t"
+        },
+        {
+            "clase": "Clase 18",
+            "titulo": "Clase 18 - Extra Salvaguardia",
+            "url": "https://www.youtube.com/watch?v=4c6ypb5iDaM&t"
+        },
+        {
+            "clase": "Clase 19",
+            "titulo": "Clase 19 - Extra La Cámara de Compensación de la FIFA",
+            "url": "https://www.youtube.com/watch?v=bFdqHepsr4w&t"
+        },                                                                                                                   
     ]
+    
     
     return videos  # Asegurémonos de retornar la lista de videos
