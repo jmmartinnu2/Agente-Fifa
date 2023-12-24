@@ -14,7 +14,7 @@ import base64
 
 
 
-contraseña_correcta = "12345"
+contraseña_correcta = "101018"
 
 session_state = verificar_sesion(contraseña_correcta)
 
