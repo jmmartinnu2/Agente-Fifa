@@ -9,6 +9,10 @@ from login import verificar_sesion
 import requests
 from pdfs import pdf_files
 import base64
+from podcast import podcasts
+from googleapiclient.discovery import build
+
+
 
 
 
@@ -296,7 +300,7 @@ if session_state:
 
     #Visualizacion
     def main():
-        tabs = ["Inicio","Examen oficial FIFA", "Examenes para practicar", "Resumenes", "Formación", "Temario", "Videos", "Calculadora"]  # Nuevas secciones
+        tabs = ["Inicio","Examen oficial FIFA", "Examenes para practicar", "Resumenes", "Formación", "Temario", "Videos", "Calculadora", "Podcast"]  # Nuevas secciones
         tab_select = st.sidebar.selectbox("Selecciona una sección", tabs, index=0)
 
         if tab_select == "Inicio":
@@ -379,7 +383,12 @@ if session_state:
                 "Preguntas sobre Salvaguardia de la infancia": preguntas_salvaguardia
             })
             
+        elif tab_select == "Podcast":
 
+            st.title('Enlaces de Podcasts')
+
+            for podcast_name, podcast_url in podcasts.items():
+                st.markdown(f"[{podcast_name}]({podcast_url})")
                     
                     
                     
