@@ -6,11 +6,8 @@ from videos import get_videos
 from examen_fifa import preguntas_agente_fifa, preguntas_estatuto_transferencia,preguntas_codigo_disciplinario,preguntas_estatutos_fifa,preguntas_salvaguardia
 from esquemas import esquema_formacion,confederacion_afc,confederacion_caf,confederacion_concacaf,confederacion_conmebol,confederacion_ofc,confederacion_uefa
 from login import verificar_sesion
-import requests
 from pdfs import pdf_files
-import base64
 from podcast import podcasts
-from googleapiclient.discovery import build
 
 
 
