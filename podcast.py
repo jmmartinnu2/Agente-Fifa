@@ -1,19 +1,3 @@
-import os
-from google.oauth2 import service_account
-
-# Ruta al directorio del escritorio donde está el archivo de credenciales
-ruta_escritorio = os.path.expanduser("~/Desktop")
-
-# Nombre del archivo de credenciales
-nombre_archivo_credenciales = "ordinal-tower-352012-3138a078aa77.json"
-
-# Ruta completa al archivo de credenciales
-ruta_completa_credenciales = os.path.join(ruta_escritorio, nombre_archivo_credenciales)
-
-# Carga las credenciales desde el archivo JSON
-credentials = service_account.Credentials.from_service_account_file(ruta_completa_credenciales)
-
-# Resto del código para acceder a los enlaces de los archivos de audio en Google Drive
 
 # Lista de nombres y URLs de los podcasts
 podcasts = {
