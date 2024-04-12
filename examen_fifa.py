@@ -17,7 +17,7 @@ preguntas_agente_fifa = [
             'El cliente no está satisfecho con el importe de una remuneración negociada',
             'El cliente desea reducir los honorarios'
         ],
-        'respuestas_correctas': ['El cliente tiene prohibido inscribir a nuevos jugadores', 'El cliente desea que lo represente un agente de fútbol de mayor renombre', 'El cliente no está satisfecho con el importe de una remuneración negociada', 'El cliente desea reducir los honorarios']  # Todas las opciones son correctas
+        'respuestas_correctas': ['El cliente desea que lo represente un agente de fútbol de mayor renombre', 'El cliente no está satisfecho con el importe de una remuneración negociada', 'El cliente desea reducir los honorarios']  # Todas las opciones son correctas
     },
     {
         'pregunta': '¿Cuáles de las siguientes son condiciones que deben cumplirse para que un agente de fútbol perciba unos honorarios?',
@@ -37,27 +37,27 @@ preguntas_agente_fifa = [
             'El 3%',
             'El 100%'
         ],
-        'respuestas_correctas': ['El 100%']
+        'respuestas_correctas': ['El 50%']
     },
     {
         'pregunta': 'Zdenko es un agente de fútbol que representa a Buza, un talentoso delantero de 18 años, en un traspaso del FC Steel de Bosnia-Herzegovina al Eisern FC de Alemania. En su contrato de representación, Zdenko y Buza acordaron unos honorarios del 1.3 %. Durante las negociaciones por el traspaso, Zdenko acuerda que el Eisern FC pague una remuneración de 194 500 USD a Buza y corra con sus honorarios. ¿Qué porcentaje de la remuneración de Buza percibirá Zdenko? Seleccione una:',
         'opciones': ['El 1.3%', 'El 3%', 'El 2.6%', 'El 5%'],
-        'respuestas_correctas': ['El 2.6%']
+        'respuestas_correctas': ['El 1.3%']
     },
     {
         'pregunta': 'En aquellos casos en los que se permite la doble representación, sí se acuerda una remuneración de 100 000 USD, ¿qué porcentaje de los honorarios totales puede abonar la entidad de destino? Seleccione una:',
         'opciones': ['El 5%', 'El 3%', 'El 50%', 'El 100%'],
-        'respuestas_correctas': ['El 50%']
+        'respuestas_correctas': ['El 100%']
     },
     {
         'pregunta': 'Si la remuneración anual de un entrenador es de 120 000 USD, ¿qué límite se aplica a los honorarios de un agente de fútbol que representa tanto al entrenador como a la federación que lo contrata? Seleccione una:',
         'opciones': ['El 6%', 'El 10%', 'El 5%', 'El 3%'],
-        'respuestas_correctas': ['El 3%']
+        'respuestas_correctas': ['El 10%']
     },
     {
         'pregunta': '¿En qué se basa el cálculo de los honorarios de un agente de fútbol que representa un jugador menor de edad? Seleccione una:',
         'opciones': ['No se abonan honorarios con relación a menores', 'La remuneración del menor', 'La indemnización por formación', 'El coste del traspaso'],
-        'respuestas_correctas': ['La indemnización por formación']
+        'respuestas_correctas': ['La remuneración del menor']
     },
     {
         'pregunta': '¿Cuál de la siguiente información sobre un agente de fútbol debe incluirse en el acuerdo de un traspaso donde el agente represente a una de las partes? Seleccione una:',
@@ -67,7 +67,7 @@ preguntas_agente_fifa = [
     {
         'pregunta': '¿Debe notificarse a la FIFA la enmienda de un contrato de representación vigente por parte de un agente de fútbol y un cliente? Seleccione una:',
         'opciones': ['Siempre, si se trata de un contrato de representación de dimensión internacional', 'Siempre, índependientemente de que el contrato de representación tenga o no dimensión internacional', 'Nunca', 'Unicamente si dicho contrato de representación guarda relación con un traspaso o una transacción nacionales'],
-        'respuestas_correctas': ['Siempre, índependientemente de que el contrato de representación tenga o no dimensión internacional']
+        'respuestas_correctas': ['Siempre, si se trata de un contrato de representación de dimensión internacional']
     },
     {
         'pregunta': '¿Qué condiciones pueden impedir que se cobren honorarios al representar a una persona que sea menor de edad? Seleccione una o más de una:',
@@ -77,10 +77,10 @@ preguntas_agente_fifa = [
             'Ausencia de un contrato profesional',
             'Oposición de los tutores legales del menor'
         ],
-        'respuestas_correctas': ['Probibición del cobro de honorarios a menores en virtud de la legislación de un territorio o país','Prohibición del cobro de honorarios a menores por parte de una federación','Oposición de los tutores legales del menor']
+        'respuestas_correctas': ['Probibición del cobro de honorarios a menores en virtud de la legislación de un territorio o país','Prohibición del cobro de honorarios a menores por parte de una federación','Ausencia de un contrato profesional']
     },
     {
-        'pregunta': '¿Qué sanción se prevé para los nuevos agentes de fúbtol que infrinjan por primera vez las disposiciones sobre el contacto con clientes menores de edad? Seleccione una:',
+        'pregunta': '¿Qué sanción se prevé para los nuevos agentes de fútbol que infrinjan por primera vez las disposiciones sobre el contacto con clientes menores de edad? Seleccione una:',
         'opciones': [
             'Multa e inhabilitación de hasta dos años para representar a dicho cliente',
             'Anulación de la licencia del agente de fútbol',
@@ -88,16 +88,6 @@ preguntas_agente_fifa = [
             'Multa y suspensión de hasta dos años de licencia del agente de fútbol'
         ],
         'respuestas_correctas': ['Multa y suspensión de hasta dos años de licencia del agente de fútbol']
-    },
-    {
-        'pregunta': '¿Cuáles de las siguientes situaciones constituyen una infracción del Reglamento sobre Agentes de Fútbol de la FIFA? Seleccione una o más de una:',
-        'opciones': [
-            'Facturar los honorarios en una divisa que no sea USD',
-            'Representar a una entidad de origen y a un jugador en la misma transacción',
-            'Aceptar que los honorarios se calculen sobre el 3% del coste de un futuro traspaso',
-            'Facturar gastos pertinentes a los clientes'
-        ],
-        'respuestas_correctas': ['Representar a una entidad de origen y a un jugador en la misma transacción','Aceptar que los honorarios se calculen sobre el 3% del coste de un futuro traspaso']
     },
     {
         'pregunta': '¿Cuáles de las siguientes situaciones constituyen una infracción del Reglamento sobre Agentes de Fútbol de la FIFA? Seleccione una o más de una:',
@@ -147,7 +137,7 @@ preguntas_agente_fifa = [
             'Cuando así lo acuerden las partes de un contrato de representación',
             'En todas las transacciones relacionadas con jugadores menores de edad'
         ],
-        'respuestas_correctas': ['Cuando así lo estipule el reglamento nacional sobre agentes de fútbol de la federación','En todas las transacciones relacionadas con jugadores menores de edad']
+        'respuestas_correctas': ['Cuando así lo estipule el reglamento nacional sobre agentes de fútbol de la federación','Cuando así lo acuerden las partes de un contrato de representación']
     },
     {
         'pregunta': '¿En cuáles de las siguientes situaciones se asumirá que los servicios de ojeamiento y consultoría prestados a un club forman parte de los servicios de representación y están sujetos a un límite? Seleccione una o más de una:',
@@ -157,7 +147,7 @@ preguntas_agente_fifa = [
             'No se ha demostrado ante la FIFA que los servicios se prestaran en la práctica',
             'Los servicios de ojeamiento y consultoría se han prestado en el contexto de una transacción que no se ha materializado'
         ],
-        'respuestas_correctas': ['Los servicios se han prestado en los 24 meses posteriores a una transacción']
+        'respuestas_correctas': ['Se estipulan en contratos que no se denominan «contratos de representación']
     },
     {
         'pregunta': '¿Qué sucede si un agente de fútbol acepta una oferta para trabajar como ojeador a jornada completa y firma un contrato? Seleccione una:',
@@ -177,7 +167,7 @@ preguntas_agente_fifa = [
             'Solicitar una oferta con el membrete del club',
             'Ignorar la oferta porque se trata de un contrato de categoría aficionado'
         ],
-        'respuestas_correctas': ['Dejará de cumplir los requisitos de elegibilidad para tener una licencia de agente de fútbol']
+        'respuestas_correctas': ['Informar de la oferta a su cliente']
     },
     {
         'pregunta': '¿Con quién no debe contactar nunca un agente de fútbol en los últimos 30 días de su contrato de representación, con vistas a representarlo? Seleccione una o más de una:',
@@ -187,7 +177,7 @@ preguntas_agente_fifa = [
             'Un posible cliente que sea menor de edad',
             'Un posible cliente con un contrato de representación exclusivo'
         ],
-        'respuestas_correctas': ['Un entrenador con contrato laboral','Un posible cliente que sea menor de edad']
+        'respuestas_correctas': ['Un posible cliente que sea menor de edad']
     },
     {
         'pregunta': '¿Quien debe de dar el visto bueno a que un cliente se represente a sí mismo en una transacción? Seleccione una:',
@@ -227,7 +217,7 @@ preguntas_agente_fifa = [
             'Impago de la renumeración',
             'Traspaso de una persona a otra entidad de destino'
         ],
-        'respuestas_correctas': ['Rescisión prematura de un contrato laboral negociado sin causa justificada, donde un agente de fútbol que haya negociado dicho contrato siga representando a la persona','Traspaso de una persona a otra entidad de destino']
+        'respuestas_correctas': ['Rescisión prematura de un contrato laboral negociado sin causa justificada, donde un agente de fútbol que haya negociado dicho contrato siga representando a la persona','Impago de la renumeración']
     },
     {
         'pregunta': '¿Qué se considera un contacto con un jugador?. Seleccione una o más de una:',
@@ -750,7 +740,7 @@ preguntas_estatuto_transferencia = [
             'La consecución del campeonato nacional por parte del club',
             'La consecución del campeonato nacional por parte del club'
         ],
-        'respuestas_correctas': ['Los resultados positivos de un examen médico','La consecución del campeonato nacional por parte del club']
+        'respuestas_correctas': ['Los resultados positivos de un examen médico']
     },
     {
         'pregunta': 'La jugadora Zaina empieza a despuntar. El Elite FC quiere ficharla y le ofrece ser profesional, opción que no tiene en el país donde juega ahora. El Elite FC y Zaina acuerdan que ella percibirá un porcentaje del coste del traspaso que se abone al Elite FC en un futuro traspaso. ¿La reglamentación de la FIFA permite este tipo de práctica? Seleccione una:',
