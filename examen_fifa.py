@@ -654,7 +654,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Si la primera inscripción como profesional se efectúa en el último club en el que el jugador estaba inscrito como aficionado','Si la primera inscripción como profesional se produce en un traspaso entre clubes afiliados a la misma federación miembro']
     },
     {
-        'pregunta': 'Si se prohíbe a un club inscribir nuevos jugadores deconformidad con el Reglamento de la Cámara deCompensación de la FIFA, ¿qué debe suceder para que selevante la sanción?. Seleccione una o más de una:',
+        'pregunta': 'Si se prohíbe a un club inscribir nuevos jugadores de conformidad con el Reglamento de la Cámara de Compensación de la FIFA, ¿qué debe suceder para que se levante la sanción?. Seleccione una o más de una:',
         'opciones': [
             'Si no ha cumplido con su obligación de realizar un pago a la Cámara de Compensación de la FIFA o a un club formador, el nuevo club deberá abonar la totalidad del importe requerido y facilitar el comprobante de pago correspondiente a la Secretaría General de la FIFA',
             'Si no ha superado una segunda evaluación de cumplimiento, el club deberá superar otra posterior',
@@ -664,7 +664,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Si no ha cumplido con su obligación de realizar un pago a la Cámara de Compensación de la FIFA o a un club formador, el nuevo club deberá abonar la totalidad del importe requerido y facilitar el comprobante de pago correspondiente a la Secretaría General de la FIFA','Si no ha superado una segunda evaluación de cumplimiento, el club deberá superar otra posterior']
     },
     {
-        'pregunta': 'El Aurora FC es un club profesional famoso por fi char ajugadoras de gran calidad de todo el mundo. La entidaddesea hacerse con los servicios de Gabriela y le ha hechollegar un contrato donde se estipula lo siguiente: «La validezdel presente contrato está supeditada de forma estricta a losresultados positivos de un examen médico y a la concesiónde un permiso de trabajo». ¿Cuáles de las siguientesafi rmaciones son correctas?. Seleccione una o más de una:',
+        'pregunta': 'El Aurora FC es un club profesional famoso por fichar ajugadoras de gran calidad de todo el mundo. La entidad desea hacerse con los servicios de Gabriela y le ha hecho llegar un contrato donde se estipula lo siguiente: «La validez del presente contrato está supeditada de forma estricta a los resultados positivos de un examen médico y a la concesión de un permiso de trabajo». ¿Cuáles de las siguientes afirmaciones son correctas?. Seleccione una o más de una:',
         'opciones': [
             'El contrato seguirá teniendo validez con independencia de los resultados del examen médico, pero la jugadora estará obligada a obtener un permiso de trabajo',
             'El contrato es válido y vinculante con independencia de los resultados del examen médico',
@@ -674,7 +674,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['El contrato es válido y vinculante con independencia de los resultados del examen médico','La cláusula se considera nula y sin efecto']
     },
     {
-        'pregunta': '¿A cuáles de los siguientes grupos de interés se les aplica laprohibición de transferencias puente de conformidad con elartículo 5bis del Reglamento sobre el Estatuto y laTransferencia de Jugadores de la FIFA?. Seleccione una o más de una:',
+        'pregunta': '¿A cuáles de los siguientes grupos de interés se les aplica lap rohibición de transferencias puente de conformidad con el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA?. Seleccione una o más de una:',
         'opciones': [
             'Solo clubes',
             'Solo futbolistas profesionales',
@@ -684,7 +684,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Todos los clubes y futbolistas']
     },
     {
-        'pregunta': 'El 31 de enero de 2023, el AFC Zúrich transfi rió a un jugadorinternacionalmente al BFC Estambul a cambio de unaindemnización fi ja de 1 000 000 USD, cuyo pago debíaefectuarse en dos cuotas de 500 000 USD cada una,pagaderas el 1 de julio y el 1 de diciembre de 2023,respectivamente. Se generó el pasaporte deportivoelectrónico (EPP) del jugador únicamente a efectos de lascontribuciones de solidaridad, lo que daba derecho al AFCMadrid, al CFC Kuala Lumpur y al AFC Cairo, que fi gurabancorrectamente en dicho EPP, a percibir su parte de lascontribuciones de solidaridad por haber entrenado al jugadordurante los años naturales transcurridos entre su 12.º y su23.º cumpleaños. ¿Qué importes debe declarar el nuevo clubdel jugador en el TMS? ¿Cómo y cuándo debe hacerlo?. Seleccione una o más de una:',
+        'pregunta': 'El 31 de enero de 2023, el AFC Zúrich transfirió a un jugador internacionalmente al BFC Estambul a cambio de unaindemnización fija de 1000 000 USD, cuyo pago debía efectuarse en dos cuotas de 500 000 USD cada una, pagaderas el 1 de julio y el 1 de diciembre de 2023,respectivamente. Se generó el pasaporte deportivo electrónico (EPP) del jugador únicamente a efectos de las contribuciones de solidaridad, lo que daba derecho al AFCMadrid, al CFC Kuala Lumpur y al AFC Cairo, que figuraban correctamente en dicho EPP, a percibir su parte de las contribuciones de solidaridad por haber entrenado al jugador durante los años naturales transcurridos entre su 12.º y su23.º cumpleaños. ¿Qué importes debe declarar el nuevo club del jugador en el TMS? ¿Cómo y cuándo debe hacerlo?. Seleccione una o más de una:',
         'opciones': [
             'El nuevo club deberá subir el comprobante de pago solo cuando se lo solicite la Cámara de Compensación de la FIFA, ya que el pago de la contribución de solidaridad no es obligatorio',
             'El nuevo club deberá subir dos comprobantes de pago por valor de 475 000 USD, uno antes del 30 de julio de 2023 y el otro antes del 30 de diciembre de 2023',
@@ -694,7 +694,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['El nuevo club deberá subir dos comprobantes de pago por valor de 475 000 USD, uno antes del 30 de julio de 2023 y el otro antes del 30 de diciembre de 2023']
     },
     {
-        'pregunta': '¿Puede sancionarse a un jugador por incumplir el artículo5bis del Reglamento sobre el Estatuto y la Transferencia deJugadores (RETJ) de la FIFA?. Seleccione una o más de una:',
+        'pregunta': '¿Puede sancionarse a un jugador por incumplir el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia deJugadores (RETJ) de la FIFA?. Seleccione una o más de una:',
         'opciones': [
             'Sí, pero solo a jugadores afi cionados',
             'Sí',
@@ -704,7 +704,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Sí']
     },
     {
-        'pregunta': '¿Cuál de las siguientes afi rmaciones sobre la elegibilidad parajugar con las selecciones nacionales es correcta?. Seleccione una:',
+        'pregunta': '¿Cuál de las siguientes afirmaciones sobre la elegibilidad para jugar con las selecciones nacionales es correcta?. Seleccione una:',
         'opciones': [
             'El Tribunal del Fútbol debe aprobar la elegibilidad de un jugador antes de disputar un partido con una selección nacional',
             'Un jugador en proceso de adquirir una nueva nacionalidad puede disputar partidos amistosos con la selección nacional de dicha federación miembro',
@@ -714,7 +714,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Un jugador solo estará vinculado a una «nacionalidad deportiva» cuando haya disputado un partido en competición oficial']
     },
     {
-        'pregunta': 'Una vez recibida la notificación de que no se ha superado laprimera evaluación de cumplimiento, ¿de qué plazo disponela parte correspondiente antes de que la Secretaría Generalde la FIFA traslade la transacción a la Cámara deCompensación de la FIFA para iniciar una segunda evaluaciónde cumplimiento?. Seleccione una:',
+        'pregunta': 'Una vez recibida la notificación de que no se ha superado la primera evaluación de cumplimiento, ¿de qué plazo disponela parte correspondiente antes de que la Secretaría Generalde la FIFA traslade la transacción a la Cámara de Compensación de la FIFA para iniciar una segunda evaluaciónde cumplimiento?. Seleccione una:',
         'opciones': [
             'Un año',
             'Seis meses',
@@ -734,7 +734,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Dos terceras partes del salario que estipule el contrato']
     },
     {
-        'pregunta': 'El Aurora FC es un club profesional famoso por fi char ajugadoras de gran calidad de todo el mundo. La entidaddesea hacerse con los servicios de Gabriela y le ha hechollegar un contrato donde se estipula lo siguiente: «La validezdel presente contrato está supeditada de forma estricta a losresultados positivos de un examen médico y a la concesiónde un permiso de trabajo». ¿Cuáles de las siguientesafi rmaciones son correctas?. Seleccione una o más de una:',
+        'pregunta': 'El Aurora FC es un club profesional famoso por fichar ajugadoras de gran calidad de todo el mundo. La entidad desea hacerse con los servicios de Gabriela y le ha hecho llegar un contrato donde se estipula lo siguiente: «La validezdel presente contrato está supeditada de forma estricta a los resultados positivos de un examen médico y a la concesión de un permiso de trabajo». ¿Cuáles de las siguientes afirmaciones son correctas?. Seleccione una o más de una:',
         'opciones': [
             'La cláusula se considera nula y sin efecto',
             'La totalidad del contrato se considera nulo y sin efecto',
@@ -754,9 +754,9 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['30 días']
     },
     {
-        'pregunta': 'El FC Cista quiere contratar a un jugador afi cionado del FCAregano. El FC Cista desea ofrecerle su primer contratoprofesional, por lo que se trataría de la primera inscripcióndel futbolista con dicho estatus. Sin embargo, al club lepreocupan los costes relacionados con la indemnización porformación. Para solucionar el problema, el FC Cista le pide alFC Provo que le ofrezca al jugador su primer contratoprofesional. El FC Provo es un club de 4.ª categoría deformación, por lo que estaría exento del pago de laindemnización por formación. El plan sería que el FC Provocediera posteriormente al jugador al FC Cista durante dostemporadas, sin coste alguno. ¿Se infringiría en este supuestola normativa de la FIFA?. Seleccione una o más de una:',
+        'pregunta': 'El FC Cista quiere contratar a un jugador aficionado del FCAregano. El FC Cista desea ofrecerle su primer contrato profesional, por lo que se trataría de la primera inscripción del futbolista con dicho estatus. Sin embargo, al club le preocupan los costes relacionados con la indemnización por formación. Para solucionar el problema, el FC Cista le pide alFC Provo que le ofrezca al jugador su primer contrato profesional. El FC Provo es un club de 4.ª categoría de formación, por lo que estaría exento del pago de laindemnización por formación. El plan sería que el FC Provo cediera posteriormente al jugador al FC Cista durante dos temporadas, sin coste alguno. ¿Se infringiría en este supuestola normativa de la FIFA?. Seleccione una o más de una:',
         'opciones': [
-            'Sí, el FC Cista estaría incumpliendo el artículo 18bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA, debido a la infl uencia ejercida sobre el FC Provo, que se vería obligado a inscribir al jugador como profesional',
+            'Sí, el FC Cista estaría incumpliendo el artículo 18bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA, debido a la influencia ejercida sobre el FC Provo, que se vería obligado a inscribir al jugador como profesional',
             'Sí, el FC Cista y el FC Provo estarían incumpliendo el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores (RETJ) de la FIFA, al acordar una transferencia puente destinada a evitar el pago de la indemnización por formación. Además, la duración de la cesión del jugador del FC Provo al FC Cista superaría el máximo de un año que se prevé en el artículo 10 del RETJ',
             'Sí, el FC Cista y el FC Provo estarían incumpliendo el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA, al acordar una transferencia puente destinada a ocultar un caso de propiedad de los derechos económicos de un futbolista por parte de terceros',
             'No, se trataría de una solución práctica para todas las partes que cumpliría la normativa de la FIFA'
@@ -764,7 +764,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Sí, el FC Cista y el FC Provo estarían incumpliendo el artículo 5bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores (RETJ) de la FIFA, al acordar una transferencia puente destinada a evitar el pago de la indemnización por formación. Además, la duración de la cesión del jugador del FC Provo al FC Cista superaría el máximo de un año que se prevé en el artículo 10 del RETJ']
     },
     {
-        'pregunta': '¿Cuál de las siguientes afi rmaciones sobre la elegibilidad parajugar con las selecciones nacionales es correcta?. Seleccione una:',
+        'pregunta': '¿Cuál de las siguientes afirmaciones sobre la elegibilidad para jugar con las selecciones nacionales es correcta?. Seleccione una:',
         'opciones': [
             'Un jugador solo estará vinculado a una «nacionalidad deportiva» cuando haya disputado partidos de categoría internacional absoluta',
             'El Tribunal del Fútbol debe aprobar la elegibilidad de un jugador antes de disputar un partido con una selección nacional',
@@ -774,7 +774,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Un jugador solo estará vinculado a una «nacionalidad deportiva» cuando haya disputado un partido en competición oficial']
     },
     {
-        'pregunta': '¿Cuál de las siguientes cláusulas de un contrato derepresentación se consideraría nula y sin efecto alrepresentar a jugadores?. Seleccione una:',
+        'pregunta': '¿Cuál de las siguientes cláusulas de un contrato de representación se consideraría nula y sin efecto al representar a jugadores?. Seleccione una:',
         'opciones': [
             'Aquella que establece que los honorarios deberán abonarse en EUR',
             'Aquella que establece unos honorarios del 1 %',
@@ -804,7 +804,7 @@ preguntas_estatuto_transferencia = [
         'respuestas_correctas': ['Enviar al club una notificación por escrito donde solicite el pago de los salarios pendientes y concederle un plazo de al menos 15 días para que cumpla con sus obligaciones económicas']
     },    
     {
-        'pregunta': '¿Cuáles de los siguinetes son factores desencadenantes de compensaciones por formación (indemnizaciones por formación o contribuciones de solidaridad), de conformidad con el Reglamento sobre el Estatuto y la Transferencia de jugadores de la FIFA?. Seleccione una o más de una:',
+        'pregunta': '¿Cuáles de los siguientes son factores desencadenantes de compensaciones por formación (indemnizaciones por formación o contribuciones de solidaridad), de conformidad con el Reglamento sobre el Estatuto y la Transferencia de jugadores de la FIFA?. Seleccione una o más de una:',
         'opciones': [
             'Partido nº 100 de un jugador con su selección nacional de categoria absoluta',
             'Traspaso internacional',
