@@ -1327,7 +1327,7 @@ preguntas_codigo_disciplinario = [
             'Sí, la decisión se puede apelar ante el Tribunal del Fútbol de la FIFA',
             'No, la decisión es definitiva y no se puede recurrir'
         ],
-        'respuestas_correctas': ['Si, la decisión se puede apelar ante la Comisión de Apelación de la FIFA']
+        'respuestas_correctas': ['Sí, la decisión se puede apelar ante la Comisión de Apelación de la FIFA']
     },
     {
         'pregunta': 'Tras la disputa de un partido de la Copa Mundial de Clubes de la FIFA™, el árbitro indica en el acta del encuentro que ha mostrado seis tarjetas amarillas a cinco jugadores del FC Mountain. Desde el club le transmiten a usted su preocupación ante posibles medidas disciplinarias. ¿Qué respuesta debería darle?. Seleccione una:',
