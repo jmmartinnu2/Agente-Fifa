@@ -1390,7 +1390,7 @@ preguntas_codigo_disciplinario = [
         'respuestas_correctas': ['Un compañero de equipo del jugador que se traspasa','El agente del club de origen','El agente del club de destino']
     },
     {
-        'pregunta': 'En el caso de la indemnización por formación, los costos de formación de jugadores de los años naturales de su 12º y 15º cumpleaños se basarán en:',
+        'pregunta': 'En el caso de la indemnización por formación, los costos de formación de jugadores de los años naturales de su 12º y 15º cumpleaños se basarán en: Seleccione una:',
         'opciones': [
             'Los costos de formación y educación de la categoría actual del club',
             'Los costos de formación y educación indicados por la federación miembro en cuestión',
