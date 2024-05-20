@@ -440,7 +440,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Al final de la temporada']
     },
     {
-        'pregunta': '¿Qué sucede si un agente de fútbol sigue sin cumplir losrequisitos de desarrollo profesional continuo una vez vencidoel periodo de suspensión provisional de 60 días?. Seleccione una o más de una:',
+        'pregunta': '¿Qué sucede si un agente de fútbol sigue sin cumplir losrequisitos de desarrollo profesional continuo una vez vencido el periodo de suspensión provisional de 60 días?. Seleccione una o más de una:',
         'opciones': [
             'El agente de fútbol deberá pagar una multa a la FIFA',
             'Se procederá a la retirada de su licencia de agente de fútbol',
@@ -450,11 +450,11 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Se procederá a la retirada de su licencia de agente de fútbol','Habrá causa justificada para que sus clientes rescindan todos los contratos de representación con dicho agente']
     },
     {
-        'pregunta': '¿Con relación a cuál de los siguientes aspectos no puedecobrar honorarios un agente de fútbol?. Seleccione una o más de una:',
+        'pregunta': '¿Con relación a cuál de los siguientes aspectos no puede cobrar honorarios un agente de fútbol?. Seleccione una o más de una:',
         'opciones': [
             'La prima de rendimiento del jugador por marcar diez goles',
             'El porcentaje de reventa del club',
-            'La prima de fi delidad del jugador por permanecer doce meses en el club',
+            'La prima de fidelidad del jugador por permanecer doce meses en el club',
             'La variable adeudada al club después de que un exjugador haya ganado un título continental'
         ],
         'respuestas_correctas': ['El porcentaje de reventa del club']
@@ -470,7 +470,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['A la FIFA']
     },
     {
-        'pregunta': 'Después de jugar al fútbol durante muchos años en elextranjero, Robba se retiró y siguió entrenando a jugadoresen la academia del Premier FC, uno de los mejores clubes deOcesia. Posteriormente, decidió dejar su puesto y volver aLuvia, su país natal, donde obtuvo una licencia de agente defútbol de la FIFA. Un día queda con una vieja amiga, a la quetransmite su decisión de hacer realidad su sueño de lainfancia de presidir su club de fútbol local, el Blue Lagoon FC.Sin embargo, su amiga le aconseja que no se postule para elcargo. ¿Cuál podría ser el motivo?. Seleccione una:',
+        'pregunta': 'Después de jugar al fútbol durante muchos años en el extranjero, Robba se retiró y siguió entrenando a jugadores en la academia del Premier FC, uno de los mejores clubes de Ocesia. Posteriormente, decidió dejar su puesto y volver a Luvia, su país natal, donde obtuvo una licencia de agente de fútbol de la FIFA. Un día queda con una vieja amiga, a la que transmite su decisión de hacer realidad su sueño de la infancia de presidir su club de fútbol local, el Blue Lagoon FC.Sin embargo, su amiga le aconseja que no se postule para elcargo. ¿Cuál podría ser el motivo?. Seleccione una:',
         'opciones': [
             'Robba tiene una licencia de entrenadora, lo que la inhabilita para ocupar el cargo de presidenta del Blue Lagoon FC, ya que se generaría un confl icto de intereses',
             'Robba tiene una licencia de agente de fútbol, por lo que, de conformidad con el Reglamento de la FIFA sobre Agentes de Fútbol, no puede ser simultáneamente oficial de un club',
@@ -480,7 +480,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Robba tiene una licencia de agente de fútbol, por lo que, de conformidad con el Reglamento de la FIFA sobre Agentes de Fútbol, no puede ser simultáneamente oficial de un club']
     },
     {
-        'pregunta': 'Jeong es un agente de fútbol surcoreano al que le encanta elfútbol y le gustaría involucrarse en su club local, el FC White,para ayudarlo a crecer. ¿Qué puede hacer para ayudar al clubsin incumplir el Reglamento de la FIFA sobre Agentes deFútbol?. Seleccione una o más de una:',
+        'pregunta': 'Jeong es un agente de fútbol surcoreano al que le encanta el fútbol y le gustaría involucrarse en su club local, el FC White,para ayudarlo a crecer. ¿Qué puede hacer para ayudar al club sin incumplir el Reglamento de la FIFA sobre Agentes de Fútbol?. Seleccione una o más de una:',
         'opciones': [
             'Convertirse en entrenador del FC White',
             'Postularse como director deportivo del FC White en calidad de voluntario',
@@ -490,7 +490,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Hacerse socio ordinario del FC White']
     },
     {
-        'pregunta': 'Cuando una entidad de destino abona los honorarios ennombre de una persona física, ¿cuáles de las siguientescondiciones no se aplican?. Seleccione una o más de una:',
+        'pregunta': 'Cuando una entidad de destino abona los honorarios en nombre de una persona física, ¿cuáles de las siguientes condiciones no se aplican?. Seleccione una o más de una:',
         'opciones': [
             'La remuneración anual negociada debe ser superior o igual a 200 000 USD',
             'Los honorarios pueden deducirse de la remuneración de una persona física',
@@ -500,7 +500,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Los honorarios pueden deducirse de la remuneración de una persona física','No es obligatorio que la persona física y un agente de fútbol firmen un contrato de representación']
     },
     {
-        'pregunta': 'Aznar es un joven agente de fútbol que aspira a conseguir suprimer cliente. Ha determinado que Carlos, una de lasestrellas del FC Lemania City, representa su mejor baza paraempezar con buen pie su nueva aventura profesional. Sinembargo, Carlos está representado en exclusiva por Chiotis,un conocido agente de fútbol, y su contrato derepresentación no vence hasta dentro de 90 días. ¿Quépuede hacer Aznar para contactar con Carlos y ofrecerle susservicios?. Seleccione una:',
+        'pregunta': 'Aznar es un joven agente de fútbol que aspira a conseguir su primer cliente. Ha determinado que Carlos, una de las estrellas del FC Lemania City, representa su mejor baza para empezar con buen pie su nueva aventura profesional. Sin embargo, Carlos está representado en exclusiva por Chiotis,un conocido agente de fútbol, y su contrato de representación no vence hasta dentro de 90 días. ¿Qué puede hacer Aznar para contactar con Carlos y ofrecerle sus servicios?. Seleccione una:',
         'opciones': [
             'Contactar con el FC Lemania City y ofrecer indirectamente sus servicios a Carlos',
             'Esperar a que el contrato de representación que fi rmaron Carlos y Chiotis entre en sus últimos 30 días y, entonces, contactar con el primero acerca de la posibilidad de representarlo',
@@ -510,7 +510,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Esperar a que el contrato de representación que fi rmaron Carlos y Chiotis entre en sus últimos 30 días y, entonces, contactar con el primero acerca de la posibilidad de representarlo']
     },
     {
-        'pregunta': 'Kenji es un agente de fútbol japonés con el que hacontactado Jackson, padre de un niño de nueve años llamadoPhilson que juega actualmente en Brasil. A Jackson le gustaríaque Kenji representara a Philson y le organizara una pruebaen Japón. ¿Puede Kenji fi rmar un contrato de representación con Philson?. Seleccione una:',
+        'pregunta': 'Kenji es un agente de fútbol japonés con el que ha contactado Jackson, padre de un niño de nueve años llamado Philson que juega actualmente en Brasil. A Jackson le gustaría que Kenji representara a Philson y le organizara una pruebaen Japón. ¿Puede Kenji firmar un contrato de representación con Philson?. Seleccione una:',
         'opciones': [
             'Sí, porque Kenji ha completado el curso de desarrollo profesional continuo sobre menores en la Plataforma de Agentes de la FIFA',
             'No, porque Kenji y Philson son de diferentes países',
@@ -520,7 +520,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['No, porque Philson es demasiado joven y solo podrá contar con representación cuando esté más cerca de la edad permitida para negociar un contrato profesional']
     },
     {
-        'pregunta': 'En principio, ¿qué condiciones deben cumplirse para que seabonen los honorarios a un agente de fútbol que representaa una persona física en virtud de un contrato laboral de unaño de duración?. Seleccione una o más de una:',
+        'pregunta': 'En principio, ¿qué condiciones deben cumplirse para que se abonen los honorarios a un agente de fútbol que representaa una persona física en virtud de un contrato laboral de un año de duración?. Seleccione una o más de una:',
         'opciones': [
             'Han transcurrido al menos seis meses desde la prestación de los servicios de representación',
             'Se ha cerrado el periodo de inscripción correspondiente',
@@ -530,27 +530,27 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Se ha cerrado el periodo de inscripción correspondiente','La persona física ha recibido su remuneración']
     },
     {
-        'pregunta': 'Usted está negociando un contrato laboral con un nuevojugador en nombre de un club. Durante las negociaciones, elagente de fútbol del jugador solicita que se incluya en elcontrato una cláusula donde se establezca que, en caso detraspasarse al futbolista a otro club en el futuro mediante elpago de una indemnización por transferencia, el agenterecibiría el 10 % del coste del traspaso. ¿Qué respuestadebería darle?. Seleccione una o más de una:',
+        'pregunta': 'Usted está negociando un contrato laboral con un nuevo jugador en nombre de un club. Durante las negociaciones, el agente de fútbol del jugador solicita que se incluya en el contrato una cláusula donde se establezca que, en caso de traspasarse al futbolista a otro club en el futuro mediante el pago de una indemnización por transferencia, el agente recibiría el 10 % del coste del traspaso. ¿Qué respuesta debería darle?. Seleccione una o más de una:',
         'opciones': [
             'La cláusula contraviene el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA, por lo que debe eliminarse del contrato',
             'En tanto en cuanto el porcentaje de la futura venta sea inferior o igual al 10 %, no se aplicará el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA',
             'En dicho supuesto, el agente de fútbol del jugador no se considera un tercero, por lo que no se aplica el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA',
-            'En tanto en cuanto la información se refl eje correctamente en el sistema de correlación de transferencias de la FIFA, no se incumplirá el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA'
+            'En tanto en cuanto la información se refleje correctamente en el sistema de correlación de transferencias de la FIFA, no se incumplirá el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA'
         ],
         'respuestas_correctas': ['La cláusula contraviene el artículo 18ter del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA, por lo que debe eliminarse del contrato']
     },
     {
-        'pregunta': 'Clarissa, entrenadora de juveniles del FC Fuzzati Runners, haidentifi cado a Moro, de 15 años, como jugadora de unenorme potencial. Dado el gran número de agentes de fútbolque siguen los partidos de Moro, a Clarissa le preocupa quecontacten con ella personas que busquen sacar provecho desu talento sin cumplir la normativa pertinente de la FIFA. Unamañana, Clarissa oye por casualidad una conversación entrePletto, un periodista local, y Chaggo, un famoso agente defútbol, en la que ofrecen a Moro representarla y organizarleuna prueba en el extranjero. Alarmada por lo que haescuchado, Clarissa llama a los padres de Moro paracontarles la situación. ¿De qué debe advertir Clarissa a lospadres de Moro?. Seleccione una o más de una:',
+        'pregunta': 'Clarissa, entrenadora de juveniles del FC Fuzzati Runners, ha identificado a Moro, de 15 años, como jugadora de un enorme potencial. Dado el gran número de agentes de fútbol que siguen los partidos de Moro, a Clarissa le preocupa que contacten con ella personas que busquen sacar provecho desu talento sin cumplir la normativa pertinente de la FIFA. Una mañana, Clarissa oye por casualidad una conversación entre Pletto, un periodista local, y Chaggo, un famoso agente de fútbol, en la que ofrecen a Moro representarla y organizarle una prueba en el extranjero. Alarmada por lo que ha escuchado, Clarissa llama a los padres de Moro para contarles la situación. ¿De qué debe advertir Clarissa a los padres de Moro?. Seleccione una o más de una:',
         'opciones': [
             'Pletto no puede representar a Moro porque no es agente de fútbol',
-            'Al ser menor de edad, Moro no puede fi rmar un contrato profesional de conformidad con la normativa de la FIFA, por lo que tampoco puede contratar a una persona que preste servicios de representación',
+            'Al ser menor de edad, Moro no puede firmar un contrato profesional de conformidad con la normativa de la FIFA, por lo que tampoco puede contratar a una persona que preste servicios de representación',
             'Chaggo ha contactado con Moro sin haber hecho lo propio primero con sus padres',
             'A Moro solo puede representarla su entrenadora, en este caso, Clarissa, no Pletto ni Chaggo'
         ],
-        'respuestas_correctas': ['Pletto no puede representar a Moro porque no es agente de fútbol','Al ser menor de edad, Moro no puede fi rmar un contrato profesional de conformidad con la normativa de la FIFA, por lo que tampoco puede contratar a una persona que preste servicios de representación','Chaggo ha contactado con Moro sin haber hecho lo propio primero con sus padres']
+        'respuestas_correctas': ['Pletto no puede representar a Moro porque no es agente de fútbol','Al ser menor de edad, Moro no puede firmar un contrato profesional de conformidad con la normativa de la FIFA, por lo que tampoco puede contratar a una persona que preste servicios de representación','Chaggo ha contactado con Moro sin haber hecho lo propio primero con sus padres']
     },
     {
-        'pregunta': 'Tim, Oliver y Bob son tres hermanos veinteañeros que jueganen el mismo club. Los tres comparten agente de fútbol, Allen,de la agencia Flowershop. ¿Puede una misma personarepresentarlos a todos?. Seleccione una:',
+        'pregunta': 'Tim, Oliver y Bob son tres hermanos veinteañeros que jueganen el mismo club. Los tres comparten agente de fútbol, Allen,de la agencia Flowershop. ¿Puede una misma persona representarlos a todos?. Seleccione una:',
         'opciones': [
             'Solo a Tim, el hermano mayor',
             'Solo a Bob, el hermano menor',
@@ -560,7 +560,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Sí']
     },
     {
-        'pregunta': '¿Cuáles de las siguientes personas no pueden tener unaparticipación en una agencia?. Seleccione una o más de una:',
+        'pregunta': '¿Cuáles de las siguientes personas no pueden tener una participación en una agencia?. Seleccione una o más de una:',
         'opciones': [
             'Presidente de un club',
             'Jugador profesional',
@@ -570,7 +570,7 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['Presidente de un club','Jugador profesional','Entrenador profesional']
     },
     {
-        'pregunta': 'En caso de que se ofrezca un contrato profesional a unjugador menor de edad, ¿quién puede representarlo?. Seleccione una:',
+        'pregunta': 'En caso de que se ofrezca un contrato profesional a un jugador menor de edad, ¿quién puede representarlo?. Seleccione una:',
         'opciones': [
             'Su entrenador',
             'Su tutor legal',
