@@ -1429,7 +1429,7 @@ preguntas_codigo_disciplinario = [
         'respuestas_correctas': ['Sí, deben colaborar en cualquier circunstancia']
     },
     {
-        'pregunta': 'Cuando se enfrenta a un posible incumplimiento del artículo 15 del Código Disciplinario de la FIFA (incumplimiento de decisiones) ¿Cuál es la única labor de la Comisión Disciplinaria de la FIFA? Seleccione una respuesta:?',
+        'pregunta': 'Cuando se enfrenta a un posible incumplimiento del artículo 15 del Código Disciplinario de la FIFA (incumplimiento de decisiones) ¿Cuál es la única labor de la Comisión Disciplinaria de la FIFA? Seleccione una respuesta:',
         'opciones': [
             'Comprobar que las sumas se hayan pagado en su totalidad',
             'Revisar que todo el caso ejerciendo la facultad de revocar o instruir de nuevo',
@@ -1476,7 +1476,7 @@ preguntas_codigo_disciplinario = [
             'La decisión se puede apelar ante el Tribunal del Fútbol de la FIFA',
             'La decisión es definitva y no se puede recurrir'
         ],
-        'respuestas_correctas': ['La decisión se puede apelar ante el Tribunal de Arbitraje Deportivo']
+        'respuestas_correctas': ['La decisión se puede apelar ante la Comisión de Apelación de la FIFA']
     },
     {
         'pregunta': 'El Tribunal de Arbitraje Deportivo emitió un fallo por el que se ordenaba a un club que le pagase a usted cierta cantidad. No obstante, los problemas financieros de dicho club lo condujeron a la bancarrota. Por ello, el club desapareció y ya no está afiliado a la federación miembro correspondiente. Pocos años después, usted descubre que un club casi idéntico ha comenzado a competir en la misma liga del club extinto. Dado que el club extinto no le ha pagado la deuda, ¿Puede usted entablar un procedimiento en contra del nuevo club por incumplir el fallo y alegar que se trata del sucesor deportivo del club extinto? Seleccione una:',
@@ -1519,7 +1519,7 @@ preguntas_codigo_disciplinario = [
         'respuestas_correctas': ['El jugador ha sido sancionado con una multa de 15 000 CHF','El jugador ha sido sancionado con una suspensión de cinco partidos']
     },
     {
-        'pregunta': 'New TabTras la disputa de un partido de la Copa Mundial de Clubesde la FIFA™, el árbitro indica en el acta del encuentro que hamostrado seis tarjetas amarillas a cinco jugadores del FCMountain. Desde el club le transmiten a usted supreocupación ante posibles medidas disciplinarias. ¿Quérespuesta debería darle?. Seleccione una:',
+        'pregunta': 'NewTab Tras la disputa de un partido de la Copa Mundial de Clubes de la FIFA™, el árbitro indica en el acta del encuentro que ha mostrado seis tarjetas amarillas a cinco jugadores del FCMountain. Desde el club le transmiten a usted su preocupación ante posibles medidas disciplinarias. ¿Qué respuesta debería darle?. Seleccione una:',
         'opciones': [
             'Los propios jugadores son los únicos que pueden ser objeto de medidas disciplinarias con relación a las tarjetas amarillas que han visto durante el partido',
             'Dado que los jugadores del FC Mountain no han recibido ninguna tarjeta amarilla previamente en la competición, el club no será objeto de medidas disciplinarias a este respecto',
@@ -1529,7 +1529,7 @@ preguntas_codigo_disciplinario = [
         'respuestas_correctas': ['El FC Mountain puede ser objeto de medidas disciplinarias por conducta inadecuada a raíz de las sanciones disciplinarias individuales que ha impuesto el árbitro a sus jugadores']
     },
     {
-        'pregunta': '¿A qué consecuencias puede enfrentarse un club en caso deomisión del pago de las cantidades que ordene el Tribunaldel Fútbol?. Seleccione una o más de una:',
+        'pregunta': '¿A qué consecuencias puede enfrentarse un club en caso de omisión del pago de las cantidades que ordene el Tribunaldel Fútbol?. Seleccione una o más de una:',
         'opciones': [
             'Exclusión de torneos',
             'Prohibición de inscribir nuevos jugadores, tanto en el ámbito nacional como en el internacional',
@@ -1539,7 +1539,7 @@ preguntas_codigo_disciplinario = [
         'respuestas_correctas': ['Prohibición de inscribir nuevos jugadores, tanto en el ámbito nacional como en el internacional']
     },
     {
-        'pregunta': '¿Cuáles de las siguientes medidas disciplinarias puedenimponerse a un jugador?. Seleccione una o más de una:',
+        'pregunta': '¿Cuáles de las siguientes medidas disciplinarias pueden imponerse a un jugador?. Seleccione una o más de una:',
         'opciones': [
             'Servicios comunitarios a través del fútbol',
             'Suspensión durante un periodo concreto',
