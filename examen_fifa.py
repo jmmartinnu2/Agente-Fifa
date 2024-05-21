@@ -1715,7 +1715,7 @@ preguntas_salvaguardia = [
             'Lastima a los niños',
             'Socava la integridad de la asociación miembro, la academia o el club'
         ],
-        'respuestas_correctas': ['Socava el crecimiento y la integridad del fútbol','Lastima a los niños']
+        'respuestas_correctas': ['Socava el crecimiento y la integridad del fútbol','Lastima a los niños','Socava la integridad de la asociación miembro, la academia o el club']
     },
     {
         'pregunta': 'Un Entrenador habla con su mejor amigo y le cuenta que le han llegado rumores de <<conducta extraña>> de un colega con los niños del club por el que acaba de fichar. Algunas de las personas que llevan más tiempo en el club dicen que esto lleva pasando muchos años, pero que es muy buen entrenador y tiene mucha influencia. También le cuenta a su amigo que se ha dado cuenta de que muchos chicos de los que juegan con él han cambiado en las últimas semanas y que todos parecen tenerle miedo. Le pide consejo a su amigo, ya que en el club no cuenta con un oficial de salvaguardia. ¿Qué debería hacer? Seleccione una o más de una:',
