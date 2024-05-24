@@ -10,6 +10,16 @@ preguntas_agente_fifa = [
         'respuestas_correctas': ['No, porque Ziss no estaría prestando servicios de representación']  # La respuesta correcta es el texto 'No, porque Ziss no estaría prestando servicios de representación'
     },
     {
+        'pregunta': '¿Cuáles de las siguientes actividades no constituyen servicios de agente de fútbol?. Seleccione una o más:',
+        'opciones': [
+            'Representación de Clientes ante el Tribunal de Fútbol de la FIFA',
+            'Organizar pruebas de jugadores con clubes',
+            'Negociar un acuerdo de patrocinio comercial para un jugador',
+            'Negociar la rescisión del contrato profesional de un entrenador'
+        ],
+        'respuestas_correctas': ['Representación de Clientes ante el Tribunal de Fútbol de la FIFA','Negociar un acuerdo de patrocinio comercial para un jugador']  
+    },    
+    {
         'pregunta': 'En circunstancias normales, ¿cómo debe solicitar un agente de fútbol el pago de sus honorarios a un jugador?. Seleccione una:',
         'opciones': [
             'Debe de enviar una factura a la federación del jugador',
@@ -1338,7 +1348,27 @@ preguntas_codigo_disciplinario = [
             'Los propios jugadores son los únicos que pueden ser objeto de medidas disciplinarias con relación a las tarjetas amarillas que han visto durante el partido'
         ],
         'respuestas_correctas': ['El FC Mountain puede ser objeto de medidas disciplinarias por conducta inadecuada a raíz de las sanciones disciplinarias individuales que ha impuesto el árbitro a sus jugadores']
+    },
+    {
+        'pregunta': 'El procedimiento disciplinario podrá cerrarse cuando. Seleccione una o más:',
+        'opciones': [
+            'un club desciende',
+            'las partes llegan a un acuerdo',
+            'un club es desafiliado de su asociación',
+            'la supuesta violación no ha sido probada'
+        ],
+        'respuestas_correctas': ['las partes llegan a un acuerdo','la supuesta violación no ha sido probada']
     },    
+    {
+        'pregunta': 'El 7 de Agosto de 2023, el Tribunal de Fútbol de la FIFA dictó sentencia mediante la cual condenó al agente M a pagar al club P la cantidad de 200.000 dólares en concepto de indemnización por incumplimiento de contrato. EL 7 de noviembre de 2023, cómo aún no se había pagado el importe adeudado, el club P presentó una denuncia ante la Comisión Disciplinaria de la FIFA. ¿Cuáles son las posibles consecuencias para el agente M?. Seleccione una o más:',
+        'opciones': [
+            'Se le prohibirá participar en cualquier actividad relacionada con el fútbol durante un periodo de tres meses',
+            'Su licencia de agente de fútbol será suspendida hasta que se pague el importe adeudado',
+            'Se le concederá un plazo final de 30 días para pagar el importe adeudado',
+            'Será sancionado con una multa de 15.000 francos suizos'
+        ],
+        'respuestas_correctas': ['Su licencia de agente de fútbol será suspendida hasta que se pague el importe adeudado','Se le concederá un plazo final de 30 días para pagar el importe adeudado']
+    },         
     {
         'pregunta': '¿Cuál de las siguientes afirmaciones sobre un jugador expulsado es correcta?. Seleccione una:',
         'opciones': [
