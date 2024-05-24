@@ -588,7 +588,17 @@ preguntas_agente_fifa = [
             'Un representante de la federación'
         ],
         'respuestas_correctas': ['Un agente de fútbol']
-    },                                                                                                       
+    },
+    {
+        'pregunta': 'Marston es un agente de fútbol que está contento por haber captado a Gavin como cliente. Gavin es un jugador con talento que tiene un futuro prometedor, por lo que Marston confía en amasar una pequeña fortuna gracias al contrato de representación exclusivo de tres años que ha firmado con el futbolista. Marston recibirá el 2 % de la remuneración de Gavin por cada contrato profesional que haya negociado, incluso una vez vencido el contrato de representación, y tendrá derecho a un pago en concepto de penalización en caso de que el jugador negocie un contrato por su cuenta. ¿Qué problemas plantea este contrato de representación de conformidad con el Reglamento de la FIFA sobre Agentes de Fútbol?. Seleccione una o más de una:',
+        'opciones': [
+            'Marston no puede cobrar a Gavin una penalización por que este se represente a sí mismo',
+            'Marston no puede cobrar a Gavin por contratos que negocie antes del vencimiento del contrato de representación',
+            'Marston solo puede cobrar honorarios fijos',
+            'La duración del contrato de representación supera el máximo permitido'
+        ],
+        'respuestas_correctas': ['Marston no puede cobrar a Gavin una penalización por que este se represente a sí mismo','La duración del contrato de representación supera el máximo permitido']
+    },                                                                                                           
                                                                          
 ]
 
@@ -612,7 +622,37 @@ preguntas_estatuto_transferencia = [
             'Un jugador en proceso de adquirir una nueva nacionalidad puede disputar partidos amistosos con la selección nacional de dicha federación miembro'
         ],
         'respuestas_correctas': ['Un jugador solo estará vinculado a una «nacionalidad deportiva» cuando haya disputado un partido en competición oficial']
-    },     
+    },
+    {
+        'pregunta': '¿Cuál de las siguientes afirmaciones es correcta en relación con la aplicación del art. 18ter del RETJ a las cláusulas de reventa? Seleccione una o más de una:',
+        'opciones': [
+            'Las cláusulas de reventa entre clubes están permitidas',
+            'Las cláusulas de reventa no incumplen el art. 18ter del RETJ',
+            'El art. 18ter del RETJ prohíbe las cláusulas de reventa, dado que afectan a la integridad de la competición',
+            'El art. 18ter del RETJ prohíbe las cláusulas de reventa, dado que los clubes son terceros'
+        ],
+        'respuestas_correctas': ['Las cláusulas de reventa entre clubes están permitidas']
+    },    
+    {
+        'pregunta': '¿Es necesario disponer de una cuenta bancaria para superar la evaluación de cumplimiento y para tramitar pagos a través de la Cámara de Compensación de la FIFA? Seleccione una o más de una:',
+        'opciones': [
+            'Sí, y deberá estar a nombre del club que desee recurrir a los servicios de la Cámara de Compensación de la FIFA o de una entidad estrechamente relacionada con este',
+            'No, también se admiten monederos electrónicos y criptomonedas',
+            'Sí, y deberá estar a nombre del club que desee recurrir a los servicios de la Cámara de Compensación de la FIFA',
+            'Sí, la Cámara de Compensación de la FIFA solo aceptará el pago de las compensaciones por formación mediante transferencia bancaria desde una cuenta bancaria'
+        ],
+        'respuestas_correctas': ['Sí, y deberá estar a nombre del club que desee recurrir a los servicios de la Cámara de Compensación de la FIFA','Sí, la Cámara de Compensación de la FIFA solo aceptará el pago de las compensaciones por formación mediante transferencia bancaria desde una cuenta bancaria']
+    },
+    {
+        'pregunta': 'Seleccione una:',
+        'opciones': [
+            'En caso de que se produzca un traspaso nacional con indemnización, el nuevo club no tendrá que cargar el comprobante de cada pago en el sistema electrónico de transferencias nacionales',
+            'Una vez concluido el proceso de revisión del EPP, la Secretaría General de la FIFA, en circunstancias de complejidad jurídica o fáctica, remitirá el caso a la Cámara del Estatuto del Jugador (PSC)',
+            'En caso de que se produzca un traspaso internacional con indemnización, el nuevo club deberá cargar el comprobante de cada pago en un plazo de 45 días desde la fecha de este',
+            'Cuando un pasaporte deportivo electrónico (EPP) (con derechos) se considere definitivo, el TMS calcula automáticamente una orden de asignación en la que se incluirá el importe para distribuir entre los clubes formadores'
+        ],
+        'respuestas_correctas': ['Cuando un pasaporte deportivo electrónico (EPP) (con derechos) se considere definitivo, el TMS calcula automáticamente una orden de asignación en la que se incluirá el importe para distribuir entre los clubes formadores']
+    },             
     {
         'pregunta': 'A María, una futbolista profesional, su club le adeuda dos mensualidades. Está convencida de que van a dejar de pagarle su salario, por lo que desea rescindir el contrato que la une a la entidad. Por norma general, ¿qué debería hacer la jugadora de conformidad con el artículo 14bis del Reglamento sobre el Estatuto y la Transferencia de Jugadores de la FIFA antes de rescindir el contrato?. Seleccione una:',
         'opciones': [
@@ -633,6 +673,16 @@ preguntas_estatuto_transferencia = [
         ],
         'respuestas_correctas': ['30 días']
     },
+    {
+        'pregunta': 'Rania es una exitosa empresaria que ha detectado la necesidad de establecer una academia de fútbol privada en su ciudad. Tras elaborar un plan de negocios, abre la academia Prime Elite, cuyos buenos resultados no tardan en llamar la atención del AFC Royals, campeón nacional de Unia. Su propietario ofrece a Rania un acuerdo de colaboración, en virtud del cual la academia Prime Elite pasará a estar afiliada al AFC Royals y sus jugadores disputarán la liga juvenil de Unia; a cambio, Rania recibirá una participación del 5 % del club. El éxito continuado de la academia lleva a Rania a presentar una solicitud para obtener una licencia de agente de fútbol, pero la FIFA la rechaza. ¿A qué se debe? Seleccione una o más de una:',
+        'opciones': [
+            'Rania tiene intereses en el AFC Royals',
+            'La academia Prime Elite está afiliada al AFC Royals, club que pertenece a la Federación de Fútbol de Unia',
+            'Rania tiene intereses en la academia Prime Elite',
+            'Rania no ha pedido permiso a la FIFA para poner en marcha una academia'
+        ],
+        'respuestas_correctas': ['Rania tiene intereses en el AFC Royals']
+    },    
     {
         'pregunta': '¿Se aplica la prohibición de transferencias puente a las cesiones?. Seleccione una:',
         'opciones': [
@@ -1357,7 +1407,7 @@ preguntas_codigo_disciplinario = [
             'un club es desafiliado de su asociación',
             'la supuesta violación no ha sido probada'
         ],
-        'respuestas_correctas': ['las partes llegan a un acuerdo','la supuesta violación no ha sido probada']
+        'respuestas_correctas': ['las partes llegan a un acuerdo','un club es desafiliado de su asociación','la supuesta violación no ha sido probada']
     },    
     {
         'pregunta': 'El 7 de Agosto de 2023, el Tribunal de Fútbol de la FIFA dictó sentencia mediante la cual condenó al agente M a pagar al club P la cantidad de 200.000 dólares en concepto de indemnización por incumplimiento de contrato. EL 7 de noviembre de 2023, cómo aún no se había pagado el importe adeudado, el club P presentó una denuncia ante la Comisión Disciplinaria de la FIFA. ¿Cuáles son las posibles consecuencias para el agente M?. Seleccione una o más:',
