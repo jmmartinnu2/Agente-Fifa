@@ -12,7 +12,7 @@ from pdfs import pdf_files
 from podcast import podcasts
 
 # Contraseña correcta definida
-CONTRASEÑA_CORRECTA = "300822"
+CONTRASEÑA_CORRECTA = "190583"
 
 # Variable para mantener el estado de la sesión
 if 'sesion_iniciada' not in st.session_state:
