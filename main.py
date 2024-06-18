@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 import streamlit as st
 import pandas as pd
 from examen_fifa import preguntas_por_categoria  # Asegúrate de que este archivo está en el mismo directorio
-from auth.database import crear_tabla
 from exam.config import ExamConfig
 from exam.exam_manager import ExamManager
 from exam.reports import crear_tabla_historial, guardar_resultado_examen, obtener_historial_examenes, obtener_detalles_examen
